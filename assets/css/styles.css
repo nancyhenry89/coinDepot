@@ -7,13 +7,17 @@
 body{
   font-family: var(--main-font)
 }
+.main-content{
+  padding-right: 5px;
+  padding-left: 5px;
+}
 header{
   background: var(--color2);
   color:var(--color3);
   height: 174px;
   padding-top: 26px;
 }
-svg{height: 100%;stroke-width: 100%;}
+svg{height: 100%;width:100%}
 .navbar-default{
   background:var(--color2);
   border:0;
@@ -61,3 +65,66 @@ svg{height: 100%;stroke-width: 100%;}
   fill: var(--color1);
   height: 27px;
 }
+.coins{
+  padding:0;
+  margin-top: -55px;
+}
+.coins>div{
+  padding:0
+}
+.coin-card{color: var(--color3);height: 164px;padding: 10px;margin-bottom: 5px;}
+.coin-card .title{
+    color: var(--color1);
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    height: calc(100% - 20px);
+    margin-bottom: 0;
+}
+.coin-card .value{
+    float: left;
+    text-align: right;
+    width: 50%;
+    font-size: 12px;
+}
+.coin-card .price{
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.coin-card .price::first-letter{font-weight:100;margin-right:2px
+}
+.btn.btn-default{
+  color:var(--color1);
+  border: 1px solid;
+  border-radius: 18px;
+  background: transparent;
+  height: 36px;
+  min-width: 100px;
+  font-size: 14px;
+  line-height: 24px;
+  float: right;
+}
+
+.coin-card .btn{
+  margin-top: 25px;
+}
+.coin-card.bitcoin{
+  background: url('../img/bitcoin.png')
+}
+.coin-card.eth{
+  background: url('../img/eth.png')
+}
+.coin-card.xrp{
+  background: url('../img/xrp.png')
+}
+.coin-card.xmr{
+  background: url('../img/xmr.png')
+}
+.coin-card.bitcoin-cash{
+  background: url('../img/bitcoin-cash.png')
+}
+.coin-card .content{border: 1px solid;border-radius: 2px;padding: 10px;float: left;padding-right: 22px;padding-bottom: 0;}
