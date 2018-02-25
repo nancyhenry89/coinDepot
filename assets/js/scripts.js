@@ -3,6 +3,9 @@ $(document).ready(function(){
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
+    infinite:false,
+    variableWidth: true,
+    initialSlide:1,
     responsive: [
       {
         breakpoint: 768,
@@ -18,7 +21,7 @@ $(document).ready(function(){
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '0px',
           slidesToShow: 1
         }
       }
