@@ -1,506 +1,680 @@
-:root {
---color1:#fea100;
---color2:#2f3538;
---color3:#fff;
---hover-color:#FFA000;
---headings-color:#4f5d75;
---main-font:Rubik,sans-serif
+:root
+{
+	--color1:#fea100;
+	--color2:#2f3538;
+	--color3:#fff;
+	--hover-color:#FFA000;
+	--headings-color:#4f5d75;
+	--main-font:Rubik,sans-serif
 }
 
-body {
-font-family:var(--main-font)
+body
+{
+	font-family:var(--main-font)
 }
 
-.main-content {
-padding-right:0;
-padding-left:0;
-background:#f6f6f6
+.main-content
+{
+	padding-right:0;
+	padding-left:0;
+	background:#f6f6f6
 }
 
-header {
-background:var(--color2);
-color:var(--color3);
-height:174px;
-padding-top:26px
+header
+{
+	background:var(--color2);
+	color:var(--color3);
+	height:174px;
+	padding-top:26px
 }
 
-svg {
-height:100%;
-width:100%
+svg
+{
+	height:100%;
+	width:100%
 }
 
-.navbar-default {
-background:var(--color2);
-border:0;
-float:left;
-margin-bottom:0;
-min-height:40px
+.navbar-default
+{
+	background:var(--color2);
+	border:0;
+	float:left;
+	margin-bottom:0;
+	min-height:40px
 }
 
-.navbar-default .navbar-toggle {
-border:none;
-float:left;
-margin-right:11px;
-margin-top:-2px;
-padding-left:3px;
-margin-bottom:0
+.navbar-default .navbar-toggle
+{
+	border:none;
+	float:left;
+	margin-right:11px;
+	margin-top:-2px;
+	padding-left:3px;
+	margin-bottom:0
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-background:var(--color1)
+.navbar-default .navbar-toggle .icon-bar
+{
+	background:var(--color1)
 }
 
-.logo .text {
-float:left;
-margin:0;
-font-style:italic;
-font-weight:lighter;
-font-size:24px;
-margin-left:10px
+.logo .text
+{
+	float:left;
+	margin:0;
+	font-style:italic;
+	font-weight:lighter;
+	font-size:24px;
+	margin-left:10px
 }
+
+.logo .img
+{
+	float:left;
+	width:26px;
+	height:31px
+}
+
+.slogan
+{
+	text-align:center;
+	font-weight:300;
+	font-size:15px;
+	text-transform:uppercase;
+	width:75%;
+	margin:auto
+}
+
+.slogan b
+{
+	font-weight:500
+}
+
+.cart
+{
+	float:right;
+	width:25px;
+	fill:var(--color1);
+	height:27px
+}
+
+.coins
+{
+	padding:0 5px;
+	margin-top:-55px
+}
+
+.coins>div
+{
+	padding:0
+}
+
+.coin-card
+{
+	color:var(--color3);
+	height:164px;
+	padding:10px;
+	margin-bottom:5px
+}
+
+.coin-card .title
+{
+	color:var(--color1);
+	font-size:20px;
+	float:left;
+	width:60%;
+	margin-top:5px;
+	height:calc(100% - 20px);
+	margin-bottom:0
+}
+
+.coin-card .value
+{
+	float:left;
+	text-align:right;
+	width:40%;
+	font-size:12px
+}
 
-.logo .img {
-float:left;
-width:26px;
-height:31px
+.coin-card .price
+{
+	float:left;
+	width:40%;
+	text-align:right;
+	font-size:28px;
+	font-weight:700
+}
+
+.price::first-letter
+{
+	font-weight:100;
+	margin-right:2px
 }
 
-.slogan {
-text-align:center;
-font-weight:300;
-font-size:15px;
-text-transform:uppercase;
-width:75%;
-margin:auto
+.btn
+{
+	color:var(--color1);
+	border:1px solid;
+	border-radius:18px;
+	background:transparent;
+	height:36px;
+	min-width:100px;
+	font-size:14px;
+	line-height:24px;
+	text-transform:capitalize
 }
 
-.slogan b {
-font-weight:500
+.btn.btn-alt
+{
+	color:var(--color3);
+	border-color:var(--color3)
 }
 
-.cart {
-float:right;
-width:25px;
-fill:var(--color1);
-height:27px
+.coin-card .btn
+{
+	margin-top:25px;
+	float:right
 }
 
-.coins {
-padding:0 5px;
-margin-top:-55px
+.coin-card.bitcoin
+{
+	background:url(../img/bitcoin.png)
 }
 
-.coins>div {
-padding:0
+.coin-card.eth
+{
+	background:url(../img/eth.png)
 }
 
-.coin-card {
-color:var(--color3);
-height:164px;
-padding:10px;
-margin-bottom:5px
+.coin-card.xrp
+{
+	background:url(../img/xrp.png)
 }
 
-.coin-card .title {
-color:var(--color1);
-font-size:20px;
-float:left;
-width:60%;
-margin-top:5px;
-height:calc(100% - 20px);
-margin-bottom:0
+.coin-card.xmr
+{
+	background:url(../img/xmr.png)
 }
 
-.coin-card .value {
-float:left;
-text-align:right;
-width:40%;
-font-size:12px
+.coin-card.bitcoin-cash
+{
+	background:url(../img/bitcoin-cash.png)
 }
 
-.coin-card .price {
-float:left;
-width:40%;
-text-align:right;
-font-size:28px;
-font-weight:700
+.coin-card .content
+{
+	border:1px solid;
+	border-radius:2px;
+	padding:10px;
+	float:left;
+	padding-right:22px;
+	padding-bottom:0;
+	width:100%
 }
 
-.price::first-letter {
-font-weight:100;
-margin-right:2px
+.section-title
+{
+	font-size:24px;
+	text-transform:uppercase;
+	text-align:center;
+	color:var(--headings-color);
+	position:relative;
+	font-weight:lighter;
+	margin-bottom:17px
 }
 
-.btn {color:var(--color1);border:1px solid;border-radius:18px;background:transparent;height:36px;min-width:100px;font-size:14px;line-height:24px;text-transform: capitalize;}
+.section-title:after
+{
+	content:'';
+	height:3px;
+	width:20%;
+	position:absolute;
+	background:var(--headings-color);
+	left:40%;
+	top:36px
+}
+
+.trending .card
+{
+	color:var(--color3);
+	height:225px;
+	border-radius:6px;
+	box-shadow:0 0 5px rgba(0,0,0,0.56);
+	background-image:linear-gradient(34deg,#e37a00 0%,#dd8d03 100%);
+	text-align:center;
+	width:184px!important;
+	margin:0 5px;
+	transition:all .5s ease
+}
+
+.trending .card.slick-center
+{
+	height:235px;
+	margin-top:-5px
+}
+
+.trending .title
+{
+	font-size:15px
+}
+
+.trending .price
+{
+	font-size:20px;
+	margin-top:15px
+}
 
-.btn.btn-alt {
-color:var(--color3);
-border-color:var(--color3)
+.trending .value
+{
+	font-size:12px;
+	margin-top:4px;
+	margin-bottom:18px
 }
 
-.coin-card .btn {
-margin-top:25px;
-float:right
+.trending .icon
+{
+	width:50px;
+	height:50px;
+	background-color:var(--color3);
+	border-radius:50%;
+	margin:13px auto;
+	color:var(--color2);
+	font-size:35px
 }
 
-.coin-card.bitcoin {
-background:url(../img/bitcoin.png)
+.trending .slick-list
+{
+	padding:20px 0!important
 }
 
-.coin-card.eth {
-background:url(../img/eth.png)
+.trending
+{
+	padding:0
 }
 
-.coin-card.xrp {
-background:url(../img/xrp.png)
+.srch-inpt
+{
+	float:left;
+	width:220px;
+	height:36px;
+	border-radius:18px;
+	background-color:var(--color3);
+	border:1px solid #d6d6d6;
+	font-size:14px;
+	color:var(--headings-color);
+	padding:10px;
+	background:url(../img/search.png) no-repeat 94% 44%
 }
 
-.coin-card.xmr {
-background:url(../img/xmr.png)
+.srch-inpt:focus
+{
+	outline:none
 }
 
-.coin-card.bitcoin-cash {
-background:url(../img/bitcoin-cash.png)
+.plus
+{
+	color:var(--color2);
+	font-size:15px;
+	float:right;
+	line-height:40px
 }
 
-.coin-card .content {
-border:1px solid;
-border-radius:2px;
-padding:10px;
-float:left;
-padding-right:22px;
-padding-bottom:0;
-width:100%
+.srch-inpt::-webkit-input-placeholder
+{
+	color:#d6d6d6
 }
 
-.section-title {
-font-size:24px;
-text-transform:uppercase;
-text-align:center;
-color:var(--headings-color);
-position:relative;
-font-weight:lighter;
-margin-bottom:17px
+.srch-inpt::-moz-placeholder
+{
+	color:#d6d6d6
 }
 
-.section-title:after {
-content:'';
-height:3px;
-width:20%;
-position:absolute;
-background:var(--headings-color);
-left:40%;
-top:36px
+.srch-inpt:-ms-input-placeholder
+{
+	color:#d6d6d6
 }
 
-.trending .card {
-color:var(--color3);
-height:225px;
-border-radius:6px;
-box-shadow:0 0 5px rgba(0,0,0,0.56);
-background-image:linear-gradient(34deg,#e37a00 0%,#dd8d03 100%);
-text-align:center;
-width:184px!important;
-margin:0 5px;
-transition:all .5s ease
+.srch-inpt:-moz-placeholder
+{
+	color:#d6d6d6
 }
 
-.trending .card.slick-center {
-height:235px;
-margin-top:-5px
+.search
+{
+	margin-top:6px
 }
 
-.trending .title {
-font-size:15px
+.coin-of-day
+{
+	background:url(../img/day-coin.png);
+	color:var(--color3);
+	height:184px;
+	margin-top:30px
 }
 
-.trending .price {
-font-size:20px;
-margin-top:15px
+.coin-of-day .details
+{
+	float:right;
+	width:193px;
+	height:173px;
+	background-color:#1f2421;
+	font-size:14px;
+	padding:20px 24px;
+	max-width:60%
 }
 
-.trending .value {
-font-size:12px;
-margin-top:4px;
-margin-bottom:18px
+.coin-of-day .title
+{
+	float:left;
+	font-size:15px;
+	font-weight:lighter;
+	width:100%;
+	margin-top:23px
 }
 
-.trending .icon {
-width:50px;
-height:50px;
-background-color:var(--color3);
-border-radius:50%;
-margin:13px auto;
-color:var(--color2);
-font-size:35px
+.coin-of-day .coin-icon
+{
+	width:64px;
+	height:60px;
+	font-size:47px;
+	text-align:center;
+	margin:auto;
+	color:var(--color1)
 }
 
-.trending .slick-list {
-padding:20px 0!important
+.coin-of-day>.item
+{
+	float:left;
+	width:40%;
+	text-align:center;
+	text-transform:uppercase
 }
 
-.trending {
-padding:0
+.coin-of-day .details .item
+{
+	height:34px
 }
 
-.srch-inpt {
-float:left;
-width:220px;
-height:36px;
-border-radius:18px;
-background-color:var(--color3);
-border:1px solid #d6d6d6;
-font-size:14px;
-color:var(--headings-color);
-padding:10px;
-background:url(../img/search.png) no-repeat 94% 44%
+.coin-of-day .coin-name
+{
+	float:left;
+	font-size:24px;
+	font-weight:700;
+	width:100%;
+	margin-top:5px
 }
 
-.srch-inpt:focus {
-outline:none
+.best-seller .title
+{
+	font-size:15px;
+	text-transform:uppercase;
+	color:var(--color2);
+	margin-top:14px
 }
 
-.plus {
-color:var(--color2);
-font-size:15px;
-float:right;
-line-height:40px
+.best-seller .icon
+{
+	font-size:30px;
+	text-transform:uppercase;
+	color:var(--color3);
+	background:var(--color2);
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	text-align:center;
+	margin:auto
 }
 
-.srch-inpt::-webkit-input-placeholder {
-color:#d6d6d6
+.best-seller .icon i
+{
+	line-height:46px
 }
 
-.srch-inpt::-moz-placeholder {
-color:#d6d6d6
+.best-seller
+{
+	margin-top:18px
 }
 
-.srch-inpt:-ms-input-placeholder {
-color:#d6d6d6
+.nav-tabs
+{
+	border:0
 }
 
-.srch-inpt:-moz-placeholder {
-color:#d6d6d6
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover
+{
+	color:var(--headings-color);
+	border:0;
+	border-bottom:2px solid #4f5d75;
+	background:transparent
 }
 
-.search {
-margin-top:6px
+.nav-tabs>li>a
+{
+	color:#929aa9;
+	font-size:16px;
+	padding:3px 0;
+	font-weight:500
 }
 
-.coin-of-day {
-background:url(../img/day-coin.png);
-color:var(--color3);
-height:184px;
-margin-top:30px
+.nav-tabs>li
+{
+	width:calc(100% / 3);
+	text-align:center
 }
 
-.coin-of-day .details {
-float:right;
-width:193px;
-height:173px;
-background-color:#1f2421;
-font-size:14px;
-padding:20px 24px;
-max-width:60%
+.best-seller .nav-tabs
+{
+	margin-top:30px
 }
 
-.coin-of-day .title {
-float:left;
-font-size:15px;
-font-weight:lighter;
-width:100%;
-margin-top:23px
+.best-seller .item
+{
+	margin-top:28px;
+	=:50pxborder-radius: 50%;
+	text-align:center
 }
 
-.coin-of-day .coin-icon {
-width:64px;
-height:60px;
-font-size:47px;
-text-align:center;
-margin:auto;
-color:var(--color1)
+.s-section-title
+{
+	font-size:23px;
+	font-weight:lighter;
+	color:var(--headings-color);
+	text-transform:uppercase;
+	text-align:center;
+	margin-top:15px
 }
 
-.coin-of-day>.item {
-float:left;
-width:40%;
-text-align:center;
-text-transform:uppercase
+.info-content
+{
+	height:169px;
+	background-color:#fff;
+	border:1px solid #d9ddd7;
+	text-align:center;
+	font-size:15px;
+	font-weight:lighter;
+	padding:10px
 }
 
-.coin-of-day .details .item {
-height:34px
+.info-block
+{
+	padding:0 8px;
+	margin-top:61px;
+	float:left
 }
 
-.coin-of-day .coin-name {
-float:left;
-font-size:24px;
-font-weight:700;
-width:100%;
-margin-top:5px
+.info-block>div
+{
+	padding:0
 }
 
-.best-seller .title {
-font-size:15px;
-text-transform:uppercase;
-color:var(--color2);
-margin-top:14px
+.info-content .btn
+{
+	margin-top:4px
 }
 
-.best-seller .icon {
-font-size:30px;
-text-transform:uppercase;
-color:var(--color3);
-background:var(--color2);
-height:50px;
-width:50px;
-border-radius:50%;
-text-align:center;
-margin:auto
+.offer
+{
+	background:url(../img/offer.png);
+	background-size:cover;
+	margin-top:10px;
+	margin-bottom:10px;
+	height:166px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	position:relative
 }
 
-.best-seller .icon i {
-line-height:46px
+.offer .details
+{
+	font-size:22px;
+	background-color:#4f5d759e;
+	width:80%;
+	margin:auto;
+	margin-top:53px
 }
 
-.best-seller {
-margin-top:18px
+.offer .time
+{
+	font-size:15px;
+	background-color:#4f5d759e;
+	display:block;
+	margin:auto;
+	width:30%;
+	margin-top:2px;
+	margin-bottom:9px
 }
 
-.nav-tabs {
-border:0
+.ribbon
+{
+	-ms-transform:rotate(70deg);
+	-webkit-transform:rotate(7deg);
+	transform:rotate(27deg);
+	background:var(--hover-color);
+	position:absolute;
+	width:150px;
+	top:7px;
+	right:-39px;
+	height:29px;
+	font-size:13px;
+	line-height:30px
 }
 
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover {
-color:var(--headings-color);
-border:0;
-border-bottom:2px solid #4f5d75;
-background:transparent
+.offer .icon
+{
+	background:url(../img/stx.png);
+	width:55px;
+	height:54px;
+	position:absolute;
+	right:10px;
+	bottom:6px
 }
 
-.nav-tabs>li>a {
-color:#929aa9;
-font-size:16px;
-padding:3px 0;
-font-weight:500
+.benifits
+{
+	float:left;
+	background:var(--color3);
+	width:100%;
+	padding:0;
+	color:var(--headings-color);
+	font-size:14px;
+	margin-top:10px;
+	font-weight:lighter;
+	line-height:20px;
+	padding:10px 0
 }
 
-.nav-tabs>li {
-width:calc(100% / 3);
-text-align:center
+.benifits .title
+{
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:lighter;
+	margin-top:6px;
+	margin-bottom:3px
 }
 
-.best-seller .nav-tabs {
-margin-top:30px
+.benifits .title b
+{
+	font-weight:500
 }
 
-.best-seller .item {
-margin-top:28px;
-=:50pxborder-radius: 50%;
-text-align:center
+.coin .icon
+{
+	background:url(../img/coins.png)
 }
 
-.s-section-title {
-font-size:23px;
-font-weight:lighter;
-color:var(--headings-color);
-text-transform:uppercase;
-text-align:center;
-margin-top:15px
+.safe .icon
+{
+	background:url(../img/card.png)
 }
 
-.info-content {
-height:169px;
-background-color:#fff;
-border:1px solid #d9ddd7;
-text-align:center;
-font-size:15px;
-font-weight:lighter;
-padding:10px
+.buy .icon
+{
+	background:url(../img/buy.png)
 }
 
-.info-block {padding: 0 8px;margin-top:61px;float: left;}
+.benifits .icon
+{
+	width:80px;
+	height:70px;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center 10px
+}
+
+.benifits .item
+{
+	margin-bottom:25px
+}
 
-.info-block>div {
-padding:0
+.sponsors
+{
+	float:left;
+	background:var(--color3);
+	width:100%
 }
 
-.info-content .btn {
-margin-top:4px
+.sponsors ul
+{
+	padding:0
 }
-.offer{
-    background:url('../img/offer.png');
-    background-size:cover;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 166px;
-    color: #fff;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+
+.sponsors li
+{
+	float:left;
+	list-style-type:none;
+	width:calc(100% / 6);
+	display:flex;
+	align-content:center;
+	height:46px;
+	justify-content:center
 }
-.offer .details{
-    font-size: 22px;
-    background-color: #4f5d759e;
-    width: 80%;
-    margin: auto;
-    margin-top: 53px;
+
+.sponsors img
+{
+	width:45px;
+	object-fit:contain
 }
-.offer .time{font-size:15px;background-color: #4f5d759e;display: block;margin: auto;width: 30%;margin-top: 2px;margin-bottom: 9px;}
-.ribbon{
-        -ms-transform: rotate(70deg); /* IE 9 */
-        -webkit-transform: rotate(7deg); /* Safari 3-8 */
-        transform: rotate(27deg);
-        background:var(--hover-color);
-        position: absolute;
-        width: 150px;
-        top: 7px;
-        right: -39px;
-        height: 29px;
-        font-size: 13px;
-        line-height: 30px;
+
+footer
+{
+	background:var(--color2);
+	text-align:center;
+	height:87px;
+	padding:10px 0
 }
-.offer .icon{
-    background: url('../img/stx.png');
-    width: 55px;
-    height: 54px;
-    position: absolute;
-    right: 10px;
-    bottom: 6px;
+
+footer a
+{
+	color:var(--headings-color)
 }
-.benifits{
-    float:left;
-    background: var(--color3);
-    width: 100%;
-    padding: 0;
-    color: var(--headings-color);
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: lighter;
-    line-height: 20px;
-    padding: 10px 0;
-    }
-.benifits .title{
-   font-size: 16px;
-   text-transform:uppercase;
-   font-weight:lighter;
-   margin-top: 6px;
-   margin-bottom: 3px;
+
+footer ul
+{
+	padding:0
 }
-.benifits .title b{font-weight: 500;}
-.coin .icon{background:url('../img/coins.png')}
-.card .icon{background:url('../img/card.png')}
-.buy .icon{background:url('../img/buy.png')}
-.benifits .icon{width: 80px;height: 70px;float: left;background-repeat: no-repeat;background-position: center 10px;}
-.benifits .item{margin-bottom: 25px;}
-.sponsors{float:left;background:var(--color3);width:100%}
-.sponsors ul{padding:0}
-.sponsors li{float:left;list-style-type:  none;width: calc(100% / 6);display: flex;align-content:  center;height: 46px;justify-content: center;}
-.sponsors img{
-    width: 45px;
-    object-fit: contain;
+
+footer li
+{
+	list-style-type:none
 }
-footer{background:var(--color2);text-align: center;height: 87px;padding: 10px 0;}
-footer a{color:var(--headings-color)}
-footer ul{padding:0}
-footer li{list-style-type:none}
