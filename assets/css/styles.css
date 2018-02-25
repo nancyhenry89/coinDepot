@@ -1,29 +1,23 @@
 :root{--color1:#fea100;--color2:#2f3538;--color3:#fff;--hover-color:#FFA000;--headings-color:#4f5d75;--main-font:Rubik,sans-serif}
 body{font-family:var(--main-font)}
-.FO{float: right;}
-.FL{float: left}
+.FO{float:right}
+.FL{float:left}
 .main-content{padding-right:0;padding-left:0;background:#f6f6f6}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
-.sticky{    position: fixed;
-    width: 100%;
-    background: var(--color2);
-    top: 0;
-    padding-top: 20px;
-    height: 60px;
-    z-index: 10;}
+.sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
 svg{height:100%;width:100%}
 .navbar-default{background:var(--color2);border:0;float:left;margin-bottom:0;min-height:40px}
 .navbar-toggle{border:none;float:left;margin-right:11px;margin-top:-2px;padding-left:3px;margin-bottom:0}
 .navbar-toggle .icon-bar{background:var(--color1)}
-.logo .text{float:left;margin:0;font-style:italic;font-weight:lighter;font-size:24px;margin-left:10px;text-transform: unset;}
-.logo .img{float:left;width:26px;height:31px;}
-.slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top: 38px;}
+.logo .text{float:left;margin:0;font-style:italic;font-weight:lighter;font-size:24px;margin-left:10px;text-transform:unset}
+.logo .img{float:left;width:26px;height:31px}
+.slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top:38px}
 .slogan b{font-weight:500}
 .cart{float:right;width:25px;fill:var(--color1);height:27px}
-.coins{padding:0 5px;margin-top:-55px;width: 100%;}
+.coins{padding:0 5px;margin-top:-55px;width:100%}
 .coins>div{padding:0}
-.coin-card{color:var(--color3);height:164px;padding:10px;margin-bottom:5px;background-size: cover;}
-.coin-card .title{color:var(--color1);font-size:20px;float:left;width:60%;margin-top:5px;height: calc(100% - 50px);margin-bottom:0;}
+.coin-card{color:var(--color3);height:164px;padding:10px;margin-bottom:5px;background-size:cover}
+.coin-card .title{color:var(--color1);font-size:20px;float:left;width:60%;margin-top:5px;height:calc(100% - 50px);margin-bottom:0}
 .coin-card .value{float:left;text-align:right;width:40%;font-size:12px}
 .coin-card .price{float:left;width:40%;text-align:right;font-size:28px;font-weight:700}
 .price::first-letter{font-weight:100;margin-right:2px}
@@ -35,7 +29,7 @@ svg{height:100%;width:100%}
 .coin-card.xrp{background:url(../img/xrp.png)}
 .coin-card.xmr{background:url(../img/xmr.png)}
 .coin-card.bitcoin-cash{background:url(../img/bitcoin-cash.png)}
-.coin-card .content{border:1px solid #625952;border-radius:2px;padding:10px;float:left;padding-right:22px;padding-bottom: 10px;width:100%;}
+.coin-card .content{border:1px solid #625952;border-radius:2px;padding:10px;float:left;padding-right:22px;padding-bottom:10px;width:100%}
 .section-title{font-size:24px;text-transform:uppercase;text-align:center;color:var(--headings-color);position:relative;font-weight:lighter;margin-bottom:17px}
 .section-title:after{content:'';height:3px;width:20%;position:absolute;background:var(--headings-color);left:40%;top:36px}
 .trending .card{color:var(--color3);height:225px;border-radius:6px;box-shadow:0 0 5px rgba(0,0,0,0.56);background-image:linear-gradient(34deg,#e37a00 0%,#dd8d03 100%);text-align:center;width:184px!important;margin:0 5px;transition:all .5s ease}
@@ -46,7 +40,7 @@ svg{height:100%;width:100%}
 .trending .icon{width:50px;height:50px;background-color:var(--color3);border-radius:50%;margin:13px auto;color:var(--color2);font-size:35px}
 .trending .slick-list{padding:20px 0!important}
 .trending{padding:0}
-.srch-inpt{float:left;width:220px;height:36px;border-radius:18px;background-color:var(--color3);border:1px solid #d6d6d6;font-size:14px;color:var(--headings-color);padding:10px;background-image: url(../img/search.png);background-repeat: no-repeat;background-position: 94% 44%;}
+.srch-inpt{float:left;width:220px;height:36px;border-radius:18px;background-color:var(--color3);border:1px solid #d6d6d6;font-size:14px;color:var(--headings-color);padding:10px;background-image:url(../img/search.png);background-repeat:no-repeat;background-position:94% 44%}
 .srch-inpt:focus{outline:none}
 .plus{color:var(--color2);font-size:15px;float:right;line-height:40px}
 .srch-inpt::-webkit-input-placeholder{color:#d6d6d6}
@@ -54,7 +48,7 @@ svg{height:100%;width:100%}
 .srch-inpt:-ms-input-placeholder{color:#d6d6d6}
 .srch-inpt:-moz-placeholder{color:#d6d6d6}
 .search{margin-top:6px}
-.coin-of-day{background:url(../img/day-coin.png);color:var(--color3);height:184px;margin-top:30px;padding-right: 0;}
+.coin-of-day{background:url(../img/day-coin.png);color:var(--color3);height:184px;margin-top:30px;padding-right:0}
 .coin-of-day .details{float:right;width:193px;height:173px;background-color:#1f2421;font-size:14px;padding:20px 24px;max-width:60%}
 .coin-of-day .title{float:left;font-size:15px;font-weight:lighter;width:100%;margin-top:23px}
 .coin-of-day .coin-icon{width:64px;height:60px;font-size:47px;text-align:center;margin:auto;color:var(--color1)}
@@ -107,65 +101,43 @@ footer li{list-style-type:none}
 .info-content .icon{width:80px;height:110px;position:absolute;right:0;bottom:0;background-size:cover}
 .icon.medal{right:-20px}
 .info-content p{position:relative;z-index:1}
+#mySidenav{display: none!important}
 @media only screen and (min-width: 769px) {
-    .coins{
-     background: #2f3538;
-     width: 100%;
-     padding-left: 10%;
-     padding-right: 10%;
-     margin-top: 0;
-     padding-top: 20px;
-     padding-bottom: 28px;
-    }
-.coins>div{padding: 7px;}
-.coin-card.bitcoin,.coin-card.eth{
-    height: 350px;
-    text-align: center;
-}
+body{display: none}
+.coins{background:#2f3538;width:100%;margin-top:0;padding:20px 10% 28px}
+.coins>div{padding:7px}
+.coin-card.bitcoin,.coin-card.eth{height:350px;text-align:center}
 .coin-card{background-size:cover!important}
-.coin-card .btn{margin-top: 20px;}
-.coin-card.bitcoin .title, .coin-card.eth .title{width:100%;height:20px;font-size: 22px;font-weight: lighter;margin-bottom: 67px;margin-top: 14px;}
-.coin-card.bitcoin .content, .coin-card.eth .content{height:100%;padding-right: 10px;}
-.coin-card.bitcoin .price, .coin-card.eth .price{width: 100%;text-align: center;margin-bottom: 10px;}
-.coin-card.bitcoin .value, .coin-card.eth .value{width: 100%;text-align: center;margin-bottom: 40px;}
-.coin-card.bitcoin .btn, .coin-card.eth .btn{float:none}
+.coin-card .btn{margin-top:20px}
+.coin-card.bitcoin .title,.coin-card.eth .title{width:100%;height:20px;font-size:22px;font-weight:lighter;margin-bottom:67px;margin-top:14px}
+.coin-card.bitcoin .content,.coin-card.eth .content{height:100%;padding-right:10px}
+.coin-card.bitcoin .price,.coin-card.eth .price{width:100%;text-align:center;margin-bottom:10px}
+.coin-card.bitcoin .value,.coin-card.eth .value{width:100%;text-align:center;margin-bottom:40px}
+.coin-card.bitcoin .btn,.coin-card.eth .btn{float:none}
 .btn{min-width:130px}
 .coin-card .title{height:50%}
-.coin-card .content{padding-right:10px;height: 100%;}
-.section-title{float:left;text-align: left;height: 224px;width: 15%;margin-top: 41px;font-size: 31px;}
-.section-title b{width:100%;display: block;}
-.section-title:after{
-    width: 3px;
-    height: 100%;
-    left: 100%;
-    top: 0;
-}
-.slider{float:left;width: 85%;}
-.tab-content{width: 70%;float:left;}
-.best-seller .nav-tabs{position: absolute;top: 108px;width: 16%;}
-.best-seller{position:relative;}
+.coin-card .content{padding-right:10px;height:100%}
+.section-title{float:left;text-align:left;height:224px;width:15%;margin-top:41px;font-size:31px}
+.section-title b{width:100%;display:block}
+.section-title:after{width:3px;height:100%;left:100%;top:0}
+.slider{float:left;width:85%}
+.tab-content{width:70%;float:left}
+.best-seller .nav-tabs{position:absolute;top:108px;width:16%}
+.best-seller{position:relative}
 .nav-tabs>li{width:100%;text-align:left}
 .two-sec{width:1170px;margin:auto}
 .two-sec>div{width:50%;float:right}
 .best-seller .section-title{width:30%}
-.coin-of-day{height: 220px;background-size: cover;}
+.coin-of-day{height:220px;background-size:cover}
 .info-block{float:none}
-.benifits .item{width:calc(100% / 3);float: left;text-align: center;}
+.benifits .item{width:calc(100% / 3);float:left;text-align:center}
 .benifits .item .icon{width:100%}
-.logo .img{
-    width: 43px;
-    height: auto;
-}
-header{padding-top;padding-top: 58px;}
-.logo .text{font-size: 37px;}
-.slogan{margin-top: 39px;}
-.trending .slick-list{
-    padding-top: 40px!important;
-}
+.logo .img{width:43px;height:auto}
+header{padding-top:58px}
+.logo .text{font-size:37px}
+.slogan{margin-top:39px}
+.trending .slick-list{padding-top:40px!important}
 .trending .card.slick-center{height:225px;margin-top:0}
-.search{width: 54%;margin-right: 10%;}
-.srch-inpt{float: left;width: 363px;}
-.plus{
-    /* float: left; */
-}
+.search{width:54%;margin-right:10%}
+.srch-inpt{float:left;width:363px}
 }
