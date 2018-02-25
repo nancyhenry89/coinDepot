@@ -495,8 +495,12 @@ margin-top:4px
 .benifits .item{margin-bottom: 25px;}
 .sponsors{float:left;background:var(--color3);width:100%}
 .sponsors ul{padding:0}
-.sponsors li{float:left;list-style-type:  none;width: calc(100% / 6);display: flex;align-content:  center;height: 50px;justify-content: center;}
+.sponsors li{float:left;list-style-type:  none;width: calc(100% / 6);display: flex;align-content:  center;height: 46px;justify-content: center;}
 .sponsors img{
     width: 45px;
     object-fit: contain;
 }
+footer{background:var(--color2);text-align: center;height: 87px;padding: 10px 0;}
+footer a{color:var(--headings-color)}
+footer ul{padding:0}
+footer li{list-style-type:none}
