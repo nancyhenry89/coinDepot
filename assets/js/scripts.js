@@ -1,15 +1,17 @@
 $(document).ready(function(){
   $('.slider').slick({
     centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 3,
     infinite:false,
     variableWidth: true,
-    initialSlide:1,
+    initialSlide:2,
+    arrows: false,
+    slidesToShow: 5,
     responsive: [
       {
         breakpoint: 768,
         settings: {
+          initialSlide:1,
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
