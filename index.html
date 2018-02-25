@@ -4,7 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/webfont/cryptocoins.css">
       <link rel="stylesheet" href="assets/css/slick.css">
       <link rel="stylesheet" href="assets/css/styles.css">
       <link href="https://fonts.googleapis.com/css?family=Rubik:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -17,6 +18,7 @@
      xmlns:xlink="http://www.w3.org/1999/xlink">
        <path id="icon-bag" d="M24.35 26C24.35 26 24.35 26 24.34 26L0.65 26C0.47 26 0.3 25.92 0.17 25.79C0.05 25.67 -0.01 25.49 0 25.32L1.29 5.66C1.32 5.33 1.6 5.07 1.94 5.07L7.39 5.07L7.39 5.02C7.39 2.25 9.68 0 12.49 0C15.31 0 17.6 2.25 17.6 5.02C17.6 5.04 17.59 5.05 17.59 5.07L23.05 5.07C23.39 5.07 23.67 5.33 23.69 5.66L24.98 25.19C24.99 25.25 25 25.3 25 25.36C25 25.71 24.71 26 24.35 26ZM16.31 5.02C16.31 2.95 14.6 1.27 12.49 1.27C10.39 1.27 8.68 2.95 8.68 5.02L8.68 5.07L16.32 5.07C16.32 5.05 16.31 5.04 16.31 5.02ZM22.44 6.34L17.6 6.34L17.6 7.77C17.91 7.98 18.13 8.31 18.13 8.71C18.13 9.35 17.61 9.86 16.96 9.86C16.3 9.86 15.78 9.35 15.78 8.71C15.78 8.31 16 7.98 16.31 7.77L16.31 6.34L8.68 6.34L8.68 7.77C8.99 7.98 9.21 8.31 9.21 8.71C9.21 9.35 8.68 9.86 8.03 9.86C7.38 9.86 6.85 9.35 6.85 8.71C6.85 8.31 7.07 7.98 7.39 7.77L7.39 6.34L2.54 6.34L1.34 24.73L23.65 24.73L22.44 6.34Z" />
      </svg>
+
       <header>
          <div class="container">
             <nav class="navbar navbar-default">
@@ -123,21 +125,21 @@
             <h2 class="section-title"><b>trending</b> now</h2>
             <div class="slider">
                <div class="card">
-                  <div class="icon nem"></div>
+                  <div class="icon"><i class="cc ADA"></i></div>
+                  <div class="title">Cardano</div>
+                  <div class="price">€<b>300</b></div>
+                  <div class="value">132.025 XXX</div>
+                  <btn class="btn btn-alt">BOOK NOW</btn>
+               </div>
+               <div class="card">
+                  <div class="icon"><i class="cc XEM-alt"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
                   <btn class="btn btn-alt">BOOK NOW</btn>
                </div>
                <div class="card">
-                  <div class="icon nem"></div>
-                  <div class="title">NEM</div>
-                  <div class="price">€<b>300</b></div>
-                  <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
-               </div>
-               <div class="card">
-                  <div class="icon nem"></div>
+                  <div class="icon"><i class="cc ADA"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
@@ -153,7 +155,7 @@
            <div class="item">
             <div class="title">coin of the day:</div>
             <div class="coin-name">stratis</div>
-            <div class="coin-icon"></div>
+            <div class="coin-icon"><i class="cc STRAT"></i></div>
           </div>
             <div class="details">
                <div class="item">Symbol : ETH</div>
@@ -164,23 +166,95 @@
          </div>
          <div class="container best-seller">
             <h2 class="section-title"><b>best</b> sellers</h2>
-            <div class="tab">
-               <a href="#today">today</a>
-               <a href="#month">this month</a>
-               <a href="#local">local</a>
-               <div id="today">
-                  <div class="icon">
-                     </h3>
-                     <p class="title">Hello World!</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#today">Today</a></li>
+                <li><a data-toggle="tab" href="#month">This month</a></li>
+                <li><a data-toggle="tab" href="#local">Local</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="today" class="tab-pane fade in active">
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ETC"></i></div>
+                      <div class="title">ethereum</div>
+                    </div>
                   </div>
-                  <div id="month">
-                     <h3>Content to Link 2</h3>
-                     <h4>Great success!</h4>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc BTC-alt"></i></div>
+                      <div class="title">bitcoin</div>
+                    </div>
                   </div>
-                  <div id="local">
-                     <h3>Content to Link 3</h3>
-                     <p>Yeah!</p>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ADA"></i></div>
+                      <div class="title">cardano</div>
+                    </div>
                   </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ETC"></i></div>
+                      <div class="title">ethereum</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc BTC-alt"></i></div>
+                      <div class="title">bitcoin</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ADA"></i></div>
+                      <div class="title">cardano</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="month" class="tab-pane fade">
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ETC"></i></div>
+                      <div class="title">ethereum</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc BTC-alt"></i></div>
+                      <div class="title">bitcoin</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ADA"></i></div>
+                      <div class="title">cardano</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="local" class="tab-pane fade">
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ETC"></i></div>
+                      <div class="title">ethereum</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc BTC-alt"></i></div>
+                      <div class="title">bitcoin</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="item">
+                      <div class="icon"><i class="cc ADA"></i></div>
+                      <div class="title">cardano</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
                   <div class="container">
                      <div class="col-md-12">
                         <div class="we-buy">

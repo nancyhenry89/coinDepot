@@ -170,8 +170,8 @@ svg{height: 100%;width:100%}
 .trending .title{font-size:15px}
 .trending .price{font-size:20px;margin-top: 15px;}
 .trending .value{font-size:12px;margin-top: 4px;margin-bottom: 18px;}
-.trending .icon{width:50px;height:50px;background-size: 60%;background-repeat: no-repeat;background-color: var(--color3);border-radius: 50%;background-position: center;margin: 13px auto;}
-.nem{background: url('../img/nem.png')}
+.trending .icon{width:50px;height:50px;background-color: var(--color3);border-radius: 50%;margin: 13px auto;color: var(--color2);font-size: 35px;}
+
 .trending .slick-list{
   padding: 20px 0!important;
 }
@@ -206,9 +206,23 @@ svg{height: 100%;width:100%}
     width: 100%;
     margin-top: 23px;
 }
-.coin-of-day .coin-icon{width: 64px;height: 60px;background:url('../img/coin-icon.png');float: left;width: 100%;background-repeat: no-repeat;background-position: center;margin-top: 15px;}
+.coin-of-day .coin-icon{width: 64px;height: 60px;margin-top: 15px;font-size: 47px;text-align: center;margin: auto;color: var(--color1);}
 .coin-of-day>.item{float: left;width: 40%;text-align: center;text-transform: uppercase;}
 .coin-of-day .details .item{
     height: 34px;
 }
 .coin-of-day .coin-name{float: left;font-size: 24px;font-weight: bold;width: 100%;margin-top: 5px;}
+.best-seller .title{font-size:15px;text-transform:uppercase;color:var(--color2);margin-top: 14px;}
+.best-seller .icon{font-size:30px;text-transform:uppercase;color:var(--color3);background:var(--color2);height: 50px;width: 50px;border-radius: 50%;text-align: center;margin: auto;}
+.best-seller .icon i{line-height: 46px;}
+.best-seller{margin-top: 18px;}
+.nav-tabs{border:0}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color:var(--headings-color);
+  border: 0;
+  border-bottom: 2px solid #4f5d75;
+}
+.nav-tabs>li>a{color: #929aa9;font-size:16px;padding: 3px 0;font-weight: 500;}
+.nav-tabs>li{width:calc(100% / 3);text-align:center}
+.best-seller .nav-tabs{margin-top: 30px;}
+.best-seller .item{margin-top: 28px;=: 50pxborder-radius: 50%;text-align: center;}
