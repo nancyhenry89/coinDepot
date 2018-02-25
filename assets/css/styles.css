@@ -1,0 +1,61 @@
+:root {
+  --color1: #fea100;/*orange*/
+  --color2: #2f3538;/*grey*/
+  --color3: #fff;/*white*/
+  --main-font:'Rubik', sans-serif;
+}
+body{
+  font-family: var(--main-font)
+}
+header{
+  background: var(--color2);
+  color:var(--color3);
+  height: 174px;
+  padding-top: 26px;
+}
+svg{height: 100%;stroke-width: 100%;}
+.navbar-default{
+  background:var(--color2);
+  border:0;
+  float: left;
+  margin-bottom: 0;
+  min-height: 40px;
+}
+.navbar-default .navbar-toggle{
+  border:none;
+  float:left;
+  margin-right: 11px;
+  margin-top: -2px;
+  padding-left: 3px;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background:var(--color1)
+}
+.logo .text
+{
+  float:left;
+  margin: 0;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.logo .img{
+    float: left;
+}
+.slogan{
+  text-align:center;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 75%;
+  margin: auto;
+}
+.slogan b{font-weight: 500;}
+.cart{
+  float:right;
+  width:25px;
+  fill: var(--color1);
+  height: 27px;
+}
