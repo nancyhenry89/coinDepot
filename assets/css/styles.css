@@ -43,6 +43,8 @@ svg{height: 100%;stroke-width: 100%;}
 }
 .logo .img{
     float: left;
+    width: 26px;
+    height: 31px;
 }
 .slogan{
   text-align:center;
