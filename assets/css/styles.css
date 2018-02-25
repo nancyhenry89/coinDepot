@@ -177,3 +177,22 @@ svg{height: 100%;width:100%}
 .slider{
 }
 .trending{padding:0;}
+.srch-inpt{float:left;width: 220px;height: 36px;border-radius: 18px;background-color: var(--color3);border: 1px solid #d6d6d6;font-size: 14px;color: var(--headings-color);padding: 10px;background: url(../img/search.png) no-repeat 94% 44%;}
+.srch-inpt:focus{
+    outline: none;
+}
+
+.plus{color:var(--color2);font-size:15px;float: right;line-height: 40px;}
+.srch-inpt::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d6d6d6;
+}
+.srch-inpt::-moz-placeholder { /* Firefox 19+ */
+  color: #d6d6d6;
+}
+.srch-inpt:-ms-input-placeholder { /* IE 10+ */
+  color: #d6d6d6;
+}
+.srch-inpt:-moz-placeholder { /* Firefox 18- */
+  color: #d6d6d6;
+}
+.search{margin-top: 6px;}
