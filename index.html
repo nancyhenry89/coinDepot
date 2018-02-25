@@ -21,19 +21,24 @@
 
       <header>
          <div class="container">
-            <nav class="navbar navbar-default">
+           <button onclick="openNav()" type="button" class="navbar-toggle collapsed"   data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>
+           <div >
+
+            <nav id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
+
                   <div class="navbar-header">
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     </button>
+
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="lang">EN</div>
                     <div class="account">
                       <ul class="nav navbar-nav">
@@ -55,6 +60,7 @@
                </div>
                <!-- /.container-fluid -->
             </nav>
+          </div>
             <div class="logo">
               <img class="img" src="assets/img/logo.png" alt="Coin Depot"/>
               <h1 class="text">Coin<b>Depot</b></h1>
@@ -68,7 +74,7 @@
 
          <div class="slogan">The most <b>simple</b>, <b>fast</b> & <b>safe</b> way to buy crypto currencies</div>
       </header>
-      <div class="container-fluid main-content">
+      <div id="main" class="container-fluid main-content">
          <div class="container coins">
             <div class="col-sm-12">
                <div class="coin-card bitcoin">
