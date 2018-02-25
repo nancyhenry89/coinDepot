@@ -161,6 +161,7 @@ svg{height: 100%;width:100%}
   text-align:center;
   width: 184px!important;
   margin: 0 5px;
+  transition: all .5s ease;
 }
 .trending .card.slick-center{
     height: 235px;
@@ -196,3 +197,18 @@ svg{height: 100%;width:100%}
   color: #d6d6d6;
 }
 .search{margin-top: 6px;}
+.coin-of-day{background: url('../img/day-coin.png');color: var(--color3);height: 184px;margin-top: 30px;}
+.coin-of-day .details{float: right;width: 193px;height: 173px;background-color: #1f2421;font-size: 14px;padding: 20px 24px;max-width: 60%;}
+.coin-of-day .title{
+    float: left;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 100%;
+    margin-top: 23px;
+}
+.coin-of-day .coin-icon{width: 64px;height: 60px;background:url('../img/coin-icon.png');float: left;width: 100%;background-repeat: no-repeat;background-position: center;margin-top: 15px;}
+.coin-of-day>.item{float: left;width: 40%;text-align: center;text-transform: uppercase;}
+.coin-of-day .details .item{
+    height: 34px;
+}
+.coin-of-day .coin-name{float: left;font-size: 24px;font-weight: bold;width: 100%;margin-top: 5px;}
