@@ -2,6 +2,7 @@
 --color1:#fea100;
 --color2:#2f3538;
 --color3:#fff;
+--hover-color:#FFA000;
 --headings-color:#4f5d75;
 --main-font:Rubik,sans-serif
 }
@@ -130,16 +131,7 @@ font-weight:100;
 margin-right:2px
 }
 
-.btn {
-color:var(--color1);
-border:1px solid;
-border-radius:18px;
-background:transparent;
-height:36px;
-min-width:100px;
-font-size:14px;
-line-height:24px
-}
+.btn {color:var(--color1);border:1px solid;border-radius:18px;background:transparent;height:36px;min-width:100px;font-size:14px;line-height:24px;text-transform: capitalize;}
 
 .btn.btn-alt {
 color:var(--color3);
@@ -427,7 +419,7 @@ font-weight:lighter;
 padding:10px
 }
 
-.info-block {padding: 0 8px;margin-top:61px;}
+.info-block {padding: 0 8px;margin-top:61px;float: left;}
 
 .info-block>div {
 padding:0
@@ -435,4 +427,76 @@ padding:0
 
 .info-content .btn {
 margin-top:4px
+}
+.offer{
+    background:url('../img/offer.png');
+    background-size:cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 166px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.offer .details{
+    font-size: 22px;
+    background-color: #4f5d759e;
+    width: 80%;
+    margin: auto;
+    margin-top: 53px;
+}
+.offer .time{font-size:15px;background-color: #4f5d759e;display: block;margin: auto;width: 30%;margin-top: 2px;margin-bottom: 9px;}
+.ribbon{
+        -ms-transform: rotate(70deg); /* IE 9 */
+        -webkit-transform: rotate(7deg); /* Safari 3-8 */
+        transform: rotate(27deg);
+        background:var(--hover-color);
+        position: absolute;
+        width: 150px;
+        top: 7px;
+        right: -39px;
+        height: 29px;
+        font-size: 13px;
+        line-height: 30px;
+}
+.offer .icon{
+    background: url('../img/stx.png');
+    width: 55px;
+    height: 54px;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+.benifits{
+    float:left;
+    background: var(--color3);
+    width: 100%;
+    padding: 0;
+    color: var(--headings-color);
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: lighter;
+    line-height: 20px;
+    padding: 10px 0;
+    }
+.benifits .title{
+   font-size: 16px;
+   text-transform:uppercase;
+   font-weight:lighter;
+   margin-top: 6px;
+   margin-bottom: 3px;
+}
+.benifits .title b{font-weight: 500;}
+.coin .icon{background:url('../img/coins.png')}
+.card .icon{background:url('../img/card.png')}
+.buy .icon{background:url('../img/buy.png')}
+.benifits .icon{width: 80px;height: 70px;float: left;background-repeat: no-repeat;background-position: center 10px;}
+.benifits .item{margin-bottom: 25px;}
+.sponsors{float:left;background:var(--color3);width:100%}
+.sponsors ul{padding:0}
+.sponsors li{float:left;list-style-type:  none;width: calc(100% / 6);display: flex;align-content:  center;height: 50px;justify-content: center;}
+.sponsors img{
+    width: 45px;
+    object-fit: contain;
 }
