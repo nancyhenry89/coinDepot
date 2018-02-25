@@ -16,7 +16,7 @@ svg{height:100%;width:100%}
 .cart{float:right;width:25px;fill:var(--color1);height:27px}
 .coins{padding:0 5px;margin-top:-55px;width:100%}
 .coins>div{padding:0}
-.coin-card{color:var(--color3);height:164px;padding:10px;margin-bottom:5px;background-size:cover}
+.coin-card{color:var(--color3);height:164px;padding:10px;margin-bottom:5px;background-size: cover!important;}
 .coin-card .title{color:var(--color1);font-size:20px;float:left;width:60%;margin-top:5px;height:calc(100% - 50px);margin-bottom:0}
 .coin-card .value{float:left;text-align:right;width:40%;font-size:12px}
 .coin-card .price{float:left;width:40%;text-align:right;font-size:28px;font-weight:700}
