@@ -87,29 +87,43 @@ svg{height:100%;width:100%}
 .sponsors ul{padding:0}
 .sponsors li{float:left;list-style-type:none;width:calc(100% / 6);display:flex;align-content:center;height:46px;justify-content:center}
 .sponsors img{width:45px;object-fit:contain}
-footer{background:var(--color2);text-align:center;height: 110px;padding:10px 0;}
-footer a{color: #8d9db6;transition: all .5s ease;}
-footer a:hover{color:var(--color1);text-decoration: none;}
+footer{background:var(--color2);text-align:center;height:110px;padding:10px 0}
+footer a{color:#8d9db6;transition:all .5s ease}
+footer a:hover{color:var(--color1);text-decoration:none}
 footer ul{padding:0}
 footer li{list-style-type:none}
-.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#111;overflow-x:hidden;transition:.5s;padding-top:60px}
+.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#2f3538;overflow-x:hidden;transition:.2s;background-image:url(../img/sidenav.png);background-size:cover;z-index:999}
 .sidenav a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#818181;display:block;transition:.3s}
 .sidenav a:hover{color:#f1f1f1}
-.sidenav .closebtn{position:absolute;top:0;right:25px;font-size:36px;margin-left:50px}
+.closebtn{position:absolute;top:1px;right:-9px;font-size:36px;margin-left:50px;background:#2d3237;width:97px;height:69px;color:var(--color1);display:none;text-align:center;padding-top:6px;background-image:url(../img/sidenav.png)}
 .navbar-toggle{float:left}
 .icon.bill{background:url(../img/bill.png)}
 .icon.medal{background:url(../img/medal.png)}
 .info-content .icon{width:80px;height:110px;position:absolute;right:0;bottom:0;background-size:cover}
 .icon.medal{right:-20px}
 .info-content p{position:relative;z-index:1}
-.link-set{float: left;width: 100%;text-align: center;}
-.footer-sub{opacity: 0;transition:all .5s ease;margin: 0;}
-.footer-sub li{transition:all .5s ease;float:left;width: calc(100% / 4);color: #8999b1;height: 0;}
+.link-set{float:left;width:100%;text-align:center}
+.footer-sub{opacity:0;transition:all .5s ease;margin:0}
+.footer-sub li{transition:all .5s ease;float:left;width:calc(100% / 4);color:#8999b1;height:0}
 .footer-link:before{content:'+'}
-.footer-sub:target{opacity: 1}
+.footer-sub:target{opacity:1}
 .footer-sub:target li{height:20px}
 .subscribe{display:none}
+.menu-group .title{font-size:18px;color:var(--headings-color);text-transform:uppercase}
+.navbar-nav>li>a{font-size:16px;color:var(--color3);text-transform:uppercase}
+.lang .dropdown-toggle.btn{color:#daddd8;font-size:14px;text-align:right;background-image:url(../img/uk.png);background-repeat:no-repeat;background-position:18px center;background-size:28px}
+.lang .dropdown-menu{background:#4e5d75}
+.nav>li.register>a{color:var(--color1)}
+.nav>li>a:focus,.nav>li>a:hover{background:#282c30}
+.account.menu-group{border-bottom:2px solid #4f5d75;margin-bottom:15px}
+.navbar-collapse{border:0;padding-top:20px}
+.navbar-nav{padding-left:15px}
+.lang .dropdown-menu>li>a{color:#dbddd9;font-size:14px}
+@media only screen and (min-width: 768px) {
+.navbar-toggle{display:block}
+}
 @media only screen and (min-width: 769px) {
+.sticky{padding-top:60px;width:90%;left:5%;background:var(--color2);height:140px}
 .coins{background:#2f3538;width:100%;margin-top:0;padding:20px 10% 28px}
 .coins>div{padding:7px}
 .coin-card.bitcoin,.coin-card.eth{height:346px;text-align:center}
@@ -141,7 +155,7 @@ footer li{list-style-type:none}
 .logo .img{width:43px;height:auto}
 header{padding-top:58px}
 .logo .text{font-size:37px}
-.slogan{margin-top:39px}
+.slogan{margin-top:89px}
 .trending .slick-list{padding-top:40px!important;padding-left:30px!important}
 .trending .card.slick-center{height:225px;margin-top:0}
 .search{width:54%;margin-right:10%}
@@ -164,25 +178,27 @@ header{padding-top:58px}
 .sponsors ul{width:1170px;float:none;margin:auto;max-width:100%}
 .sponsors img{width:100px}
 .footer-link:before{display:none}
-.link-set{width:calc(60% / 3);text-align: left;margin-top: 27px;}
-.footer-sub{opacity:1;height:20px;padding-left: 10px;}
-.footer-sub li{height: 30px!important;float:none;}
-footer{height: 264px;}
-footer .footer-link{font-size: 15px;text-transform:uppercase;margin-bottom: 24px;display: block;cursor: default;}
-.subscribe{float: left;width: 40%;height: 100%;position: relative;padding-left: 70px;}
-.footer-header{color:#8c9db6;font-size: 15px;text-transform: uppercase;margin-bottom: 24px;text-align: left;margin-top: 27px;}
-.sub-inpt{float:left;height: 36px;width: 230px;background: #3d4449;border: 1px solid #8d9db6;border-radius: 20px;padding: 5px 15px;transition:all .5s ease;color:var(--color3)}
+.link-set{width:calc(60% / 3);text-align:left;margin-top:27px}
+.footer-sub{opacity:1;height:20px;padding-left:10px}
+.footer-sub li{height:30px!important;float:none}
+footer{height:264px}
+footer .footer-link{font-size:15px;text-transform:uppercase;margin-bottom:24px;display:block;cursor:default}
+.subscribe{float:left;width:40%;height:100%;position:relative;padding-left:70px}
+.footer-header{color:#8c9db6;font-size:15px;text-transform:uppercase;margin-bottom:24px;text-align:left;margin-top:27px}
+.sub-inpt{float:left;height:36px;width:230px;background:#3d4449;border:1px solid #8d9db6;border-radius:20px;padding:5px 15px;transition:all .5s ease;color:var(--color3)}
 .sub-inpt:focus{outline:none;background:#8596ad}
 .sub-inpt::-webkit-input-placeholder{color:var(--color3)}
 .sub-inpt::-moz-placeholder{color:var(--color3)}
 .sub-inpt:-ms-input-placeholder{color:var(--color3)}
 .sub-inpt:-moz-placeholder{color:var(--color3)}
-footer .btn{float:left;margin-left: 10px;min-width: 60px;color: var(--color3);}
-.subscribe:before{content:'';width: 2px;height: 80%;background: #4e5d75;position: absolute;left: 0;top: 19px;}
+footer .btn{float:left;margin-left:10px;min-width:60px;color:var(--color3)}
+.subscribe:before{content:'';width:2px;height:80%;background:#4e5d75;position:absolute;left:0;top:19px}
 .subscribe{display:block}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 }
-
+@media only screen and (min-width: 992px) {
+.navbar-toggle{display:none}
+}
 @media only screen and (min-width: 1025px) {
 .two-sec{width:1170px}
 }

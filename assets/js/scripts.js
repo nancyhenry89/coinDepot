@@ -35,9 +35,11 @@ $(document).ready(function(){
 
 });
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
+    $('.closebtn').css('display','block');
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    $('.closebtn').hide();
 }
