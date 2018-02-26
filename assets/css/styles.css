@@ -192,6 +192,7 @@ footer .footer-link{font-size:15px;text-transform:uppercase;margin-bottom:24px;d
 .sub-inpt:-ms-input-placeholder{color:var(--color3)}
 .sub-inpt:-moz-placeholder{color:var(--color3)}
 footer .btn{float:left;margin-left:10px;min-width:60px;color:var(--color3)}
+footer .btn:hover{color: var(--color1)}
 .subscribe:before{content:'';width:2px;height:80%;background:#4e5d75;position:absolute;left:0;top:19px}
 .subscribe{display:block}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
