@@ -9,11 +9,16 @@ $(document).ready(function(){
     slidesToShow: 5,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1025,
         settings: {
-          initialSlide:1,
-          arrows: false,
-          centerMode: true,
+          initialSlide:2,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          initialSlide:2,
           centerPadding: '40px',
           slidesToShow: 3
         }
@@ -21,8 +26,6 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
           centerPadding: '0px',
           slidesToShow: 1
         }
