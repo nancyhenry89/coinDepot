@@ -124,7 +124,7 @@ footer li{list-style-type:none}
 }
 @media only screen and (min-width: 769px) {
 .navbar-nav>li>a{font-size:15px}
-.nav-cont{order:2;max-width:56%;width:710px;margin-left:230px;margin-top:-27px}
+.nav-cont{order:2;max-width:56%;width:710px;margin-top:-27px;}
 .cart{order:3}
 .logo{order:1;margin-top:-5px}
 .account.menu-group{float:right;border:0}
@@ -217,4 +217,5 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 }
 @media only screen and (min-width: 1025px) {
 .two-sec{width:1170px}
+.nav-cont{margin-left: 142px;}
 }
