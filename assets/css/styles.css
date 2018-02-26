@@ -95,7 +95,7 @@ footer li{list-style-type:none}
 .sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#2f3538;overflow-x:hidden;transition:.2s;background-image:url(../img/sidenav.png);background-size:cover;z-index:999}
 .sidenav a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#818181;display:block;transition:.3s}
 .sidenav a:hover{color:#f1f1f1}
-.closebtn{position:absolute;top: 0px;right: 0;font-size:36px;margin-left:50px;background:#2d3237;width: 20%;height:69px;color:var(--color1);display:none;text-align:center;padding-top:6px;background-image:url(../img/sidenav.png);/* background-position: 0; */border-top: .5px solid #41464a;}
+.closebtn{position:absolute;top:0;right:0;font-size:36px;margin-left:50px;background:#2d3237;width:20%;height:69px;color:var(--color1);display:none;text-align:center;padding-top:6px;background-image:url(../img/sidenav.png);border-top:.5px solid #41464a}
 .navbar-toggle{float:left}
 .icon.bill{background:url(../img/bill.png)}
 .icon.medal{background:url(../img/medal.png)}
@@ -123,24 +123,15 @@ footer li{list-style-type:none}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 769px) {
-    .navbar-nav>li>a{font-size: 15px;}
-    .nav-cont{order:2;max-width: 56%;width: 710px;margin-left: 230px;margin-top: -27px;}
-    .cart{order: 3;}
-    .logo{
-    order: 1;
-    margin-top: -5px;
-}
-    .account.menu-group{float:right;border:0}
-   .menu-group .title,.lang{display:none}
- .sidenav{
-    display: block;
-    position: relative;
-    float: right;
-    width: 100%;
-    background: #2f3538;
-}
-.sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none;}
-.sticky{padding-top:60px;width: 100%;padding-left: 11%;background:var(--color2);height:140px;display: flex;}
+.navbar-nav>li>a{font-size:15px}
+.nav-cont{order:2;max-width:56%;width:710px;margin-left:230px;margin-top:-27px}
+.cart{order:3}
+.logo{order:1;margin-top:-5px}
+.account.menu-group{float:right;border:0}
+.menu-group .title,.lang{display:none}
+.sidenav{display:block;position:relative;float:right;width:100%;background:#2f3538}
+.sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none}
+.sticky{padding-top:60px;width:100%;padding-left:11%;background:var(--color2);height:140px;display:flex}
 .coins{background:#2f3538;width:100%;margin-top:0;padding:20px 10% 28px}
 .coins>div{padding:7px}
 .coin-card.bitcoin,.coin-card.eth{height:346px;text-align:center}
@@ -209,29 +200,20 @@ footer .footer-link{font-size:15px;text-transform:uppercase;margin-bottom:24px;d
 .sub-inpt:-ms-input-placeholder{color:var(--color3)}
 .sub-inpt:-moz-placeholder{color:var(--color3)}
 footer .btn{float:left;margin-left:10px;min-width:60px;color:var(--color3)}
-footer .btn:hover{color: var(--color1)}
+footer .btn:hover{color:var(--color1)}
 .subscribe:before{content:'';width:2px;height:80%;background:#4e5d75;position:absolute;left:0;top:19px}
 .subscribe{display:block}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 }
 @media only screen and (min-width: 992px) {
 .navbar-toggle{display:none}
-    .navbar-nav>li>a{font-size: 15px;}
-    .nav-cont{order:2;max-width: 56%;width: 710px;margin-left: 22px;margin-top: -27px;}
-    .cart{order: 3;}
-    .logo{
-    order: 1;
-    margin-top: -5px;
-}
-    .account.menu-group{float:right;border:0}
-   .menu-group .title,.lang{display:none}
- .sidenav{
-    display: block;
-    position: relative;
-    float: right;
-    width: 100%;
-    background: #2f3538;
-}
+.navbar-nav>li>a{font-size:15px}
+.nav-cont{order:2;max-width:56%;width:710px;margin-left:22px;margin-top:-27px}
+.cart{order:3}
+.logo{order:1;margin-top:-5px}
+.account.menu-group{float:right;border:0}
+.menu-group .title,.lang{display:none}
+.sidenav{display:block;position:relative;float:right;width:100%;background:#2f3538}
 }
 @media only screen and (min-width: 1025px) {
 .two-sec{width:1170px}
