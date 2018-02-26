@@ -123,7 +123,24 @@ footer li{list-style-type:none}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 769px) {
-.sticky{padding-top:60px;width:90%;left:5%;background:var(--color2);height:140px}
+    .navbar-nav>li>a{font-size: 15px;}
+    .nav-cont{order:2;max-width: 56%;width: 710px;margin-left: 230px;margin-top: -27px;}
+    .cart{order: 3;}
+    .logo{
+    order: 1;
+    margin-top: -5px;
+}
+    .account.menu-group{float:right;border:0}
+   .menu-group .title,.lang{display:none}
+ .sidenav{
+    display: block;
+    position: relative;
+    float: right;
+    width: 100%;
+    background: #2f3538;
+}
+.sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none;}
+.sticky{padding-top:60px;width: 100%;padding-left: 11%;background:var(--color2);height:140px;display: flex;}
 .coins{background:#2f3538;width:100%;margin-top:0;padding:20px 10% 28px}
 .coins>div{padding:7px}
 .coin-card.bitcoin,.coin-card.eth{height:346px;text-align:center}
@@ -199,6 +216,22 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 }
 @media only screen and (min-width: 992px) {
 .navbar-toggle{display:none}
+    .navbar-nav>li>a{font-size: 15px;}
+    .nav-cont{order:2;max-width: 56%;width: 710px;margin-left: 22px;margin-top: -27px;}
+    .cart{order: 3;}
+    .logo{
+    order: 1;
+    margin-top: -5px;
+}
+    .account.menu-group{float:right;border:0}
+   .menu-group .title,.lang{display:none}
+ .sidenav{
+    display: block;
+    position: relative;
+    float: right;
+    width: 100%;
+    background: #2f3538;
+}
 }
 @media only screen and (min-width: 1025px) {
 .two-sec{width:1170px}
