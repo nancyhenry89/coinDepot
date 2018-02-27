@@ -92,10 +92,10 @@ footer a{color:#8d9db6;transition:all .5s ease}
 footer a:hover{color:var(--color1);text-decoration:none}
 footer ul{padding:0}
 footer li{list-style-type:none}
-.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#2f3538;overflow-x:hidden;transition:.2s;background-image:url(../img/sidenav.png);background-size:cover;z-index:999}
+.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#2f3538;overflow-x:hidden;transition:.2s;background-image:url(../img/sidenav.png);background-size:cover;z-index:999;max-width: 300px;}
 .sidenav a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#818181;display:block;transition:.3s}
 .sidenav a:hover{color:#f1f1f1}
-.closebtn{position:absolute;top:0;right:0;font-size:36px;margin-left:50px;background:#2d3237;width:20%;height:69px;color:var(--color1);display:none;text-align:center;padding-top:6px;background-image:url(../img/sidenav.png);border-top:.5px solid #41464a}
+.closebtn{position:absolute;top:0;right:0;font-size:36px;margin-left:50px;background:#2d3237;width:20%;height: 119px;color:var(--color1);display:none;text-align:center;padding-top: 23px;background-image:url(../img/sidenav.png);border-top:.5px solid #41464a;width: 100%;text-align: right;padding-right: 30px;}
 .navbar-toggle{float:left}
 .icon.bill{background:url(../img/bill.png)}
 .icon.medal{background:url(../img/medal.png)}
@@ -131,7 +131,7 @@ footer li{list-style-type:none}
 .account.menu-group{float:right;border:0}
 .menu-group{float:right}
 .menu-group .title,.lang{display:none}
-.sidenav{display:block;position:relative;width:100%!important;background:#2f3538;overflow:hidden}
+.sidenav{display:block;position:relative;width:100%!important;background:#2f3538;overflow:hidden;max-width: 100%;}
 .sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none}
 .sticky{padding-top:40px;width:100%;background:var(--color2);height:100px}
 .sticky>div{display:flex}
