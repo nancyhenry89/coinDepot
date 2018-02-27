@@ -60,7 +60,7 @@ svg{height:100%;width:100%}
 .best-seller .icon i{line-height:46px}
 .best-seller{margin-top:18px}
 .nav-tabs{border:0}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent;transition: all 1s ease;}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent}
 .nav-tabs>li>a{color:#929aa9;font-size:16px;padding:3px 0;font-weight:500}
 .nav-tabs>li{width:calc(100% / 3);text-align:center}
 .best-seller .nav-tabs{margin-top:30px}
@@ -115,11 +115,13 @@ footer li{list-style-type:none}
 .lang .dropdown-toggle.btn{color:#daddd8;font-size:14px;text-align:right;background-image:url(../img/uk.png);background-repeat:no-repeat;background-position:18px center;background-size:28px}
 .lang .dropdown-menu{background:#4e5d75}
 .nav>li.register>a{color:var(--color1)}
-.nav>li>a:focus,.nav>li>a:hover{background: transparent;border: 0;border-bottom: 2px solid;}
+.nav>li>a:focus,.nav>li>a:hover{background:#282c30}
 .account.menu-group{border-bottom:2px solid #4f5d75;margin-bottom:15px}
 .navbar-collapse{border:0;padding-top:20px}
 .navbar-nav{padding-left:15px}
 .lang .dropdown-menu>li>a{color:#dbddd9;font-size:14px}
+.best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background: transparent}
+
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}
 }
@@ -127,10 +129,12 @@ footer li{list-style-type:none}
 
 }
 @media only screen and (min-width: 992px) {
+    .best-seller .nav>li>a, .best-seller .nav>li>a{transition:all .5s ease;}
+    .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background: transparent;/* color: #fea100; */border-color: transparent;border-bottom-color: #4e5d75;border-bottom: 2px solid;}
     .two-sec{width:970px}
     .coins-bg{background:var(--color2)}
 .navbar-nav>li>a{font-size:15px}
-.nav-cont{order:2;width:70%;margin-top:-27px;float:left}
+.nav-cont{order:2;width:70%;margin-top: -27px;float:left;height: 70px;}
 .cart{order:3;width:5%;float:left}
 .logo{order:1;width:25%;float:left;}
 .account.menu-group{float:right;border:0}
