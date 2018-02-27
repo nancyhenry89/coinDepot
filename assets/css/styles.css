@@ -60,15 +60,16 @@ svg{height:100%;width:100%}
 .best-seller .icon i{line-height:46px}
 .best-seller{margin-top:18px}
 .nav-tabs{border:0}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent;transition: all 1s ease;}
 .nav-tabs>li>a{color:#929aa9;font-size:16px;padding:3px 0;font-weight:500}
 .nav-tabs>li{width:calc(100% / 3);text-align:center}
 .best-seller .nav-tabs{margin-top:30px}
 .best-seller .item{margin-top:28px;=:50pxborder-radius: 50%;text-align:center}
 .s-section-title{font-size:23px;font-weight:lighter;color:var(--headings-color);text-transform:uppercase;text-align:center;margin-top:15px}
 .info-content{height:179px;background-color:#fff;border:1px solid #d9ddd7;text-align:center;font-size:15px;font-weight:lighter;padding:10px;position:relative;overflow:hidden}
-.info-block{padding:0 8px;margin-top:61px;float:left}
-.info-block>div{padding:0}
+.info-block{padding:0 8px;margin-top:61px;float:left;width: 100%;}
+.info-block .container>div{padding:0}
+.info-block .container{padding:0}
 .info-content .btn{margin-top:4px}
 .offer{background:url(../img/offer.png);background-size:cover;margin-top:10px;margin-bottom:10px;height:166px;color:#fff;text-align:center;overflow:hidden;position:relative}
 .offer .details{font-size:22px;background-color:#4f5d759e;width:80%;margin:auto;margin-top:53px}
@@ -114,7 +115,7 @@ footer li{list-style-type:none}
 .lang .dropdown-toggle.btn{color:#daddd8;font-size:14px;text-align:right;background-image:url(../img/uk.png);background-repeat:no-repeat;background-position:18px center;background-size:28px}
 .lang .dropdown-menu{background:#4e5d75}
 .nav>li.register>a{color:var(--color1)}
-.nav>li>a:focus,.nav>li>a:hover{background:#282c30}
+.nav>li>a:focus,.nav>li>a:hover{background: transparent;border: 0;border-bottom: 2px solid;}
 .account.menu-group{border-bottom:2px solid #4f5d75;margin-bottom:15px}
 .navbar-collapse{border:0;padding-top:20px}
 .navbar-nav{padding-left:15px}
@@ -123,15 +124,19 @@ footer li{list-style-type:none}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 769px) {
-.coins-bg{background:var(--color2)}
+
+}
+@media only screen and (min-width: 992px) {
+    .two-sec{width:970px}
+    .coins-bg{background:var(--color2)}
 .navbar-nav>li>a{font-size:15px}
 .nav-cont{order:2;width:70%;margin-top:-27px;float:left}
 .cart{order:3;width:5%;float:left}
-.logo{order:1;width:25%;float:left}
+.logo{order:1;width:25%;float:left;}
 .account.menu-group{float:right;border:0}
 .menu-group{float:right}
 .menu-group .title,.lang{display:none}
-.sidenav{display:block;position:relative;width:100%!important;background:#2f3538;overflow:hidden;max-width: 100%;}
+.sidenav{display: none;position:relative;width:100%!important;background:#2f3538;overflow:hidden;max-width: 100%;}
 .sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none}
 .sticky{padding-top:40px;width:100%;background:var(--color2);height:100px}
 .sticky>div{display:flex}
@@ -156,7 +161,7 @@ footer li{list-style-type:none}
 .section-title:after{width:3px;height:100%;left:100%;top:0}
 .slider{float:left;width:83%}
 .tab-content{width:66%;float:left;margin-top:22px}
-.best-seller .nav-tabs{position:absolute;top:108px;width:16%}
+.best-seller .nav-tabs{position:absolute;top:108px;width:16%;z-index: 9;}
 .best-seller{position:relative;padding-left:0;padding-right:0}
 .nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
 .two-sec{width:970px;margin:auto;max-width:100%;position:relative}
@@ -166,9 +171,8 @@ footer li{list-style-type:none}
 .info-block{float:none;padding:0}
 .benifits .item{width:calc(100% / 3);float:left;text-align:center}
 .benifits .item .icon{width:100%;background-size:56px;margin-top:29px;margin-bottom:16px;height:80px;background-position:center}
-.logo .img{width:43px;height:auto;margin-top:-4px}
 header{padding-top:58px;height:140px}
-.logo .text{font-size:37px}
+
 .slogan{margin-top:49px}
 .trending .slick-list{padding-top:40px!important;padding-left:30px!important}
 .trending .card.slick-center{height:225px;margin-top:0}
@@ -179,10 +183,10 @@ header{padding-top:58px;height:140px}
 .coin-of-day .details{width:340px;height:189px;padding:37px 30px}
 .coin-of-day .details .item{height:25px}
 .coin-of-day .details .btn{margin-top:29px}
-.info-block>div{margin-top:37px;margin-left:10px;margin-right:10px;width:calc(100% / 3 - 14px)}
+.info-block .container>div{margin-top:37px;margin-left:10px;margin-right:10px;width:calc(100% / 3 - 14px);padding: 0;}
 .offer{margin-top:0;border:2px solid var(--color3);height:180px}
-.info-block>div:first-of-type{margin-left:0}
-.info-block>div:last-of-type{margin-right:0}
+.info-block .container>div:first-of-type{margin-left:0}
+.info-block .container>div:last-of-type{margin-right:0}
 .two-sec:after{content:'';width:100%;height:1px;background:#e8e9e7;position:absolute;top:310px}
 .benifits{width:100%;position:relative}
 .benifits>div:after{content:'';width:100%;height:1px;background:#e8e9e7;position:absolute;top:236px;left:0}
@@ -210,16 +214,20 @@ footer .btn:hover{color:var(--color1)}
 .subscribe:before{content:'';width:2px;height:80%;background:#4e5d75;position:absolute;left:0;top:19px}
 .subscribe{display:block}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
-}
-@media only screen and (min-width: 992px) {
-.navbar-toggle{display:none}
-.navbar-nav>li>a{font-size:13px}
-.menu-group .title,.lang{display:none}
+    .logo .img{width:43px;height:auto;margin-top:-4px}
+    .logo .text{font-size:37px}
+    .sidenav{display:block}
+    .navbar-toggle{display:none}
+    .navbar-nav>li>a{font-size:13px}
+    .menu-group .title,.lang{display:none}
 }
 @media only screen and (min-width: 1025px) {
 .slider{padding-left:30px;margin-top:41px}
 .slider .card{float:left;width:calc(100% / 5 - 10px)!important}
 .slider .card:first-of-type{margin-left:0;width:calc(100% / 5 - 5px)!important}
 .slider .card:last-of-type{margin-right:0;width:calc(100% / 5 - 5px)!important}
+
+}
+@media only screen and (min-width: 1200px) {
 .two-sec{width:1170px}
 }
