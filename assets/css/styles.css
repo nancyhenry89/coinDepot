@@ -134,19 +134,38 @@ footer li{list-style-type:none}
 .popup-label .title{color:var(--color3);font-size:24px;font-weight:700}
 .popup-cont{float:left;width:100%}
 .book-now .item{width: 95%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto;cursor: pointer;}
+.item.cust .content{height:0;visibility: hidden;}
+.selected.item.cust .content{height:75px;visibility:visible}
 .book-now .item .number{font-size:16px}
 .book-now .item .type{font-size:12px}
 .book-now .item .price{text-align:left}
 .book-now .item .value{text-align:right;font-weight:lighter}
-.book-now .content>div{float:left;width:calc(100% / 3);text-align:center}
+.book-now .content>*{float:left;width: calc(100% / 2 - 20px);text-align:center;}
+.book-now .content .input-cont{height:36px;margin-top: 20px;font-size: 12px;text-align: left;position: relative;}
+.book-now .content .input-cont .input{height:100%;border-radius: 18px;padding: 0 10px;width: 100%;border: none;font-size: 14px;font-weight: normal;}
+.price-input:before{content:'\20AC';position: absolute;top: -18px;font-size: 18px;font-weight: lighter;left: 7px;}
+.value-input:before{content:'NEM';position: absolute;top: -18px;font-size: 18px;font-weight: lighter;right: 7px;font-size: 12px;}
+.book-now .content .value-input .input{padding-right:40px}
+.book-now .content .price-input .input{padding-left:30px;border: 1px solid #dcddd9;}
+input:focus{
+    outline: none;
+    color: #1e2421;
+    border: 1px solid #4f5d75!important;
+}
+.custom-label{width: calc(100%);float: left;padding-left: 66px;font-weight: normal;}
+.selected .custom-label{
+    height: 0;
+    visibility: hidden;
+}
+.book-now .content .sign{width: 40px;}
 .book-now .item-radio:after{content:'';width:24px;height:24px;display:block;border:2px solid #c6c6c6;border-radius:50%;margin-top:-19px;margin-left:30px;visibility:visible}
-.book-now .content{width: calc(100% - 40px);float:left;padding:0 20px;height:100%;margin-left: 40px;border-bottom:1px solid #e0e0e0;transition: all .5s ease;}
+.book-now .content{width: calc(100% - 40px);float:left;padding: 0 10px;height:100%;margin-left: 40px;border-bottom:1px solid #e0e0e0;transition: background .5s ease;}
 .checkbox,.radio{margin:0}
 .book-now .selected .content{background:#dbddd8;color:#1f2521}
 .book-now .selected .content .sign{color:var(--color1)}
 .book-now .selected .item-radio:before{background:var(--color1);visibility:visible}
 .book-now .selected .item-radio:after{border-color:var(--color1)}
-.book-now .item-radio:before{content:'';width:14px;height:14px;display:block;background:#c6c6c6;border-radius:50%;margin-left:35px;margin-top:-1px;visibility:hidden}
+.book-now .item-radio:before{content:'';width:14px;height:14px;display:block;background:#c6c6c6;border-radius:50%;margin-left:35px;margin-top: 0px;visibility:hidden;}
 .book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width: 60px;margin-top:30px;}
 .popup-footer{width: 100%;float: left;background: #f6f6f6;height: 90px;}
 .popup-footer .link{color: var(--hover-color);display: block;line-height: 36px;float: left;margin-top: 20px;cursor: pointer;transition: all .5s ease;width: 100%;text-align: center;margin-bottom: -70px;}
@@ -159,10 +178,26 @@ footer li{list-style-type:none}
 }
 .popup-footer .btns{margin-top: 60px;}
 .popup-footer .btns .btn{float: left;width: 80%;left: 10%;position: relative;margin-top: -30px;}
+.book-now ::-webkit-input-placeholder{color:var(--headings-color)}
+.book-now ::-moz-placeholder{color:var(--headings-color)}
+.book-now :-ms-input-placeholder{color:var(--headings-color)}
+.book-now :-moz-placeholder{color:var(--headings-color)}
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
+    .value-input:before{
+    right: -7px;
+}
+    .price-input:before{
+    left: 1px;
+}
+    .book-now .content .input-cont .input{width:85%}
+    .book-now .content .price-input .input{float:right;padding-left: 10px;}
+    .book-now .content .value-input .input{
+    padding-right: 10px;
+}
+    .book-now .content{padding:0 20px}
 .popup-footer .btns .btn{
     width: auto;
     left: auto;
@@ -176,8 +211,8 @@ footer li{list-style-type:none}
     margin-top: 40px;
 }
     .book-now .content{
-            width: calc(100% - 40px);
-            margin-left:50px
+            width: calc(100% - 50px);
+            margin-left:50px;
     }
 
 .book-now .item{
@@ -187,7 +222,7 @@ footer li{list-style-type:none}
     width: 80%;
     margin: auto;
 }
-.modal-dialog{width: 37%;margin: auto;min-width: 530px;min-height: 640px;} ;
+.modal-dialog{width: 37%;margin: auto;min-width: 530px;min-height: 640px;top: 50%;margin-top: -320px;} ;
 .best-seller .nav>li>a,.best-seller .nav>li>a{transition:all .5s ease}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent;border-color:transparent;border-bottom-color:#4e5d75;border-bottom:2px solid}
 .two-sec{width:970px}
