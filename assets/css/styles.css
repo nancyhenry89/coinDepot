@@ -176,7 +176,7 @@ input:focus{
     width: 100%;
     color: #afafaf;
 }
-.popup-footer .btns{margin-top: 60px;}
+.popup-footer .btns{margin-top: 60px;background: #f6f6f6;height: 90px;}
 .popup-footer .btns .btn{float: left;width: 80%;left: 10%;position: relative;margin-top: -30px;}
 .book-now ::-webkit-input-placeholder{color:var(--headings-color)}
 .book-now ::-moz-placeholder{color:var(--headings-color)}
