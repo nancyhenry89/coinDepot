@@ -1,4 +1,4 @@
-:root{--color1:#f08700;--color2:#2f3538;--color3:#fff;--hover-color:#FFA000;--headings-color:#4f5d75;--main-font:Rubik,sans-serif}
+:root{--color1:#fea100;--color2:#2f3538;--color3:#fff;--hover-color:#FFA000;--headings-color:#4f5d75;--main-font:Rubik,sans-serif}
 body{font-family:var(--main-font)}
 .FO{float:right}
 .FL{float:left}
@@ -21,10 +21,9 @@ svg{height:100%;width:100%}
 .coin-card .value{float:left;text-align:right;width:40%;font-size:12px}
 .coin-card .price{float:left;width:40%;text-align:right;font-size:28px;font-weight:700}
 .price::first-letter{font-weight:100;margin-right:2px}
-.btn{color:var(--color1);border:1px solid;border-radius:18px;background:transparent;height:36px;min-width:100px;font-size: 14px;line-height:24px;text-transform: uppercase;transition: all .5s ease;}
-.btn.solid{background:var(--color1);color:var(--color3);min-width: 205px;margin-top: 20px;font-size: 15px;border: 0;}
-.btn.solid:hover,.btn.solid:active,.btn.solid:focus{background:var(--hover-color);color: #fff;border-width: 1px;}
-.btn:hover,.btn:focus,.btn:active{border-width:2px;background:transparent;border-color:var(--color1);color:var(--color1);outline: none;}
+.btn{color:var(--color1);border:1px solid;border-radius:18px;background:transparent;height:36px;min-width:100px;font-size:14px;line-height:24px;text-transform:capitalize}
+.btn.solid{background:var(--color1);color:var(--color3);min-width: 205px;margin-top: 20px;}
+.btn:hover{border-width:2px;background:transparent;border-color:var(--color1);color:var(--color1)}
 .btn.btn-alt{color:var(--color3);border-color:var(--color3)}
 .coin-card .btn{margin-top:25px;float:right}
 .coin-card.bitcoin{background:url(../img/bitcoin.png)}
@@ -125,7 +124,7 @@ footer li{list-style-type:none}
 .navbar-collapse{border:0;padding-top:20px}
 .lang .dropdown-menu>li>a{color:#dbddd9;font-size:14px}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent}
-.modal-dialog{width: 100%;background:#f6f6f6;margin: 0;min-height: 100%;}
+.modal-dialog{width:37%;background:#f6f6f6}
 .modal-dialog button.close{right:19px;top:10px;color:#373e43;text-shadow:none;opacity:1;font-size:21px;position:absolute}
 .popup-label{text-align:center;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#e37b00),color-stop(1,#de8d03));background-image:-o-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-moz-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-webkit-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-ms-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:linear-gradient(to right,#e37b00 0%,#de8d03 100%);height:140px;padding:10px}
 .popup-label .icon i{line-height:30px}
@@ -133,61 +132,39 @@ footer li{list-style-type:none}
 .popup-cont{background:#f6f6f6;float:left}
 .popup-label .title{color:var(--color3);font-size:24px;font-weight:700}
 .popup-cont{float:left;width:100%}
-.book-now .item{width: 95%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto;cursor: pointer;}
+.book-now .item{width:80%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto}
 .book-now .item .number{font-size:16px}
 .book-now .item .type{font-size:12px}
 .book-now .item .price{text-align:left}
 .book-now .item .value{text-align:right;font-weight:lighter}
 .book-now .content>div{float:left;width:calc(100% / 3);text-align:center}
 .book-now .item-radio:after{content:'';width:24px;height:24px;display:block;border:2px solid #c6c6c6;border-radius:50%;margin-top:-19px;margin-left:30px;visibility:visible}
-.book-now .content{width: calc(100% - 40px);float:left;padding:0 20px;height:100%;margin-left: 40px;border-bottom:1px solid #e0e0e0;transition: all .5s ease;}
+.book-now .content{width:calc(100% - 50px);float:left;padding:0 20px;height:100%;margin-left:50px;border-bottom:1px solid #e0e0e0}
 .checkbox,.radio{margin:0}
 .book-now .selected .content{background:#dbddd8;color:#1f2521}
 .book-now .selected .content .sign{color:var(--color1)}
 .book-now .selected .item-radio:before{background:var(--color1);visibility:visible}
 .book-now .selected .item-radio:after{border-color:var(--color1)}
 .book-now .item-radio:before{content:'';width:14px;height:14px;display:block;background:#c6c6c6;border-radius:50%;margin-left:35px;margin-top:-1px;visibility:hidden}
-.book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width: 60px;margin-top:30px;}
+.book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width:40px;margin-top:30px}
 .popup-footer{width: 100%;float: left;background: #f6f6f6;height: 90px;}
-.popup-footer .link{color: var(--hover-color);display: block;line-height: 36px;float: left;margin-top: 20px;cursor: pointer;transition: all .5s ease;width: 100%;text-align: center;margin-bottom: -70px;}
+.popup-footer .link{color:var(--color1);display: block;line-height: 36px;float: left;margin-top: 20px;margin-right: 48px;cursor: pointer;transition: all .5s ease;}
 .popup-footer .link:hover{color;color: #FFA000;text-decoration: none;}
 .popup-footer .disc{
     font-size: 12px;
     padding-left: 10px;
-    width: 100%;
-    color: #afafaf;
+    width: 80%;
+    margin: auto;
 }
-.popup-footer .btns{margin-top: 60px;}
-.popup-footer .btns .btn{float: left;width: 80%;left: 10%;position: relative;margin-top: -30px;}
+.popup-footer .btns{
+    float: right;
+    margin-right: 50px;
+}
+.popup-footer .btns .btn{float:left}
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
-.popup-footer .btns .btn{
-    width: auto;
-    left: auto;
-    margin-top: 0;
-}
- .popup-footer .link{margin-right: 48px;width:auto;margin-bottom: 0;margin-top: 0;}
-
-  .popup-footer .btns {
-    float: right;
-    margin-right: 50px;
-    margin-top: 40px;
-}
-    .book-now .content{
-            width: calc(100% - 40px);
-            margin-left:50px
-    }
-
-.book-now .item{
-    width:80%
-}
-.popup-footer .disc{
-    width: 80%;
-    margin: auto;
-}
-.modal-dialog{width: 37%;margin: auto;min-width: 530px;min-height: 640px;} ;
 .best-seller .nav>li>a,.best-seller .nav>li>a{transition:all .5s ease}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent;border-color:transparent;border-bottom-color:#4e5d75;border-bottom:2px solid}
 .two-sec{width:970px}
