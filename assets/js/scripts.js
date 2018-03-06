@@ -1,4 +1,9 @@
 $(document).ready(function(){
+//toggle selected for popups
+$('.item-radio').click(function(){
+$(this).parents('.book-now').find('.item').removeClass('selected');
+$(this).parents('.item').addClass('selected');
+});
   initSlider();
   if($(window).innerWidth() >= 1025 ) {
     $('.slider').hide();

@@ -15,11 +15,9 @@
       <svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
          <path id="icon-bag" d="M24.35 26C24.35 26 24.35 26 24.34 26L0.65 26C0.47 26 0.3 25.92 0.17 25.79C0.05 25.67 -0.01 25.49 0 25.32L1.29 5.66C1.32 5.33 1.6 5.07 1.94 5.07L7.39 5.07L7.39 5.02C7.39 2.25 9.68 0 12.49 0C15.31 0 17.6 2.25 17.6 5.02C17.6 5.04 17.59 5.05 17.59 5.07L23.05 5.07C23.39 5.07 23.67 5.33 23.69 5.66L24.98 25.19C24.99 25.25 25 25.3 25 25.36C25 25.71 24.71 26 24.35 26ZM16.31 5.02C16.31 2.95 14.6 1.27 12.49 1.27C10.39 1.27 8.68 2.95 8.68 5.02L8.68 5.07L16.32 5.07C16.32 5.05 16.31 5.04 16.31 5.02ZM22.44 6.34L17.6 6.34L17.6 7.77C17.91 7.98 18.13 8.31 18.13 8.71C18.13 9.35 17.61 9.86 16.96 9.86C16.3 9.86 15.78 9.35 15.78 8.71C15.78 8.31 16 7.98 16.31 7.77L16.31 6.34L8.68 6.34L8.68 7.77C8.99 7.98 9.21 8.31 9.21 8.71C9.21 9.35 8.68 9.86 8.03 9.86C7.38 9.86 6.85 9.35 6.85 8.71C6.85 8.31 7.07 7.98 7.39 7.77L7.39 6.34L2.54 6.34L1.34 24.73L23.65 24.73L22.44 6.34Z" />
-
       </svg>
       <header>
-
-         <div class="sticky">
+        <div class="sticky">
             <div class="container">
                <button onclick="openNav()" type="button" class="navbar-toggle collapsed"   data-target="#bs-example-navbar-collapse-1">
                <span class="sr-only">Toggle navigation</span>
@@ -71,7 +69,19 @@
                      </div>
                      <!-- /.container-fluid -->
                   </nav>
-
+               </div>
+               <div class="logo">
+                  <img class="img" src="assets/img/logo.png" alt="Coin Depot"/>
+                  <h1 class="text">Coin<b>Depot</b></h1>
+               </div>
+               <div class="cart">
+                  <svg class="icon">
+                     <use xlink:href="#icon-bag" />
+                  </svg>
+               </div>
+            </div>
+         </div>
+         <div class="slogan">The most <b>simple</b>, <b>fast</b> & <b>safe</b> way to buy crypto currencies</div>
       </header>
       <div id="main" class="container-fluid main-content">
          <div class="modal fade" id="bookNow" tabindex="-1" role="dialog" style="display: none;">
@@ -81,7 +91,7 @@
                   <span aria-hidden="true">&times;</span>
                   </button>
                   <div class="icon"><i class="cc XEM-alt"></i></div>
-                  <div class="title">Order NEM</div>
+                  <h1 class="title">Order NEM</h1>
                </div>
                <div class="popup-cont book-now">
                   <form>
@@ -124,8 +134,87 @@
                            </div>
                         </label>
                      </div>
-                  </form>
+                     <div class="item cust">
 
+                        <label class="radio">
+                          <div class="custom-label">Custom Amount</div>
+                           <input class="item-radio" type="radio" name="optradio">
+                           <div class="content">
+                             <div class="price-input input-cont">
+                             <input class="price-input input" placeholder="Type Amount"></input>
+                           </div>
+                             <div class="sign">=</div>
+                            <div class="value-input input-cont">
+                             <input class="input" placeholder="Value"></input>
+                           </div>
+                           </div>
+                        </label>
+                     </div>
+                  </form>
+               </div>
+               <div class="popup-footer">
+                  <div class="disc">* Disclamer can be here Disclamer can be here</div>
+                  <div class="btns">
+                     <a class="link cancel" data-dismiss="modal" aria-label="Close">CANCEL</a>
+                     <button class="btn solid">Add to cart</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+         <div class="fluid-container bg coins-bg">
+         <div class="container coins">
+         <div class="col-sm-12 col-md-3">
+         <div class="coin-card bitcoin">
+         <div class="content">
+         <h2 class="title">BITCOIN</h2>
+         <div class="price">€999</div>
+         <div class="value">0.0949966 BTC</div>
+         <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+         </div>
+         </div>
+         </div>
+         <div class="col-sm-12 col-md-3">
+         <div class="coin-card eth">
+         <div class="content">
+         <h2 class="title">ETHEREUM</h2>
+         <div class="price">€499</div>
+         <div class="value">0.0949966 ETH</div>
+         <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+         </div>
+         </div>
+         </div>
+         <div class="col-sm-12 col-md-3">
+         <div class="coin-card xrp">
+         <div class="content">
+         <h2 class="title">RIPPLE </h2>
+         <div class="price">€399</div>
+         <div class="value"> 0.0949966 XRP</div>
+         <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+         </div>
+         </div>
+         </div>
+         <div class="col-sm-12 col-md-3">
+         <div class="coin-card xmr">
+         <div class="content">
+         <h2 class="title">MONERO</h2>
+         <div class="price">€128</div>
+         <div class="value">0.0949966 XMR</div>
+         <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+         </div>
+         </div>
+         </div>
+         <div class="col-sm-12 col-md-6">
+         <div class="coin-card bitcoin-cash">
+         <div class="content">
+         <h2 class="title">BITCOIN CASH</h2>
+         <div class="price">€99</div>
+         <div class="value">0.0949966 XMR</div>
+         <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+         </div>
+         </div>
+         </div>
+         </div>
          </div>
          <div class="container trending">
             <h2 class="section-title"><b>trending</b> now</h2>
@@ -135,35 +224,35 @@
                   <div class="title">Cardano</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
+                  <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
                </div>
                <div class="card">
                   <div class="icon"><i class="cc XEM-alt"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
+                  <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
                </div>
                <div class="card">
                   <div class="icon"><i class="cc XEM-alt"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
+                  <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
                </div>
                <div class="card">
                   <div class="icon"><i class="cc XEM-alt"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
+                  <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
                </div>
                <div class="card">
                   <div class="icon"><i class="cc XEM-alt"></i></div>
                   <div class="title">NEM</div>
                   <div class="price">€<b>300</b></div>
                   <div class="value">132.025 XXX</div>
-                  <btn class="btn btn-alt">BOOK NOW</btn>
+                  <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>
@@ -275,33 +364,33 @@
             </div>
          </div>
          <div class="info-block">
-           <div class="container">
-            <div class="col-sm-12 col-md-4">
-               <div class="info-content">
-                  <h3 class="s-section-title">We buy blocks of coins</h3>
-                  <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
-                  <btn class="btn btn-default">apply here</btn>
-                  <div class="icon medal"></div>
+            <div class="container">
+               <div class="col-sm-12 col-md-4">
+                  <div class="info-content">
+                     <h3 class="s-section-title">We buy blocks of coins</h3>
+                     <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
+                     <btn class="btn btn-default">apply here</btn>
+                     <div class="icon medal"></div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                  <div class="offer">
+                     <div class="ribbon">Special Offer</div>
+                     <p class="details"><b>1%</b> commission on <b>STX</b> </p>
+                     <p class="time">Today only</p>
+                     <btn class="btn btn-default">book now</btn>
+                     <div class="icon"></div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                  <div class="info-content">
+                     <h3 class="s-section-title">Some content here</h3>
+                     <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
+                     <btn class="btn btn-default">apply here</btn>
+                     <div class="icon bill"></div>
+                  </div>
                </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-               <div class="offer">
-                  <div class="ribbon">Special Offer</div>
-                  <p class="details"><b>1%</b> commission on <b>STX</b> </p>
-                  <p class="time">Today only</p>
-                  <btn class="btn btn-default">book now</btn>
-                  <div class="icon"></div>
-               </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-               <div class="info-content">
-                  <h3 class="s-section-title">Some content here</h3>
-                  <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
-                  <btn class="btn btn-default">apply here</btn>
-                  <div class="icon bill"></div>
-               </div>
-            </div>
-          </div>
          </div>
          <div class="container benifits">
             <div class="col-md-12">
@@ -336,7 +425,7 @@
       </div>
       </div>
       <footer>
-         <div class="container">
+        <div class="container">
             <div class="link-set">
                <a class="footer-link" href="#f-one">footer header</a>
                <ul id="f-one" class="footer-sub">
