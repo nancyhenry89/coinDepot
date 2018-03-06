@@ -27,6 +27,7 @@ function initSlider(){
     initialSlide:2,
     arrows: false,
     slidesToShow: 5,
+    infinite:true,
     responsive: [
       {
         breakpoint: 1025,
