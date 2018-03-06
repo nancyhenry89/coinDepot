@@ -142,7 +142,7 @@ footer li{list-style-type:none}
 .book-now .item .value{text-align:right;font-weight:lighter}
 .book-now .content>*{float:left;width: calc(100% / 2 - 20px);text-align:center;}
 .book-now .content .input-cont{height:36px;margin-top: 20px;font-size: 12px;text-align: left;position: relative;}
-.book-now .content .input-cont .input{height:100%;border-radius: 18px;padding: 0 10px;width: 100%;border: none;font-size: 14px;font-weight: normal;}
+.book-now .content .input-cont .input{height:100%;border-radius: 18px;padding: 0 10px;width: 100%;border: none;font-size: 14px;font-weight: normal;line-height: 20px;}
 .price-input:before{content:'\20AC';position: absolute;top: -18px;font-size: 18px;font-weight: lighter;left: 7px;}
 .value-input:before{content:'NEM';position: absolute;top: -18px;font-size: 18px;font-weight: lighter;right: 7px;font-size: 12px;}
 .book-now .content .value-input .input{padding-right:40px}
