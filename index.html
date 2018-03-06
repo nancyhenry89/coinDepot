@@ -18,6 +18,7 @@
 
       </svg>
       <header>
+
          <div class="sticky">
             <div class="container">
                <button onclick="openNav()" type="button" class="navbar-toggle collapsed"   data-target="#bs-example-navbar-collapse-1">
@@ -70,74 +71,61 @@
                      </div>
                      <!-- /.container-fluid -->
                   </nav>
-               </div>
-               <div class="logo">
-                  <img class="img" src="assets/img/logo.png" alt="Coin Depot"/>
-                  <h1 class="text">Coin<b>Depot</b></h1>
-               </div>
-               <div class="cart">
-                  <svg class="icon">
-                     <use xlink:href="#icon-bag" />
-                  </svg>
-               </div>
-            </div>
-         </div>
-         <div class="slogan">The most <b>simple</b>, <b>fast</b> & <b>safe</b> way to buy crypto currencies</div>
+
       </header>
       <div id="main" class="container-fluid main-content">
-         <div class="fluid-container bg coins-bg">
-            <div class="container coins">
-               <div class="col-sm-12 col-md-3">
-                  <div class="coin-card bitcoin">
-                     <div class="content">
-                        <h2 class="title">BITCOIN</h2>
-                        <div class="price">€999</div>
-                        <div class="value">0.0949966 BTC</div>
-                        <btn class="btn btn-default">BOOK NOW</btn>
-                     </div>
-                  </div>
+         <div class="modal fade" id="bookNow" tabindex="-1" role="dialog" style="display: none;">
+            <div class="modal-dialog">
+               <div class="popup-label">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="icon"><i class="cc XEM-alt"></i></div>
+                  <div class="title">Order NEM</div>
                </div>
-               <div class="col-sm-12 col-md-3">
-                  <div class="coin-card eth">
-                     <div class="content">
-                        <h2 class="title">ETHEREUM</h2>
-                        <div class="price">€499</div>
-                        <div class="value">0.0949966 ETH</div>
-                        <btn class="btn btn-default">BOOK NOW</btn>
+               <div class="popup-cont book-now">
+                  <form>
+                     <div class="item">
+                        <label class="radio">
+                           <input class="item-radio" type="radio" name="optradio">
+                           <div class="content">
+                              <div class="price">€<b>100</b></div>
+                              <div class="sign">=</div>
+                              <div class="value">
+                                 <span class="number">132.025</span>
+                                 <span class="type">NEM</span>
+                              </div>
+                           </div>
+                        </label>
                      </div>
-                  </div>
-               </div>
-               <div class="col-sm-12 col-md-3">
-                  <div class="coin-card xrp">
-                     <div class="content">
-                        <h2 class="title">RIPPLE </h2>
-                        <div class="price">€399</div>
-                        <div class="value"> 0.0949966 XRP</div>
-                        <btn class="btn btn-default">BOOK NOW</btn>
+                     <div class="item selected">
+                        <label class="radio">
+                           <input class="item-radio" type="radio" name="optradio">
+                           <div class="content">
+                              <div class="price">€<b>100</b></div>
+                              <div class="sign">=</div>
+                              <div class="value">
+                                 <span class="number">132.025</span>
+                                 <span class="type">NEM</span>
+                              </div>
+                           </div>
+                        </label>
                      </div>
-                  </div>
-               </div>
-               <div class="col-sm-12 col-md-3">
-                  <div class="coin-card xmr">
-                     <div class="content">
-                        <h2 class="title">MONERO</h2>
-                        <div class="price">€128</div>
-                        <div class="value">0.0949966 XMR</div>
-                        <btn class="btn btn-default">BOOK NOW</btn>
+                     <div class="item ">
+                        <label class="radio">
+                           <input class="item-radio" type="radio" name="optradio">
+                           <div class="content">
+                              <div class="price">€<b>100</b></div>
+                              <div class="sign">=</div>
+                              <div class="value">
+                                 <span class="number">132.025</span>
+                                 <span class="type">NEM</span>
+                              </div>
+                           </div>
+                        </label>
                      </div>
-                  </div>
-               </div>
-               <div class="col-sm-12 col-md-6">
-                  <div class="coin-card bitcoin-cash">
-                     <div class="content">
-                        <h2 class="title">BITCOIN CASH</h2>
-                        <div class="price">€99</div>
-                        <div class="value">0.0949966 XMR</div>
-                        <btn class="btn btn-default">BOOK NOW</btn>
-                     </div>
-                  </div>
-               </div>
-            </div>
+                  </form>
+
          </div>
          <div class="container trending">
             <h2 class="section-title"><b>trending</b> now</h2>
