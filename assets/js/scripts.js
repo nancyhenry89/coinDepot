@@ -5,6 +5,11 @@ $(document).ready(function(){
 $('footer').append(
   ' <div class="container"> <div class="link-set"> <a class="footer-link" href="#f-one">footer header</a> <ul id="f-one" class="footer-sub"> <li><a href="#">Link link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link link</a></li> </ul> </div> <div class="link-set"> <a class="footer-link" href="#f-two">footer header</a> <ul id="f-two" class="footer-sub"> <li><a href="#">Link link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link link</a></li> </ul> </div> <div class="link-set"> <a class="footer-link" href="#f-three">footer header</a> <ul id="f-three" class="footer-sub"> <li><a href="#">Link link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link link</a></li> </ul> </div> <div class="subscribe"> <div class="footer-header" href="#f-three">footer header</div> <input class="sub-inpt" type="text" placeholder="Your Email"/> <a class="btn go">GO</a> </div> </div>'
 )
+//toggle selected for popups
+$('.item-radio').click(function(){
+$(this).parents('.book-now').find('.item').removeClass('selected');
+$(this).parents('.item').addClass('selected');
+});
   initSlider();
   if($(window).innerWidth() >= 1025 ) {
     $('.slider').hide();
