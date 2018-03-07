@@ -1,8 +1,31 @@
 :root{--color1:#f08700;--color2:#2f3538;--color3:#fff;--hover-color:#FFA000;--headings-color:#4f5d75;--main-font:Rubik,sans-serif}
 body{font-family:var(--main-font)}
+body{transition: all .5s ease;background: #000}
+ @-webkit-keyframes all {
+    0%   {transform: scale(1) translatex(0%)}
+    50%  {transform: scale(.5) translatex(0%)}
+    100% {transform: scale(.5) translatex(-160%)}
+}
+.closing #bookNow{height: 100%;animation: all 1s;}
+.closing .main-content{transform: scale(0);}
+.closing header{    transform: scale(0);}
+.closed{
+   transform: scale(1)!important;
+}
+ @-webkit-keyframes trans {
+    0%   {transform: scale(.3) translatex(180%)}
+    50%  {transform: scale(.3) translatex(0%)}
+    100% {transform: scale(1) translatex(0%)}
+}
+.trans{animation:trans .5s;transform: scale(.3);height: 100%;}
+.closing .main-content,.trans .main-content{
+    visibility:hidden
+}
+.trans .coins-bg{visibility:visible}
+html{background: #000}
 .FO{float:right}
 .FL{float:left}
-.main-content{padding-right:0;padding-left:0;background:#f6f6f6}
+.main-content{padding-right:0;padding-left:0;background:#f6f6f6;}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
 .sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
 svg{height:100%;width:100%}
@@ -182,6 +205,7 @@ input:focus{
 .book-now ::-moz-placeholder{color:var(--headings-color)}
 .book-now :-ms-input-placeholder{color:var(--headings-color)}
 .book-now :-moz-placeholder{color:var(--headings-color)}
+
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}
 }
@@ -326,4 +350,11 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 }
 @media only screen and (min-width: 1200px) {
 .two-sec{width:1170px}
+}
+@media only screen and (max-height: 600px) {
+    .modal-dialog{
+    top: 0;
+    margin-top: 0;
+}
+
 }
