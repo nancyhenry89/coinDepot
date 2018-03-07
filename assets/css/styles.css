@@ -155,6 +155,34 @@ footer li{list-style-type:none}
 .popup-label .icon{width:50px;height:50px;background-color:var(--color3);border-radius:50%;margin:auto;color:var(--color2);font-size:30px;display:flex;align-items:center;justify-content:center;margin-top:24px;margin-bottom:14px;margin-bottom:15px}
 .popup-cont{background:#f6f6f6;float:left}
 .popup-label .title{color:var(--color3);font-size:24px;font-weight:700}
+#addToCart .popup-label .title{
+    font-weight: normal;
+    margin-top: 7px;
+}
+.add-to-cart{text-align:center;font-weight: 500;color: var(--color2);}
+.add-to-cart .item{
+    margin-top: 90px;
+    font-size: 18px;
+}
+.add-to-cart .message{
+    font-size: 18px;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.add-to-cart .question{
+    font-size: 16px;
+    margin-bottom: 29px;
+}
+.add-to-cart .cart-img{
+    height: 200px;
+    width: 140px;
+    background: url(../img/big-cart.png);
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 91px;
+    margin-bottom: -6px;
+}
 .popup-cont{float:left;width:100%}
 .book-now .item{width: 95%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto;cursor: pointer;}
 .item.cust .content{height:0;visibility: hidden;}
@@ -190,7 +218,7 @@ input:focus{
 .book-now .selected .item-radio:after{border-color:var(--color1)}
 .book-now .item-radio:before{content:'';width:14px;height:14px;display:block;background:#c6c6c6;border-radius:50%;margin-left:35px;margin-top: 0px;visibility:hidden;}
 .book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width: 60px;margin-top:30px;}
-.popup-footer{width: 100%;float: left;background: #f6f6f6;height: 90px;}
+.popup-footer{width: 100%;float: left;background: #f6f6f6;height: 90px;text-transform: uppercase;}
 .popup-footer .link{color: var(--hover-color);display: block;line-height: 36px;float: left;margin-top: 20px;cursor: pointer;transition: all .5s ease;width: 100%;text-align: center;margin-bottom: -70px;}
 .popup-footer .link:hover{color;color: #FFA000;text-decoration: none;}
 .popup-footer .disc{
@@ -205,7 +233,9 @@ input:focus{
 .book-now ::-moz-placeholder{color:var(--headings-color)}
 .book-now :-ms-input-placeholder{color:var(--headings-color)}
 .book-now :-moz-placeholder{color:var(--headings-color)}
-
+#addToCart .popup-footer .btns{
+    margin-top:20px;
+}
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}
 }
