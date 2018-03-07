@@ -31,7 +31,7 @@ $(document).ready(function() {
                 $('body').removeClass('trans');
                 $('body').removeClass('closed');
                 $('#bookNow').modal('hide');
-            }, 500);
+            }, 1000);
         }, 1000);
 
     }
