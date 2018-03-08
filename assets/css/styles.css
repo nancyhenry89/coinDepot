@@ -13,7 +13,7 @@ body{transition: all .5s ease;background: #000}
    transform: scale(1)!important;
 }
 .page-popup{
-  margin-top: 0;
+  margin-top: 30px;
   background: white;
   width: 100%;
   float: left;
@@ -32,7 +32,7 @@ body{transition: all .5s ease;background: #000}
 .closing .main-content,.trans .main-content{
     visibility:hidden
 }
-header.over{z-index: 1400;height: 60px;}
+header.over{z-index: 1400;height: 0;padding-top: 0;position: fixed;}
 .coin-icon{
     font-size: 30px;
     text-transform: uppercase;
@@ -70,6 +70,7 @@ svg{height:100%;width:100%}
 .logo .text{float:left;margin:0;font-style:italic;font-weight:lighter;font-size:24px;margin-left:10px;text-transform:unset}
 .logo .img{float:left;width:26px;height:31px}
 .slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top:38px;height: 0;}
+.over .slogan{display:none}
 .slogan b{font-weight:500}
 .cart{float:right;width:25px;fill:var(--color1);height:27px}
 .coins{padding:0 5px;margin-top:-55px}

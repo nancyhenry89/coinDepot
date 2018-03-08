@@ -1,4 +1,4 @@
-<div class="modal fade" id="addToCart" tabindex="-1" role="dialog" style="display: none;">
+<div class="modal" id="addToCart" tabindex="-1" role="dialog" style="display: none;">
    <div class="modal-dialog">
       <div class="popup-label">
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -16,7 +16,7 @@
       <div class="popup-footer">
          <div class="btns">
             <a class="link cancel" data-dismiss="modal" aria-label="Close">cancel</a>
-            <button class="btn solid" id="openCheckout">checkout</button>
+            <button class="btn solid modal-opener" data="checkout">checkout</button>
          </div>
       </div>
    </div>

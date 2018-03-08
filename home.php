@@ -7,7 +7,7 @@
                   <h2 class="title">BITCOIN</h2>
                   <div class="price">€999</div>
                   <div class="value">0.0949966 BTC</div>
-                  <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+                  <button class="btn btn-default modal-opener" data="bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>

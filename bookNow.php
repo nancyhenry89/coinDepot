@@ -1,4 +1,4 @@
-<div class="modal fade" id="bookNow" tabindex="-1" role="dialog" style="display: none;">
+<div class="modal" id="bookNow" tabindex="-1" role="dialog" style="display: none;">
    <div class="modal-dialog">
       <div class="popup-label">
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -69,7 +69,7 @@
          <div class="disc">* Disclamer can be here Disclamer can be here</div>
          <div class="btns">
             <a class="link cancel modal-closer" data-dismiss="modal" aria-label="Close">CANCEL</a>
-            <button class="btn solid modal-opener" data-dismiss="modal" data-toggle="modal" data-target="#addToCart">Add to cart</button>
+            <button class="btn solid modal-opener"  data="addToCart">Add to cart</button>
          </div>
       </div>
    </div>
