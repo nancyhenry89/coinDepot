@@ -51,7 +51,7 @@
   </div>
   <div class="popup-footer">
      <div class="btns">
-        <a class="link cancel" href="index.html" aria-label="Close">order more coins</a>
+        <button class="link cancel">order more coins</button>
         <button class="btn solid" >PROCEED</button>
      </div>
   </div>

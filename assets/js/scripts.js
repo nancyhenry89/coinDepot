@@ -32,6 +32,7 @@ $('body').addClass('modal-open');
                 },500);
                 $('#home').hide();
                 $('#addToCart').hide();
+
             }
         }else{
           //desktop
@@ -40,14 +41,21 @@ $('body').addClass('modal-open');
         }
 
                              });
+ $('#addToCart .close , #addToCart .cancel').click(function(){
+   $('#addToCart').fadeOut();
+});
+$('#checkout .cancel').click(function(){
+  $('header').removeClass('over');
+  $('header, #main').removeClass('coming-in');
+  $('#home').fadeIn();
+  $('#checkout').fadeOut();
+});
     //1- listen for popup opener clicked
     //2- get its ID
     //3- check if desktop --> fade in and out popup
     //4 - if mobile start animation depending on the ID
     //5 - close any other opened popups
-    $('#openCheckout').click(function(){
 
-    });
     //remove item from cart
     $('.delete-item').click(function(){
         $(this).parents('.cart-card').slideUp(400, function() {
@@ -57,11 +65,9 @@ $('body').addClass('modal-open');
     });
     if ($(window).innerWidth() <= 768) {
         $('#bookNow .close').click(function() {
-
             popupClose($(this))
         })
         $('#bookNow .cancel').click(function() {
-
             popupClose($(this))
         })
     }
