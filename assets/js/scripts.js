@@ -1,55 +1,55 @@
 $(document).ready(function() {
     //modal open setup
-    function addModalOpen(){
-$('body').addClass('modal-open');
-      $('.modal').on('hidden.bs.modal', function () {
-          $('body').addClass('modal-open');
-      });
+    function addModalOpen() {
+        $('body').addClass('modal-open');
+        $('.modal').on('hidden.bs.modal', function() {
+            $('body').addClass('modal-open');
+        });
     }
-    $('.modal-opener').click(function(){
-        var id=$(this).attr('data');
+    $('.modal-opener').click(function() {
+        var id = $(this).attr('data');
         if ($(window).innerWidth() <= 768) {
 
-            if(id=="bookNow"){
+            if (id == "bookNow") {
 
-              $('#bookNow').fadeIn(500,function(){
-                addModalOpen();
-              });
+                $('#bookNow').fadeIn(500, function() {
+                    addModalOpen();
+                });
             }
-            if(id=="addToCart"){
-              $('#addToCart').fadeIn(500,function(){
-                addModalOpen();
-                $('#bookNow').hide();
-              });
+            if (id == "addToCart") {
+                $('#addToCart').fadeIn(500, function() {
+                    addModalOpen();
+                    $('#bookNow').hide();
+                });
             }
-            if (id=="checkout"){
-              $('body').removeClass('modal-open');
+            if (id == "checkout") {
+                $('body').removeClass('modal-open');
                 $('#checkout').show();
                 $('header').addClass('over');
                 $('header, #main').addClass('coming-in');
-                setTimeout(function(){
+                setTimeout(function() {
                     $('#addToCart').modal('hide');
-                },500);
+                }, 500);
                 $('#home').hide();
                 $('#addToCart').hide();
 
             }
-        }else{
-          //desktop
-          $('.modal').modal('hide');
-          $(this).parents('.modol').fadeIn();
+        } else {
+            //desktop
+            $('.modal').modal('hide');
+            $(this).parents('.modol').fadeIn();
         }
 
-                             });
- $('#addToCart .close , #addToCart .cancel').click(function(){
-   $('#addToCart').fadeOut();
-});
-$('#checkout .cancel').click(function(){
-  $('header').removeClass('over');
-  $('header, #main').removeClass('coming-in');
-  $('#home').fadeIn();
-  $('#checkout').fadeOut();
-});
+    });
+    $('#addToCart .close , #addToCart .cancel').click(function() {
+        $('#addToCart').fadeOut();
+    });
+    $('#checkout .cancel').click(function() {
+        $('header').removeClass('over');
+        $('header, #main').removeClass('coming-in');
+        $('#home').fadeIn();
+        $('#checkout').fadeOut();
+    });
     //1- listen for popup opener clicked
     //2- get its ID
     //3- check if desktop --> fade in and out popup
@@ -57,7 +57,7 @@ $('#checkout .cancel').click(function(){
     //5 - close any other opened popups
 
     //remove item from cart
-    $('.delete-item').click(function(){
+    $('.delete-item').click(function() {
         $(this).parents('.cart-card').slideUp(400, function() {
 
             $(this).parents('.cart-card').remove();
@@ -122,28 +122,28 @@ function initSlider() {
         slidesToShow: 5,
         infinite: true,
         responsive: [{
-            breakpoint: 1025,
-            settings: {
-                initialSlide: 2,
-                slidesToShow: 2
+                breakpoint: 1025,
+                settings: {
+                    initialSlide: 2,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    initialSlide: 2,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
             }
-        },
-                     {
-                         breakpoint: 769,
-                         settings: {
-                             initialSlide: 2,
-                             centerPadding: '40px',
-                             slidesToShow: 3
-                         }
-                     },
-                     {
-                         breakpoint: 480,
-                         settings: {
-                             centerPadding: '0px',
-                             slidesToShow: 1
-                         }
-                     }
-                    ]
+        ]
     });
 }
 
