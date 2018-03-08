@@ -12,20 +12,27 @@ body{transition: all .5s ease;background: #000}
 .closed{
    transform: scale(1)!important;
 }
-.page-popup .modal-dialog{
-    overflow:scroll;/* margin-top: 65px; */padding-top: 1px;top: 58px;}
+.page-popup{
+  margin-top: 0;
+  background: white;
+  width: 100%;
+  float: left;
+  }
  @-webkit-keyframes trans {
     0%   {transform: scale(.3) translatex(180%)}
     50%  {transform: scale(.3) translatex(0%)}
     100% {transform: scale(1) translatex(0%)}
 }
-.page-popup{
-    overflow:visible;
+ @-webkit-keyframes fromLeftSlide {
+    0%   {left:-100%}
+    100% {left:0}
 }
+
 .trans{animation:trans 1s;transform: scale(.3);height: 100%;}
 .closing .main-content,.trans .main-content{
     visibility:hidden
 }
+header.over{z-index: 1400;height: 60px;}
 .coin-icon{
     font-size: 30px;
     text-transform: uppercase;
@@ -49,14 +56,20 @@ html{background: #000}
 .page-title:after{content:"";display: block;width: 20%;height: 2px;background: var(--headings-color);left: 40%;position: absolute;top: 35px;}
 .page-title b{font-weight:bold}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
-.sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
+
+.coming-in{
+    position:relative;
+    animation:fromLeftSlide .5s;
+    z-index: 1200;
+}
+.sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index: 10;}
 svg{height:100%;width:100%}
 .navbar-default{background:var(--color2);border:0;float:left;margin-bottom:0;min-height:40px}
 .navbar-toggle{border:none;float:left;margin-right:11px;margin-top:-2px;padding-left:3px;margin-bottom:0}
 .navbar-toggle .icon-bar{background:var(--color1)}
 .logo .text{float:left;margin:0;font-style:italic;font-weight:lighter;font-size:24px;margin-left:10px;text-transform:unset}
 .logo .img{float:left;width:26px;height:31px}
-.slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top:38px}
+.slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top:38px;height: 0;}
 .slogan b{font-weight:500}
 .cart{float:right;width:25px;fill:var(--color1);height:27px}
 .coins{padding:0 5px;margin-top:-55px}
@@ -351,8 +364,7 @@ input:focus{
     width: 80%;
     margin: auto;
 }
-.page-popup .modal-dialog{width:100%;top: -40px;}
-.page-popup{position:relative}
+
 .modal-dialog{width: 37%;margin: auto;min-width: 530px;min-height: 640px;top: 50%;margin-top: -320px;} ;
 .best-seller .nav>li>a,.best-seller .nav>li>a{transition:all .5s ease}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent;border-color:transparent;border-bottom-color:#4e5d75;border-bottom:2px solid}

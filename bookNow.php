@@ -68,8 +68,8 @@
       <div class="popup-footer">
          <div class="disc">* Disclamer can be here Disclamer can be here</div>
          <div class="btns">
-            <a class="link cancel" data-dismiss="modal" aria-label="Close">CANCEL</a>
-            <button class="btn solid" data-dismiss="modal" data-toggle="modal" data-target="#addToCart">Add to cart</button>
+            <a class="link cancel modal-closer" data-dismiss="modal" aria-label="Close">CANCEL</a>
+            <button class="btn solid modal-opener" data-dismiss="modal" data-toggle="modal" data-target="#addToCart">Add to cart</button>
          </div>
       </div>
    </div>

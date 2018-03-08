@@ -1,4 +1,23 @@
 $(document).ready(function() {
+//modal open setup
+$('.modal-opener').click(function(){
+ $(this).parents('.modal').on('hidden.bs.modal', function () {
+    $('body').addClass('modal-open');
+})
+});
+
+
+//
+$('#openCheckout').click(function(){
+  $('#checkout').show();
+   $('header').addClass('over');
+  $('header, #main').addClass('coming-in');
+  setTimeout(function(){
+    $('#addToCart').modal('hide');
+
+  },500);
+  $('#home').hide();
+});
   //remove item from cart
   $('.delete-item').click(function(){
 $(this).parents('.cart-card').slideUp(400, function() {

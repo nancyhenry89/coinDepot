@@ -1,4 +1,4 @@
-<div class="checkout" id="checkout"  style="display: none;">
+<div class="checkout page-popup" id="checkout"  style="display: none;">
   <h1 class="page-title"><b>my</b>cart</h1>
   <div class="cart-card">
     <div class="delete-item">x</div>
