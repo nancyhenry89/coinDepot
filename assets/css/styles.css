@@ -12,10 +12,15 @@ body{transition: all .5s ease;background: #000}
 .closed{
    transform: scale(1)!important;
 }
+.page-popup .modal-dialog{
+    overflow:scroll;/* margin-top: 65px; */padding-top: 1px;top: 58px;}
  @-webkit-keyframes trans {
     0%   {transform: scale(.3) translatex(180%)}
     50%  {transform: scale(.3) translatex(0%)}
     100% {transform: scale(1) translatex(0%)}
+}
+.page-popup{
+    overflow:visible;
 }
 .trans{animation:trans 1s;transform: scale(.3);height: 100%;}
 .closing .main-content,.trans .main-content{
@@ -346,6 +351,8 @@ input:focus{
     width: 80%;
     margin: auto;
 }
+.page-popup .modal-dialog{width:100%;top: -40px;}
+.page-popup{position:relative}
 .modal-dialog{width: 37%;margin: auto;min-width: 530px;min-height: 640px;top: 50%;margin-top: -320px;} ;
 .best-seller .nav>li>a,.best-seller .nav>li>a{transition:all .5s ease}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent;border-color:transparent;border-bottom-color:#4e5d75;border-bottom:2px solid}
