@@ -21,11 +21,28 @@ body{transition: all .5s ease;background: #000}
 .closing .main-content,.trans .main-content{
     visibility:hidden
 }
+.coin-icon{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--color3);
+    background: var(--color2);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin-icon i:before{line-height:30px}
 .trans .coins-bg{visibility:visible}
 html{background: #000}
 .FO{float:right}
 .FL{float:left}
 .main-content{padding-right:0;padding-left:0;background:#f6f6f6;}
+.page-title{text-align:center;color:var(--headings-color);text-transform: uppercase;font-size: 24px;font-weight: normal;position: relative;margin-top: 38px;margin-bottom: 20px;}
+.page-title:after{content:"";display: block;width: 20%;height: 2px;background: var(--headings-color);left: 40%;position: absolute;top: 35px;}
+.page-title b{font-weight:bold}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
 .sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
 svg{height:100%;width:100%}
@@ -114,6 +131,9 @@ svg{height:100%;width:100%}
 .sponsors{float:left;background:var(--color3);width:100%}
 .sponsors ul{padding:0}
 .sponsors li{float:left;list-style-type:none;width:calc(100% / 6);display:flex;align-content:center;height:46px;justify-content:center}
+.checkout .sponsors li{
+    width: calc(100% / 3);
+}
 .sponsors img{width:45px;object-fit:contain}
 footer{background:var(--color2);text-align:center;height:110px;padding:10px 0}
 footer a{color:#8d9db6;transition:all .5s ease}
@@ -218,6 +238,7 @@ input:focus{
 .book-now .selected .item-radio:after{border-color:var(--color1)}
 .book-now .item-radio:before{content:'';width:14px;height:14px;display:block;background:#c6c6c6;border-radius:50%;margin-left:35px;margin-top: 0px;visibility:hidden;}
 .book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width: 60px;margin-top:30px;}
+.checkout .popup-footer{height: 186px;}
 .popup-footer{width: 100%;float: left;background: #f6f6f6;height: 90px;text-transform: uppercase;}
 .popup-footer .link{color: var(--hover-color);display: block;line-height: 36px;float: left;margin-top: 20px;cursor: pointer;transition: all .5s ease;width: 100%;text-align: center;margin-bottom: -70px;}
 .popup-footer .link:hover{color;color: #FFA000;text-decoration: none;}
@@ -235,6 +256,55 @@ input:focus{
 .book-now :-moz-placeholder{color:var(--headings-color)}
 #addToCart .popup-footer .btns{
     margin-top:20px;
+}
+.cart-card .header .title{color:var(--hover-color);font-size:16px;float: left;/* line-height: 50px; */padding-left: 16px;}
+.cart-card .header .icon{float:left}
+.cart-card .header{float:left;width:100%
+}
+.cart-card{
+    width: 95%;
+    background: var(--color3);
+    padding: 18px;
+    margin-top: 0;
+    float: left;
+    left: 2.5%;
+    position: relative;
+    margin-bottom: 13px;
+}
+.cart-card .delete-item{position:absolute;right: 16px;font-size: 20px;top: 12px;color: #aaabae;cursor: pointer;}
+.cart-card .content{float:left;width: calc(100% );padding-left: 66px;margin-top: -14px;font-size: 16px;color: #7d7f84;border bottom: 1px solid;margin-bottom: 24px;border-bottom: 1px solid #d9ddd7;padding-bottom: 30px;}
+.cart-card .content .price{margin-top: 13px;}
+.cart-card .content .smal{font-size:12px}
+.cart-card .content .labl{display: inline-block;width: 88px;}
+.wallet-input{
+    width: 86%;
+    border-radius: 20px;
+    border: 1px solid #d9d9d9;
+    height: 36px;
+    padding: 0 10px;
+    float: left;
+    font-size: 16px;
+}
+.cart-total{width:100%;float:left;text-align:center;font-size: 18px;font-weight: lighter;text-transform: uppercase;color: #373e44;margin-top: 15px;}
+.cart-total .labl{display: inline-block;margin-left: -35px;width: 94px;}
+.wallet .barcode{width:14%;float: left;height: 35px;background: url(../img/bar-code.png);background-repeat: no-repeat;background-position: center;}
+.wallet-input::-webkit-input-placeholder{color:#46a13d}
+.wallet-input::-moz-placeholder{color:#46a13d}
+.wallet-input:-ms-input-placeholder{color:#46a13d}
+.wallet-input:-moz-placeholder{color:#46a13d}
+.get-wallet{
+    float:left;
+    text-align:center;
+    width: 100%;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+.get-wallet .question{
+    color:#7d7f84
+}
+.get-wallet .link{
+    color:var(--hover-color);
+    text-decoration:underline;
 }
 @media only screen and (min-width: 768px) {
 .navbar-toggle{display:block}

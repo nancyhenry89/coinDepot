@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  //remove item from cart
+  $('.delete-item').click(function(){
+$(this).parents('.cart-card').slideUp(400, function() {
+
+    $(this).parents('.cart-card').remove();
+});
+});
     if ($(window).innerWidth() <= 768) {
         $('#bookNow .close').click(function() {
 
