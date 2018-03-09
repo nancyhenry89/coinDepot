@@ -38,6 +38,7 @@ $(document).ready(function() {
             //desktop
             if (id == "checkout") {
                 $('body').removeClass('modal-open');
+                $('body').addClass('cart-opened');
                 $('#checkout').fadeIn();
                 setTimeout(function() {
                     $('#addToCart').modal('hide');

@@ -56,13 +56,13 @@
      </div>
   </div>
 
-   <div class="container sponsors">
-      <ul>
-         <li><img src="assets/img/sp1.png" alt=""/></li>
-         <li><img src="assets/img/sp2.png" alt=""/></li>
-         <li><img src="assets/img/sp3.png" alt=""/></li>
-      </ul>
-   </div>
-</div>
 
+</div>
+<div class="checkout-sponsors sponsors">
+   <ul>
+      <li><img src="assets/img/sp1.png" alt=""/></li>
+      <li><img src="assets/img/sp2.png" alt=""/></li>
+      <li><img src="assets/img/sp3.png" alt=""/></li>
+   </ul>
+</div>
 </div>
