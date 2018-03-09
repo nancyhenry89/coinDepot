@@ -26,7 +26,7 @@ $(document).ready(function() {
                 $('body').removeClass('modal-open');
                 $('#checkout').show();
                 $('header').addClass('over');
-                $('header, #main').addClass('coming-in');
+                $('body').addClass('coming-in');
                 setTimeout(function() {
                     $('#addToCart').modal('hide');
                 }, 500);
@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
     $('#checkout .cancel').click(function() {
         $('header').removeClass('over');
-        $('header, #main').removeClass('coming-in');
+        $('body').removeClass('coming-in');
         $('#home').fadeIn();
         $('#checkout').fadeOut();
     });
