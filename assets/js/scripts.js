@@ -36,8 +36,28 @@ $(document).ready(function() {
             }
         } else {
             //desktop
+            if (id == "checkout") {
+                $('body').removeClass('modal-open');
+                $('#checkout').fadeIn();
+                setTimeout(function() {
+                    $('#addToCart').modal('hide');
+                }, 500);
+                $('#home').hide();
+                $('#addToCart').hide();
+
+
+            }else{
             $('.modal').modal('hide');
-            $(this).parents('.modol').fadeIn();
+            $('#bookNow .close , #bookNow .cancel').click(function() {
+
+                $('#bookNow').fadeOut();
+
+            });
+            $('.modal').fadeOut();
+            $('#'+id).fadeIn(500, function() {
+                addModalOpen();
+            });
+            }
         }
 
     });
@@ -49,6 +69,9 @@ $(document).ready(function() {
         $('body').removeClass('coming-in');
         $('#home').fadeIn();
         $('#checkout').fadeOut();
+        $('html, body').animate({
+            scrollTop: ($('body').offset().top)
+        }, 0)
     });
     //1- listen for popup opener clicked
     //2- get its ID

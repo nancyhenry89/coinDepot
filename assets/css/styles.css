@@ -233,6 +233,9 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .get-wallet .question{color:#7d7f84}
 .get-wallet .link{color:var(--hover-color);text-decoration:underline}
 @media only screen and (min-width: 768px) {
+  .modal {
+    background: rgba(0,0,0,.5);
+}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
