@@ -231,11 +231,36 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .get-wallet{float:left;text-align:center;width:100%;font-size:14px;margin-bottom:10px}
 .get-wallet .question{color:#7d7f84}
 .get-wallet .link{color:var(--hover-color);text-decoration:underline}
-.checkout-sponsors{display:none}
-.cart-opened .checkout-sponsors.sponsors,.coming-in .checkout-sponsors.sponsors{display:block}
-.cart-opened .checkout-sponsors.sponsors li,.coming-in .checkout-sponsors.sponsors li{width:calc(100% / 3)}
+.small-sponsors{display:none}
+.page-opened .small-sponsors.sponsors,.coming-in .small-sponsors.sponsors{display:block}
+.page-opened .small-sponsors.sponsors li,.coming-in .small-sponsors.sponsors li{width:calc(100% / 3)}
+.paymentCont .method{
+    border: 1px solid #daddd8;
+    background: var(--color3);
+    margin-bottom: 12px;
+    height: 104px;
+    text-align:center;
+}
+.paymentcont{margin-top: 28px;}
+.logo-text .pay-logo{height: 46%;display: block;padding-top: 22px;}
+.pay-logo img{width:auto;}
+.pay-logo {display:flex;justify-content:  center;align-items: center;height: 100%;width: 100%;}
+.paymentCont .method .title{
+    font-weight:lighter;
+    font-size:20px;
+    color:var(--hover-color);text-transform:capitalize
+}
 @media only screen and (min-width: 768px) {
-.cart-opened .checkout-sponsors.sponsors ul{width:40%}
+    .paymentcont.container{
+    padding-left: 49px;
+}
+.paymentcont.container .row>div{
+    max-width: 175px;
+}
+    .paymentCont .method{
+    width: 158px;
+}
+.page-opened .small-sponsors.sponsors ul{width:40%}
 .cart-card .delete-item{top:40px}
 .wallet{width:100%;float:left;border-top:1px solid #dbddd8}
 .wallet-input{width:300px;float:right;margin-right:31px;text-align:center;margin-top:32px}
@@ -254,8 +279,8 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .cart-card{padding-top:31px}
 .page-title{width:15%;float:left;height:100%;margin-top:7px;font-size:28px;text-align:left}
 .page-title b{display:block;margin-bottom:6px}
-.cart-opened header{height:60px}
-.cart-opened .slogan{display:none}
+.page-opened header{height:60px}
+.page-opened .slogan{display:none}
 .modal{background:rgba(0,0,0,.5)}
 .navbar-toggle{display:block}
 }

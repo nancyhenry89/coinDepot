@@ -4,6 +4,13 @@
 <div id="main" class="container-fluid main-content">
   <?php require_once ('home.php') ?>
   <?php require_once ('checkout.php') ?>
-    
+  <?php require_once ('paymentMethods.php') ?>
+  <div class="small-sponsors sponsors">
+     <ul>
+        <li><img src="assets/img/sp1.png" alt=""/></li>
+        <li><img src="assets/img/sp2.png" alt=""/></li>
+        <li><img src="assets/img/sp3.png" alt=""/></li>
+     </ul>
+  </div>
 </div>
 <?php require_once ('footer.php') ?>

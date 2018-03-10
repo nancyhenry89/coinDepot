@@ -248,7 +248,7 @@
          </div>
       </div>
    </div>
-   <div class="container sponsors">
+   <div class="container sponsors home-sponsors">
       <ul>
          <li><img src="assets/img/sp1.png" alt=""/></li>
          <li><img src="assets/img/sp2.png" alt=""/></li>

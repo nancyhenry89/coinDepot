@@ -10,6 +10,7 @@ $(document).ready(function() {
 
     //go to home
     function goToHome(){
+      $('.small-sponsors').hide();
       $('.modal').fadeOut();
       $('.page-popup').fadeOut();
       $('body').attr('class', '');
@@ -29,7 +30,6 @@ $(document).ready(function() {
     $('.modal-opener').click(function() {
         var id = $(this).attr('data');
         if ($(window).innerWidth() <= 768) {
-
             if (id == "bookNow") {
 
                 $('#bookNow').fadeIn(500, function() {
@@ -61,11 +61,22 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
+            if (id=="paymentMethods"){
+
+              $('.modal').hide();
+              $('.page-popup').hide();
+              $('body').removeClass('modal-open');
+              $('#paymentMethods').show();
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+            }
         } else {
             //desktop
             if (id == "checkout") {
                 $('body').removeClass('modal-open');
-                $('body').addClass('cart-opened');
+                $('body').addClass('page-opened');
                 $('#checkout').fadeIn();
                 setTimeout(function() {
                     $('#addToCart').modal('hide');
@@ -77,8 +88,22 @@ $(document).ready(function() {
                 }, 0)
 
 
-            } else {
+            }else if (id == "paymentMethods") {
+              $('.modal,.page-popup').hide();
+              $('body').removeClass('modal-open');
+              $('body').addClass('page-opened');
+              $('#paymentMethods').fadeIn();
+              setTimeout(function() {
+                  $('#checkout').modal('hide');
+              }, 500);
+              $('#home').hide();
+              $('html, body').animate({
+                  scrollTop: ($('body').offset().top)
+              }, 0)
+            }
+             else {
                 $('.modal').modal('hide');
+                $('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
                     $('body').removeClass('modal-open');
                     $('#bookNow').fadeOut();
@@ -86,6 +111,7 @@ $(document).ready(function() {
 
                 });
                 $('.modal').fadeOut();
+                $('.page-popup').fadeOut();
                 $('#' + id).fadeIn(500, function() {
                     addModalOpen();
                 });

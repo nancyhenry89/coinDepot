@@ -1,68 +1,49 @@
 <div class="paymentMethods page-popup" id="paymentMethods"  style="display: none;">
   <h1 class="page-title"><b>payment</b>Methods</h1>
-  <div class="cart-card">
-    <div class="delete-item">x</div>
-    <div class="header">
-      <div class="icon coin-icon"><i class="cc ETC"></i></div>
-      <div class="title">ETHEREUM</div>
-    </div>
-    <div class="content">
-      <div class="amount">
-        <span class="labl">Amount:</span>
-        <span>4132.025 <span class="smal">ETH</span></span>
+  <div class="container paymentcont">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+          <div class="method credit logo-text">
+            <div class="pay-logo"><img src="assets/img/card.png"></div>
+            <h2 class="title">credit card</h2>
+          </div>
       </div>
-      <div class="price">
-        <span class="labl">Price:</span>
-        <span>€<b>1,000 </b></span>
-      </div>
-    </div>
-    <div class="wallet">
-      <input placeholder="Insert Wallet address" class="wallet-input"/>
-      <div class="barcode"></div>
-    </div>
-  </div>
-  <div class="get-wallet">
-    <span class="question">Need a wallet?</span>
-    <a class="link">create a wallet here</a>
-  </div>
-  <div class="cart-card">
-    <div class="delete-item">x</div>
-    <div class="header">
-      <div class="icon coin-icon"><i class="cc BTC-alt"></i></div>
-      <div class="title">BITCOIN</div>
-    </div>
-    <div class="content">
-      <div class="amount">
-        <span class="labl">Amount:</span>
-        <span>4132.025 <span class="smal">BTC</span></span>
-      </div>
-      <div class="price">
-        <span class="labl">Price:</span>
-        <span>€<b>500 </b></span>
+      <div class="col-xs-6 col-md-3">
+        <div class="method wire logo-text">
+          <div class="pay-logo"><img src="assets/img/wire.png"></div>
+          <h2 class="title">bank wire</h2>
+        </div>
       </div>
     </div>
-    <div class="wallet">
-      <input placeholder="Insert Wallet address" class="wallet-input"/>
-      <div class="barcode"></div>
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+          <div class="method giro">
+            <div class="pay-logo"><img src="assets/img/giro.png"></div>
+          </div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="method citadel">
+          <div class="pay-logo"><img src="assets/img/citadel.png"></div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+          <div class="method trustly">
+            <div class="pay-logo"><img src="assets/img/trustly.png"></div>
+          </div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="method citadel">
+          <div class="pay-logo"><img src="assets/img/sofort.png"></div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="cart-total">
-    <span class="labl">total:</span><span class="price">€<b>1,500</b></span>
-  </div>
-  <div class="popup-footer">
-     <div class="btns">
-        <a class="link cancel">order more coins</a>
-        <button class="btn solid" >PROCEED</button>
-     </div>
-  </div>
+      <div class="row">
+      <div class="col-xs-6 col-md-3">
+          <div class="method ideal">
+            <div class="pay-logo"><img src="assets/img/ideal.png"></div>
+          </div>
+      </div>
+    </div>
 
-
-</div>
-<div class="checkout-sponsors sponsors">
-   <ul>
-      <li><img src="assets/img/sp1.png" alt=""/></li>
-      <li><img src="assets/img/sp2.png" alt=""/></li>
-      <li><img src="assets/img/sp3.png" alt=""/></li>
-   </ul>
-</div>
+  </div>
 </div>

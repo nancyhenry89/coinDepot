@@ -52,17 +52,9 @@
   <div class="popup-footer">
      <div class="btns">
         <a class="link cancel">order more coins</a>
-        <button class="btn solid" >PROCEED</button>
+        <button class="btn solid modal-opener" data="paymentMethods" >PROCEED</button>
      </div>
   </div>
 
 
-</div>
-<div class="checkout-sponsors sponsors">
-   <ul>
-      <li><img src="assets/img/sp1.png" alt=""/></li>
-      <li><img src="assets/img/sp2.png" alt=""/></li>
-      <li><img src="assets/img/sp3.png" alt=""/></li>
-   </ul>
-</div>
 </div>
