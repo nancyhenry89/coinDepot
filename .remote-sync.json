@@ -1,0 +1,18 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "files.000webhost.com",
+  "port": "21",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "nancyhenry89",
+  "password": "n2487456",
+  "watch": [],
+  "transport": "ftp"
+}

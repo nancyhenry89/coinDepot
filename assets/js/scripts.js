@@ -50,8 +50,9 @@ $(document).ready(function() {
             }else{
             $('.modal').modal('hide');
             $('#bookNow .close , #bookNow .cancel').click(function() {
-
+                $('body').removeClass('modal-open');
                 $('#bookNow').fadeOut();
+
 
             });
             $('.modal').fadeOut();
@@ -63,11 +64,13 @@ $(document).ready(function() {
 
     });
     $('#addToCart .close , #addToCart .cancel').click(function() {
+        $('body').removeClass('modal-open');
         $('#addToCart').fadeOut();
     });
     $('#checkout .cancel').click(function() {
         $('header').removeClass('over');
         $('body').removeClass('coming-in');
+        $('body').removeClass('cart-opened');
         $('#home').fadeIn();
         $('#checkout').fadeOut();
         $('html, body').animate({
