@@ -17,7 +17,7 @@
                   <h2 class="title">ETHEREUM</h2>
                   <div class="price">€499</div>
                   <div class="value">0.0949966 ETH</div>
-                  <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+                  <button class="btn btn-default modal-opener" data="bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>
@@ -27,7 +27,7 @@
                   <h2 class="title">RIPPLE </h2>
                   <div class="price">€399</div>
                   <div class="value"> 0.0949966 XRP</div>
-                  <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+                  <button class="btn btn-default modal-opener" data="bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>
@@ -37,7 +37,7 @@
                   <h2 class="title">MONERO</h2>
                   <div class="price">€128</div>
                   <div class="value">0.0949966 XMR</div>
-                  <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+                  <button class="btn btn-default modal-opener" data="bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>
@@ -47,7 +47,7 @@
                   <h2 class="title">BITCOIN CASH</h2>
                   <div class="price">€99</div>
                   <div class="value">0.0949966 XMR</div>
-                  <button class="btn btn-default" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+                  <button class="btn btn-default modal-opener" data="bookNow">BOOK NOW</button>
                </div>
             </div>
          </div>
@@ -61,35 +61,35 @@
             <div class="title">Cardano</div>
             <div class="price">€<b>300</b></div>
             <div class="value">132.025 XXX</div>
-            <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+            <button class="btn btn-alt modal-opener" data="bookNow">BOOK NOW</button>
          </div>
          <div class="card">
             <div class="icon"><i class="cc XEM-alt"></i></div>
             <div class="title">NEM</div>
             <div class="price">€<b>300</b></div>
             <div class="value">132.025 XXX</div>
-            <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+            <button class="btn btn-alt modal-opener" data="bookNow">BOOK NOW</button>
          </div>
          <div class="card">
             <div class="icon"><i class="cc XEM-alt"></i></div>
             <div class="title">NEM</div>
             <div class="price">€<b>300</b></div>
             <div class="value">132.025 XXX</div>
-            <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+            <button class="btn btn-alt modal-opener" data="bookNow">BOOK NOW</button>
          </div>
          <div class="card">
             <div class="icon"><i class="cc XEM-alt"></i></div>
             <div class="title">NEM</div>
             <div class="price">€<b>300</b></div>
             <div class="value">132.025 XXX</div>
-            <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+            <button class="btn btn-alt modal-opener" data="bookNow">BOOK NOW</button>
          </div>
          <div class="card">
             <div class="icon"><i class="cc XEM-alt"></i></div>
             <div class="title">NEM</div>
             <div class="price">€<b>300</b></div>
             <div class="value">132.025 XXX</div>
-            <button class="btn btn-alt" data-toggle="modal" data-target="#bookNow">BOOK NOW</button>
+            <button class="btn btn-alt modal-opener" data="bookNow">BOOK NOW</button>
          </div>
       </div>
    </div>
