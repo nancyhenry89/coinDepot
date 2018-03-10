@@ -74,7 +74,7 @@
                   <img class="img" src="assets/img/logo.png" alt="Coin Depot"/>
                   <h1 class="text">Coin<b>Depot</b></h1>
                </div>
-               <div class="cart">
+               <div class="cart modal-opener" point="header" data="checkout">
                   <svg class="icon">
                      <use xlink:href="#icon-bag" />
                   </svg>

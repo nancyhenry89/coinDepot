@@ -43,10 +43,15 @@ $(document).ready(function() {
                 });
             }
             if (id == "checkout") {
+                if($(this).attr('point')=="header"){
+                  $('body').addClass('cart-slide');
+                  $('#checkout').slideDown(600);
+                }else{
+                  $('body').addClass('coming-in');
+                }
                 $('body').removeClass('modal-open');
                 $('#checkout').show();
                 $('header').addClass('over');
-                $('body').addClass('coming-in');
                 setTimeout(function() {
                     $('#addToCart').modal('hide');
                 }, 500);
@@ -91,11 +96,6 @@ $(document).ready(function() {
         goToHome();
         $('#checkout').fadeOut();
     });
-    //1- listen for popup opener clicked
-    //2- get its ID
-    //3- check if desktop --> fade in and out popup
-    //4 - if mobile start animation depending on the ID
-    //5 - close any other opened popups
 
     //remove item from cart
     $('.delete-item').click(function() {
