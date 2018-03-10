@@ -9,7 +9,7 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closing .main-content{transform:scale(0)}
 .closing header{transform:scale(0)}
 .closed{transform:scale(1)!important}
-.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
+.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left;}
 @-webkit-keyframes trans {
 0%{transform:scale(.3) translatex(180%)}
 50%{transform:scale(.3) translatex(0%)}
@@ -35,6 +35,9 @@ html{background:#000}
 .page-title b{font-weight:700}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
 .coming-in{-webkit-transform:translate3d(0,0,0);position:relative;animation:fromLeftSlide .5s;-webkit-animation:fromLeftSlide .5s;z-index:1200}
+.came-in {
+    -webkit-transform: none!important;
+}
 .sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
 svg{height:100%;width:100%}
 .navbar-default{background:var(--color2);border:0;float:left;margin-bottom:0;min-height:40px}
@@ -242,6 +245,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     text-align:center;
 }
 .paymentcont{margin-top: 28px;}
+.paymentcont .question{display:none}
 .logo-text .pay-logo{height: 46%;display: block;padding-top: 22px;}
 .pay-logo img{width:auto;}
 .pay-logo {display:flex;justify-content:  center;align-items: center;height: 100%;width: 100%;}
@@ -250,9 +254,20 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     font-size:20px;
     color:var(--hover-color);text-transform:capitalize
 }
-@media only screen and (min-width: 768px) {
+.cart-slide{ min-height: calc(100% - 160px);
+}
+@media only screen and (min-width: 769px) {
+    .paymentcont .question{display:block}
     .paymentcont.container{
     padding-left: 49px;
+    margin-top: 13px;
+}
+.paymentcont.container .row.question>div{
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: lighter;
+    color:var(--headings-color);
+    margin-bottom: 10px;
 }
 .paymentcont.container .row>div{
     max-width: 175px;
@@ -277,7 +292,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .page-popup>*{width:85%;float:right}
 .get-wallet{margin-top:11px;font-size:14px}
 .cart-card{padding-top:31px}
-.page-title{width:15%;float:left;height:100%;margin-top:7px;font-size:28px;text-align:left}
+.page-title{width:15%;float:left;height:100%;margin-top:7px;text-align:left;}
 .page-title b{display:block;margin-bottom:6px}
 .page-opened header{height:60px}
 .page-opened .slogan{display:none}
@@ -397,8 +412,11 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 .navbar-toggle{display:none}
 .navbar-nav>li>a{font-size:13px}
 .menu-group .title,.lang{display:none}
+.paymentMethods .page-title{font-size: 25px;}
 }
 @media only screen and (min-width: 1025px) {
+    .paymentMethods .page-title{font-size: 28px;}
+
 .slider{padding-left:30px;margin-top:41px}
 .slider .card{float:left;width:calc(100% / 5 - 10px)!important}
 .slider .card:first-of-type{margin-left:0;width:calc(100% / 5 - 5px)!important}
