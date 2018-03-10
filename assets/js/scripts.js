@@ -57,7 +57,9 @@ $(document).ready(function() {
                 }, 500);
                 $('#home').hide();
                 $('#addToCart').hide();
-
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
             }
         } else {
             //desktop
@@ -70,6 +72,9 @@ $(document).ready(function() {
                 }, 500);
                 $('#home').hide();
                 $('#addToCart').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
 
 
             } else {
