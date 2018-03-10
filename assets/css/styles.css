@@ -409,6 +409,7 @@ footer .btn:hover{color:var(--color1)}
 .subscribe:before{content:'';width:2px;height:80%;background:#4e5d75;position:absolute;left:0;top:19px}
 .subscribe{display:block}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
+.logo{cursor:pointer}
 .logo .img{width:43px;height:auto;margin-top:-4px}
 .logo .text{font-size:37px}
 .sidenav{display:block}

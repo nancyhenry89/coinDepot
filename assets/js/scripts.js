@@ -1,4 +1,24 @@
 $(document).ready(function() {
+
+    //logo go to home
+    //______________________
+    $('.logo *').click(function() {
+      goToHome();
+    })
+    //______________________
+    //logo go to home end
+
+    //go to home
+    function goToHome(){
+      $('.modal').fadeOut();
+      $('.page-popup').fadeOut();
+      $('body').attr('class', '');
+      $('header').removeClass('over');
+      $('#home').fadeIn();
+      $('html, body').animate({
+          scrollTop: ($('body').offset().top)
+      }, 0)
+    }
     //modal open setup
     function addModalOpen() {
         $('body').addClass('modal-open');
@@ -47,18 +67,18 @@ $(document).ready(function() {
                 $('#addToCart').hide();
 
 
-            }else{
-            $('.modal').modal('hide');
-            $('#bookNow .close , #bookNow .cancel').click(function() {
-                $('body').removeClass('modal-open');
-                $('#bookNow').fadeOut();
+            } else {
+                $('.modal').modal('hide');
+                $('#bookNow .close , #bookNow .cancel').click(function() {
+                    $('body').removeClass('modal-open');
+                    $('#bookNow').fadeOut();
 
 
-            });
-            $('.modal').fadeOut();
-            $('#'+id).fadeIn(500, function() {
-                addModalOpen();
-            });
+                });
+                $('.modal').fadeOut();
+                $('#' + id).fadeIn(500, function() {
+                    addModalOpen();
+                });
             }
         }
 
@@ -68,14 +88,8 @@ $(document).ready(function() {
         $('#addToCart').fadeOut();
     });
     $('#checkout .cancel').click(function() {
-        $('header').removeClass('over');
-        $('body').removeClass('coming-in');
-        $('body').removeClass('cart-opened');
-        $('#home').fadeIn();
+        goToHome();
         $('#checkout').fadeOut();
-        $('html, body').animate({
-            scrollTop: ($('body').offset().top)
-        }, 0)
     });
     //1- listen for popup opener clicked
     //2- get its ID
