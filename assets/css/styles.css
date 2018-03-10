@@ -306,7 +306,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .coin-card.bitcoin .value,.coin-card.eth .value{width:100%;text-align:center;margin-bottom:40px}
 .coin-card.bitcoin .btn,.coin-card.eth .btn{float:none;min-width:130px}
 .btn{min-width:100px}
-.coin-card .title{height:50%}
+.coin-card .title{height:50%;font-size: 22px;font-weight: lighter;}
 .coin-card .content{padding-right:10px;height:100%}
 .section-title{float:left;text-align:left;height:224px;width:17%;margin-top:41px;font-size:31px;z-index:9}
 .section-title b{width:100%;display:block}
