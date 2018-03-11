@@ -5,6 +5,7 @@
   <?php require_once ('home.php') ?>
   <?php require_once ('checkout.php') ?>
   <?php require_once ('paymentMethods.php') ?>
+  <?php require_once ('orderComplete.php') ?>
   <?php require_once ('payment.php') ?>
   <div class="small-sponsors sponsors">
      <ul>

@@ -80,6 +80,15 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
+            if (id=="orderComplete"){
+              $('.modal,.page-popup').hide();
+              $('body').removeClass('modal-open');
+              $('#orderComplete').show();
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+            }
             //--------------------------------------------------
             //mobile popups end
             //--------------------------------------------------
@@ -114,6 +123,18 @@ $(document).ready(function() {
               }, 0)
             }else if(id=="payment"){
               $('#payment').fadeIn();
+            }else if(id=="orderComplete"){
+              $('.modal,.page-popup').hide();
+              $('body').removeClass('modal-open');
+              $('body').addClass('page-opened');
+              $('#orderComplete').fadeIn();
+              setTimeout(function() {
+                  $('#payment').modal('hide');
+              }, 500);
+              $('#home').hide();
+              $('html, body').animate({
+                  scrollTop: ($('body').offset().top)
+              }, 0)
             }
              else {
                 $('.modal').modal('hide');

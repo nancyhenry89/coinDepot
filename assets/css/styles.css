@@ -19,6 +19,10 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 0%{left:-100%}
 100%{left:0}
 }
+.orderComplete{text-align:center}
+.orderComplete p{margin-top:50px;font-size: 16px;color: #373e44;}
+.orderComplete .popup-footer .btns{height: 60px;}
+.orderComplete .wallet-img{background:url('../img/wallet.png');width: 100%;height: 83px;background-repeat: no-repeat;background-position: center;margin-top: 50px;margin-bottom: 50px;}
 .trans{animation:trans 1s;transform:scale(.3);height:100%}
 .closing .main-content,.trans .main-content{visibility:hidden}
 header.over{height:0}
@@ -299,11 +303,24 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .cart-card .content .price b{font-size:17px;color:#373e43}
 .cart-card .header{width:27%}
 .page-title:after{height:100%;width:2px;left:100%;top:0}
+.orderComplete .page-title:after{
+    width: 20%;
+    height: 2px;
+    left: 40%;
+    top: 35px;
+}
 .page-popup{top:128px;width:81%;margin:auto;float:left;left:10%;position:relative;margin-bottom:170px}
 .page-popup>*{width:85%;float:right}
+.orderComplete.page-popup>*{width: 50%;float: none;}
 .get-wallet{margin-top:11px;font-size:14px}
 .cart-card{padding-top:31px}
 .page-title{width:15%;float:left;height:100%;margin-top:7px;text-align:left;}
+.orderComplete .page-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.orderComplete .page-title b{display:inline}
 .page-title b{display:block;margin-bottom:6px}
 .page-opened header{height:60px}
 .page-opened .slogan{display:none}
@@ -323,7 +340,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     left: 10%;
     margin-top: -30px;
 }
-.page-popup .popup-footer .btns .btn{float:right;width:280px}
+.page-popup .popup-footer .btns .btn{float:right;width:280px;}
+.orderComplete .popup-footer .btns .btn{
+    float: none;
+}
 .modal-smal .popup-footer .link{
     margin-top: 20px;
     margin-bottom: -70px;
@@ -339,7 +359,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     height: 60px;
 }
 .popup-footer .btns{float:right;margin-right:50px;margin-top:40px;}
-.page-popup .popup-footer .btns{width:100%;margin-right:0;margin-top:44px;padding-right:29px}
+.page-popup .popup-footer .btns{width:100%;margin-right:0;margin-top:44px;padding-right:29px;}
+.orderComplete.page-popup .popup-footer .btns{
+    padding-right: 0;
+}
 .book-now .content{width:calc(100% - 50px);margin-left:50px}
 .book-now .item{width:80%}
 .popup-footer .disc{width:80%;margin:auto}
