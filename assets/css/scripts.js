@@ -3,21 +3,21 @@ $(document).ready(function() {
     //logo go to home
     //______________________
     $('.logo *').click(function() {
-      goToHome();
+        goToHome();
     })
     //______________________
     //logo go to home end
 
     //go to home
-    function goToHome(){
-      $('.modal').fadeOut();
-      $('.page-popup').fadeOut();
-      $('body').attr('class', '');
-      $('header').removeClass('over');
-      $('#home').fadeIn();
-      $('html, body').animate({
-          scrollTop: ($('body').offset().top)
-      }, 0)
+    function goToHome() {
+        $('.modal').fadeOut();
+        $('.page-popup').fadeOut();
+        $('body').attr('class', '');
+        $('header').removeClass('over');
+        $('#home').fadeIn();
+        $('html, body').animate({
+            scrollTop: ($('body').offset().top)
+        }, 0)
     }
     //modal open setup
     function addModalOpen() {
@@ -43,11 +43,11 @@ $(document).ready(function() {
                 });
             }
             if (id == "checkout") {
-                if($(this).attr('point')=="header"){
-                  $('body').addClass('cart-slide');
-                  $('#checkout').slideDown(600);
-                }else{
-                  $('body').addClass('coming-in');
+                if ($(this).attr('point') == "header") {
+                    $('body').addClass('cart-slide');
+                    $('#checkout').slideDown(600);
+                } else {
+                    $('body').addClass('coming-in');
                 }
                 $('body').removeClass('modal-open');
                 $('#checkout').show();

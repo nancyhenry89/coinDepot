@@ -9,7 +9,7 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closing .main-content{transform:scale(0)}
 .closing header{transform:scale(0)}
 .closed{transform:scale(1)!important}
-.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left;}
+.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
 @-webkit-keyframes trans {
 0%{transform:scale(.3) translatex(180%)}
 50%{transform:scale(.3) translatex(0%)}
@@ -20,9 +20,9 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 100%{left:0}
 }
 .orderComplete{text-align:center}
-.orderComplete p{margin-top:50px;font-size: 16px;color: #373e44;}
-.orderComplete .popup-footer .btns{height: 60px;}
-.orderComplete .wallet-img{background:url('../img/wallet.png');width: 100%;height: 83px;background-repeat: no-repeat;background-position: center;margin-top: 50px;margin-bottom: 50px;}
+.orderComplete p{margin-top:50px;font-size:16px;color:#373e44}
+.orderComplete .popup-footer .btns{height:60px}
+.orderComplete .wallet-img{background:url(../img/wallet.png);width:100%;height:83px;background-repeat:no-repeat;background-position:center;margin-top:50px;margin-bottom:50px}
 .trans{animation:trans 1s;transform:scale(.3);height:100%}
 .closing .main-content,.trans .main-content{visibility:hidden}
 header.over{height:0}
@@ -39,9 +39,7 @@ html{background:#000}
 .page-title b{font-weight:700}
 header{background:var(--color2);color:var(--color3);height:174px;padding-top:26px}
 .coming-in{-webkit-transform:translate3d(0,0,0);position:relative;animation:fromLeftSlide .5s;-webkit-animation:fromLeftSlide .5s;z-index:1200}
-.came-in {
-    -webkit-transform: none!important;
-}
+.came-in{-webkit-transform:none!important}
 .sticky{position:fixed;width:100%;background:var(--color2);top:0;padding-top:20px;height:60px;z-index:10}
 svg{height:100%;width:100%}
 .navbar-default{background:var(--color2);border:0;float:left;margin-bottom:0;min-height:40px}
@@ -165,20 +163,20 @@ footer li{list-style-type:none}
 .navbar-collapse{border:0;padding-top:20px}
 .lang .dropdown-menu>li>a{color:#dbddd9;font-size:14px}
 .best-seller .nav>li>a:focus,.best-seller .nav>li>a:hover{background:transparent}
-.modal-smal .modal-dialog{width: 90%;margin:auto;height: 438px;min-height: 0;max-height: 80%;/* padding-top: 10px; */top: 0;bottom: 0;position: fixed;left: 0;right: 0;overflow: scroll;}
+.modal-smal .modal-dialog{width:90%;margin:auto;height:438px;min-height:0;max-height:80%;top:0;bottom:0;position:fixed;left:0;right:0;overflow:scroll}
 .modal-smal{background:rgba(0,0,0,0.5)}
-#payment .popup-cont{padding: 40px 25px;padding-bottom: 20px;}
+#payment .popup-cont{padding:40px 25px;padding-bottom:20px}
 #payment{color:#373e44;font-size:16px}
 #payment .popup-label{height:80px}
-#payment .popup-label .title{margin-top: 32px;}
-#payment .total>div{float:left;padding-right:20px;margin: 35px 0;}
+#payment .popup-label .title{margin-top:32px}
+#payment .total>div{float:left;padding-right:20px;margin:35px 0}
 .modal-dialog{width:100%;background:#f6f6f6;margin:0;min-height:100%}
 .modal-dialog button.close{right:19px;top:10px;color:#373e43;text-shadow:none;opacity:1;font-size:21px;position:absolute}
 .popup-label{text-align:center;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#e37b00),color-stop(1,#de8d03));background-image:-o-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-moz-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-webkit-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-ms-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:linear-gradient(to right,#e37b00 0%,#de8d03 100%);height:140px;padding:10px}
 .popup-label .icon i{line-height:30px}
 .popup-label .icon{width:50px;height:50px;background-color:var(--color3);border-radius:50%;margin:auto;color:var(--color2);font-size:30px;display:flex;align-items:center;justify-content:center;margin-top:24px;margin-bottom:14px;margin-bottom:15px}
 .popup-cont{background:#f6f6f6;float:left}
-.popup-label .title{color:var(--color3);font-size:24px;font-weight:700;text-transform: uppercase;}
+.popup-label .title{color:var(--color3);font-size:24px;font-weight:700;text-transform:uppercase}
 #addToCart .popup-label .title{font-weight:400;margin-top:7px}
 .add-to-cart{text-align:center;font-weight:500;color:var(--color2)}
 .add-to-cart .item{margin-top:90px;font-size:18px}
@@ -219,9 +217,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .popup-footer .link:hover{color:#FFA000;text-decoration:none}
 .popup-footer .disc{font-size:12px;padding-left:10px;width:100%;color:#afafaf}
 .popup-footer .btns{margin-top:60px;background:#f6f6f6;height:90px}
-.modal-smal .popup-footer .btns{
-    height: 60px;
-}
+.modal-smal .popup-footer .btns{height:60px}
 .popup-footer .btns .btn{float:left;width:80%;left:10%;position:relative;margin-top:-30px}
 .book-now ::-webkit-input-placeholder{color:var(--headings-color)}
 .book-now ::-moz-placeholder{color:var(--headings-color)}
@@ -251,45 +247,21 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .small-sponsors{display:none}
 .page-opened .small-sponsors.sponsors,.coming-in .small-sponsors.sponsors{display:block}
 .page-opened .small-sponsors.sponsors li,.coming-in .small-sponsors.sponsors li{width:calc(100% / 3)}
-.paymentCont .method{
-    border: 1px solid #daddd8;
-    background: var(--color3);
-    margin-bottom: 12px;
-    height: 104px;
-    text-align:center;
-}
-.paymentcont{margin-top: 28px;}
+.paymentCont .method{border:1px solid #daddd8;background:var(--color3);margin-bottom:12px;height:104px;text-align:center}
+.paymentcont{margin-top:28px}
 .paymentcont .question{display:none}
-.logo-text .pay-logo{height: 46%;display: block;padding-top: 22px;}
-.pay-logo img{width:auto;}
-.pay-logo {display:flex;justify-content:  center;align-items: center;height: 100%;width: 100%;}
-.paymentCont .method .title{
-    font-weight:lighter;
-    font-size:20px;
-    color:var(--hover-color);text-transform:capitalize
-}
-.cart-slide{ min-height: calc(100% - 160px);
-}
+.logo-text .pay-logo{height:46%;display:block;padding-top:22px}
+.pay-logo img{width:auto}
+.pay-logo{display:flex;justify-content:center;align-items:center;height:100%;width:100%}
+.paymentCont .method .title{font-weight:lighter;font-size:20px;color:var(--hover-color);text-transform:capitalize}
+.cart-slide{min-height:calc(100% - 160px)}
 @media only screen and (min-width: 769px) {
-    .modal-smal .modal-dialog{width:350px;min-width: 35px;height: 400px;}
-    .paymentcont .question{display:block}
-    .paymentcont.container{
-    padding-left: 49px;
-    margin-top: 13px;
-}
-.paymentcont.container .row.question>div{
-    max-width: 100%;
-    font-size: 18px;
-    font-weight: lighter;
-    color:var(--headings-color);
-    margin-bottom: 10px;
-}
-.paymentcont.container .row>div{
-    max-width: 175px;
-}
-    .paymentCont .method{
-    width: 158px;
-}
+.modal-smal .modal-dialog{width:350px;min-width:35px;height:400px}
+.paymentcont .question{display:block}
+.paymentcont.container{padding-left:49px;margin-top:13px}
+.paymentcont.container .row.question>div{max-width:100%;font-size:18px;font-weight:lighter;color:var(--headings-color);margin-bottom:10px}
+.paymentcont.container .row>div{max-width:175px}
+.paymentCont .method{width:158px}
 .page-opened .small-sponsors.sponsors ul{width:40%}
 .cart-card .delete-item{top:40px}
 .wallet{width:100%;float:left;border-top:1px solid #dbddd8}
@@ -303,28 +275,19 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .cart-card .content .price b{font-size:17px;color:#373e43}
 .cart-card .header{width:27%}
 .page-title:after{height:100%;width:2px;left:100%;top:0}
-.orderComplete .page-title:after{
-    width: 20%;
-    height: 2px;
-    left: 40%;
-    top: 35px;
-}
+.orderComplete .page-title:after{width:20%;height:2px;left:40%;top:35px}
 .page-popup{top:128px;width:81%;margin:auto;float:left;left:10%;position:relative;margin-bottom:170px}
 .page-popup>*{width:85%;float:right}
-.orderComplete.page-popup>*{width: 50%;float: none;}
+.orderComplete.page-popup>*{width:50%;float:none}
 .get-wallet{margin-top:11px;font-size:14px}
 .cart-card{padding-top:31px}
-.page-title{width:15%;float:left;height:100%;margin-top:7px;text-align:left;}
-.orderComplete .page-title{
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
+.page-title{width:15%;float:left;height:100%;margin-top:7px;text-align:left}
+.orderComplete .page-title{width:100%;height:auto;text-align:center}
 .orderComplete .page-title b{display:inline}
 .page-title b{display:block;margin-bottom:6px}
 .page-opened header{height:60px}
 .page-opened .slogan{display:none}
-.modal{background:rgba(0,0,0,.5);}
+.modal{background:rgba(0,0,0,.5)}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
@@ -335,34 +298,16 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .book-now .content .value-input .input{padding-right:10px}
 .book-now .content{padding:0 20px}
 .popup-footer .btns .btn{width:auto;left:auto;margin-top:0}
-.modal-smal .popup-footer .btns .btn{
-    width: 80%;
-    left: 10%;
-    margin-top: -30px;
-}
-.page-popup .popup-footer .btns .btn{float:right;width:280px;}
-.orderComplete .popup-footer .btns .btn{
-    float: none;
-}
-.modal-smal .popup-footer .link{
-    margin-top: 20px;
-    margin-bottom: -70px;
-    width: 100%;
-    margin-right: 0;
-}
-.popup-footer .link{margin-right:48px;width:auto;margin-bottom:0;margin-top:0;}
+.modal-smal .popup-footer .btns .btn{width:80%;left:10%;margin-top:-30px}
+.page-popup .popup-footer .btns .btn{float:right;width:280px}
+.orderComplete .popup-footer .btns .btn{float:none}
+.modal-smal .popup-footer .link{margin-top:20px;margin-bottom:-70px;width:100%;margin-right:0}
+.popup-footer .link{margin-right:48px;width:auto;margin-bottom:0;margin-top:0}
 .page-popup .popup-footer .link{margin-right:0;margin-left:48px}
-.modal-smal .popup-footer .btns{
-    margin-right: 0;
-    float: none;
-    margin-top: 20px;
-    height: 60px;
-}
-.popup-footer .btns{float:right;margin-right:50px;margin-top:40px;}
-.page-popup .popup-footer .btns{width:100%;margin-right:0;margin-top:44px;padding-right:29px;}
-.orderComplete.page-popup .popup-footer .btns{
-    padding-right: 0;
-}
+.modal-smal .popup-footer .btns{margin-right:0;float:none;margin-top:20px;height:60px}
+.popup-footer .btns{float:right;margin-right:50px;margin-top:40px}
+.page-popup .popup-footer .btns{width:100%;margin-right:0;margin-top:44px;padding-right:29px}
+.orderComplete.page-popup .popup-footer .btns{padding-right:0}
 .book-now .content{width:calc(100% - 50px);margin-left:50px}
 .book-now .item{width:80%}
 .popup-footer .disc{width:80%;margin:auto}
@@ -397,7 +342,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .coin-card.bitcoin .value,.coin-card.eth .value{width:100%;text-align:center;margin-bottom:40px}
 .coin-card.bitcoin .btn,.coin-card.eth .btn{float:none;min-width:130px}
 .btn{min-width:100px}
-.coin-card .title{height:50%;font-size: 22px;font-weight: lighter;}
+.coin-card .title{height:50%;font-size:22px;font-weight:lighter}
 .coin-card .content{padding-right:10px;height:100%}
 .section-title{float:left;text-align:left;height:224px;width:17%;margin-top:41px;font-size:31px;z-index:9}
 .section-title b{width:100%;display:block}
@@ -463,11 +408,10 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 .navbar-toggle{display:none}
 .navbar-nav>li>a{font-size:13px}
 .menu-group .title,.lang{display:none}
-.paymentMethods .page-title{font-size: 25px;}
+.paymentMethods .page-title{font-size:25px}
 }
 @media only screen and (min-width: 1025px) {
-    .paymentMethods .page-title{font-size: 26px;}
-
+.paymentMethods .page-title{font-size:26px}
 .slider{padding-left:30px;margin-top:41px}
 .slider .card{float:left;width:calc(100% / 5 - 10px)!important}
 .slider .card:first-of-type{margin-left:0;width:calc(100% / 5 - 5px)!important}
