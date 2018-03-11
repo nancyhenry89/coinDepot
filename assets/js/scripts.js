@@ -11,8 +11,7 @@ $(document).ready(function() {
     //go to home
     function goToHome(){
     //  $('.small-sponsors').hide();
-      $('.modal').fadeOut();
-      $('.page-popup').fadeOut();
+      $('.modal,.page-popup').fadeOut();
       $('body').attr('class', '');
       $('header').removeClass('over');
       $('#home').fadeIn();
@@ -30,8 +29,10 @@ $(document).ready(function() {
     $('.modal-opener').click(function() {
         var id = $(this).attr('data');
         if ($(window).innerWidth() <= 768) {
+          //--------------------------------------------------
+          //mobile popups start
+          //--------------------------------------------------
             if (id == "bookNow") {
-
                 $('#bookNow').fadeIn(500, function() {
                     addModalOpen();
                 });
@@ -40,6 +41,12 @@ $(document).ready(function() {
                 $('#addToCart').fadeIn(500, function() {
                     addModalOpen();
                     $('#bookNow').hide();
+                });
+            }
+            if (id == "payment") {
+                  $('#payment').fadeIn(500, function() {
+                    addModalOpen();
+                  //  $('#paymentMethods').hide();
                 });
             }
             if (id == "checkout") {
@@ -65,7 +72,6 @@ $(document).ready(function() {
                 }, 0)
             }
             if (id=="paymentMethods"){
-
               $('.modal,.page-popup').hide();
               $('body').removeClass('modal-open');
               $('#paymentMethods').show();
@@ -74,6 +80,9 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
+            //--------------------------------------------------
+            //mobile popups end
+            //--------------------------------------------------
         } else {
             //desktop
             if (id == "checkout") {
@@ -103,6 +112,8 @@ $(document).ready(function() {
               $('html, body').animate({
                   scrollTop: ($('body').offset().top)
               }, 0)
+            }else if(id=="payment"){
+              $('#payment').fadeIn();
             }
              else {
                 $('.modal').modal('hide');
@@ -126,6 +137,10 @@ $(document).ready(function() {
         $('body').removeClass('modal-open');
         $('#addToCart').fadeOut();
     });
+    $('#payment .close , #payment .cancel').click(function() {
+        $('body').removeClass('modal-open');
+        $('#payment').fadeOut();
+    });
     $('#checkout .cancel').click(function() {
         goToHome();
         $('#checkout').fadeOut();
@@ -134,7 +149,6 @@ $(document).ready(function() {
     //remove item from cart
     $('.delete-item').click(function() {
         $(this).parents('.cart-card').slideUp(400, function() {
-
             $(this).parents('.cart-card').remove();
         });
     });
@@ -147,7 +161,7 @@ $(document).ready(function() {
         })
     }
 
-    //popup close
+    //popup close book now special animation
     function popupClose(clicked) {
 
         clicked.removeAttr('data-dismiss');
