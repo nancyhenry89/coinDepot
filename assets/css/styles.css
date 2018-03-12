@@ -34,6 +34,7 @@ html{background:#000}
 .FO{float:right}
 .FL{float:left}
 .main-content{padding-right:0;padding-left:0;background:#f6f6f6}
+.orderComplete .page-title:after{}
 .page-title{text-align:center;color:var(--headings-color);text-transform:uppercase;font-size:24px;font-weight:400;position:relative;margin-top:38px;margin-bottom:20px}
 .page-title:after{content:"";display:block;width:20%;height:2px;background:var(--headings-color);left:40%;position:absolute;top:35px}
 .page-title b{font-weight:700}
@@ -275,7 +276,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .cart-card .content .price b{font-size:17px;color:#373e43}
 .cart-card .header{width:27%}
 .page-title:after{height:100%;width:2px;left:100%;top:0}
-.orderComplete .page-title:after{width:20%;height:2px;left:40%;top:35px}
+.orderComplete .page-title:after{width: 150px;height:2px;left: 50%;top:35px;margin-left: -75px;}
 .page-popup{top:128px;width:81%;margin:auto;float:left;left:10%;position:relative;margin-bottom:170px}
 .page-popup>*{width:85%;float:right}
 .orderComplete.page-popup>*{width:50%;float:none}
