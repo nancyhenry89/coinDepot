@@ -173,10 +173,10 @@ footer li{list-style-type:none}
 #payment .popup-label .title{margin-top:32px}
 #payment .total>div{float:left;padding-right:20px;margin:35px 0}
 .modal-dialog{width:100%;background:#f6f6f6;margin:0;min-height:100%}
-#createAccount .modal-dialog{background-image: url(../img/sign-up.png);background-position: center 55px;}
-#createAccount .question{text-align: center;margin-top: 37px;float: left;width: 100%;font-size: 15px;position: relative;color: #252525;}
-#createAccount .question:before{content:"";width: 120%;position: absolute;height: 1px;background: #daddd8;left: -10%;top: -17px;}
-#createAccount .login-here{text-align:center;float: left;width: 100%;font-size: 16px;text-decoration: underline;font-weight: bold;color: var(--color1);}
+.form-popup .modal-dialog{background-image: url(../img/sign-up.png);background-position: center 55px;}
+.form-popup .question{text-align: center;margin-top: 37px;float: left;width: 100%;font-size: 15px;position: relative;color: #252525;}
+.form-popup .question:before{content:"";width: 120%;position: absolute;height: 1px;background: #daddd8;left: -10%;top: -17px;}
+.form-popup .login-here{text-align:center;float: left;width: 100%;font-size: 16px;text-decoration: underline;font-weight: bold;color: var(--color1);}
 .modal-dialog button.close{right:19px;top:10px;color:#373e43;text-shadow:none;opacity:1;font-size:21px;position:absolute}
 .popup-label{text-align:center;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#e37b00),color-stop(1,#de8d03));background-image:-o-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-moz-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-webkit-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-ms-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:linear-gradient(to right,#e37b00 0%,#de8d03 100%);height:140px;padding:10px}
 .popup-label .icon i{line-height:30px}
@@ -191,22 +191,24 @@ footer li{list-style-type:none}
 .add-to-cart .question{font-size:16px;margin-bottom:29px}
 .add-to-cart .cart-img{height:200px;width:140px;background:url(../img/big-cart.png);margin:auto;background-repeat:no-repeat;background-position:center;background-size:91px;margin-bottom:-6px}
 .popup-cont{float:left;width:100%}
-#createAccount .popup-cont{background:transparent;width: 52%;margin: auto;float: none;padding-top: 40px;}
+.form-popup .popup-cont{background:transparent;width: 80%;margin: auto;float: none;padding-top: 40px;}
 .form-item .form-label{
     float: left;
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: lighter;
     color:var(--headings-color);
     padding: 0 18px;
     padding-top: 8px;
     margin-bottom: 0;
+    opacity: 0;
 }
 .form-item{margin-bottom: 13px;}
 .form-item .info{
     text-align: right;
     font-size: 12px;
     color: #7d7f84;
+    padding-right: 10px;
 }
 .form-item .form-input{
     width: 100%;
@@ -230,10 +232,12 @@ footer li{list-style-type:none}
 }
 .checkbox .selected:before{/* background:var(--color1); */visibility:visible;}
 .checkbox .selected:after{border-color: var(--hover-color);}
-.checkbox label:before{display:block;top: -10px;visibility:hidden;content: "\2713";color: #fff;position: absolute;left: -19px;z-index: 9;font-size: 17px;}
+.checkbox label:before{display:block;top: 1px;visibility:hidden;content: "\2713";color: #fff;position: absolute;left: -19px;z-index: 9;font-size: 17px;}
+.selected.checkbox label:before{visibility:visible}
 .checkbox input{visibility:hidden;display:block;float:left;font-size:0;width:60px;margin-top:30px}
 .checkbox label{font-size: 14px;color:#7c7f84;height:75px;line-height: 53px;margin:0 auto;cursor:pointer;}
 .checkbox label:after{content:'';width: 16px;height: 16px;display:block;/* margin-top:-19px; *//* margin-left:30px; */visibility:visible;background: var(--color1);border-radius: 2px;position: absolute;top: 19px;left: -21px;}
+.selected.checkbox label:after{background:var(--hover-color)}
 .book-now .item{width:95%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto;cursor:pointer}
 .item.cust .content{height:0;visibility:hidden}
 .selected.item.cust .content{height:75px;visibility:visible}
@@ -263,17 +267,18 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width:60px;margin-top:30px}
 .checkout .popup-footer{height:186px}
 .popup-footer{width:100%;float:left;background:#f6f6f6;height:90px;text-transform:uppercase}
-#createAccount .popup-footer{background:transparent}
+.form-popup .popup-footer{background:transparent}
 .popup-footer .link{color:var(--hover-color);display:block;line-height:36px;float:left;margin-top:20px;cursor:pointer;transition:all .5s ease;width:100%;text-align:center;margin-bottom:-70px}
 .popup-footer .link:hover{color:#FFA000;text-decoration:none}
 .popup-footer .disc{font-size:12px;padding-left:10px;width:100%;color:#afafaf}
 .popup-footer .btns{margin-top:60px;background:#f6f6f6;height:90px}
-#createAccount .popup-footer .btns{background:transparent;float: none;width: 52%;margin: auto;}
+.form-popup .popup-footer .btns{background:transparent;float: none;width: 80%;margin: auto;}
 .modal-smal .popup-footer .btns{height:60px}
 .popup-footer .btns .btn{float:left;width:80%;left:10%;position:relative;margin-top:-30px}
-#createAccount .popup-footer .btns .btn{
+.form-popup .popup-footer .btns .btn{
     width: 100%;
     margin-top: 4px;
+    left: 0;
 }
 .book-now ::-webkit-input-placeholder{color:var(--headings-color)}
 .book-now ::-moz-placeholder{color:var(--headings-color)}
@@ -362,6 +367,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .page-popup .popup-footer .link{margin-right:0;margin-left:48px}
 .modal-smal .popup-footer .btns{margin-right:0;float:none;margin-top:20px;height:60px}
 .popup-footer .btns{float:right;margin-right:50px;margin-top:40px}
+
+.form-popup .popup-footer .btns,.form-popup .popup-cont {
+    width: 52%;
+}
 .page-popup .popup-footer .btns{width:100%;margin-right:0;margin-top:44px;padding-right:29px}
 .orderComplete.page-popup .popup-footer .btns{padding-right:0}
 .book-now .content{width:calc(100% - 50px);margin-left:50px}

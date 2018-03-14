@@ -1,13 +1,13 @@
-<div class="modal form-popup" id="createAccount" tabindex="-1" role="dialog" style="display: none;">
+<div class="modal form-popup" id="login"  tabindex="-1" role="dialog" style="display: none;">
    <div class="modal-dialog">
       <div class="popup-label">
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
          <span aria-hidden="true">&times;</span>
          </button>
          <div class="icon no-bg"><img src="assets/img/user.png"/></div>
-         <h1 class="title"><b>create</b> <span class="light">account</span></h1>
+         <h1 class="title">Login</h1>
       </div>
-      <div class="popup-cont signUp">
+      <div class="popup-cont login">
         <div class="form">
           <div class="form-item">
             <label class="form-label">Email</label>
@@ -30,9 +30,9 @@
       </div>
       <div class="popup-footer">
          <div class="btns">
-            <button class="btn solid modal-opener" data="">Sing Up</button>
+            <button class="btn solid modal-opener" data="checkout">Sing Up</button>
             <div class="question">Already have an account?</div>
-            <a class="link modal-opener login-here" data="login">Login here</a>
+            <a class="link login-here">Login here</a>
          </div>
 
 

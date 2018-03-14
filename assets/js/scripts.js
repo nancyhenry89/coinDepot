@@ -73,12 +73,10 @@ $(document).ready(function() {
             }
             if (id=="createAccount"){
               $('.modal,.page-popup').hide();
-              //$('body').removeClass('modal-open');
-              $('#createAccount').show();
-              //  $('#home').hide();
-                $('html, body').animate({
-                    scrollTop: ($('body').offset().top)
-                }, 0)
+              $('body').addClass('page-opened');
+              $('body').addClass('modal-open');
+              $('#createAccount').slideDown();
+
             }
             if (id=="orderComplete"){
               $('.modal,.page-popup').hide();
@@ -112,10 +110,11 @@ $(document).ready(function() {
             }else if (id == "createAccount") {
               $('.modal,.page-popup').hide();
             //  $('body').removeClass('modal-open');
-            //  $('body').addClass('page-opened');
+             $('body').removeClass('page-opened');
               $('#createAccount').fadeIn();
               setTimeout(function() {
                   $('#checkout').modal('hide');
+                  $('body').addClass('modal-open');
               }, 500);
               $('#home').show();
               $('html, body').animate({
@@ -166,7 +165,10 @@ $(document).ready(function() {
         goToHome();
         $('#checkout').fadeOut();
     });
-
+    $('#createAccount .close').click(function() {
+        goToHome();
+        $('#createAccount').fadeOut();
+    });
     //remove item from cart
     $('.delete-item').click(function() {
         $(this).parents('.cart-card').slideUp(400, function() {
@@ -211,6 +213,21 @@ $(document).ready(function() {
     $('.item-radio').click(function() {
         $(this).parents('.book-now').find('.item').removeClass('selected');
         $(this).parents('.item').addClass('selected');
+    });
+    $('.signUp .checkbox input').click(function(){
+      $(this).parents('.checkbox').toggleClass('selected');
+    });
+    //focus on input show label
+    $('.form-item .form-input').focus(function(){
+      $(this).siblings('.form-label').css('opacity','1');
+    });
+    $('.form-item .form-input').blur(function()
+    {
+          if( !this.value ) {
+                $(this).siblings('.form-label').css('opacity','0');
+          }else{
+            $(this).siblings('.form-label').css('opacity','1');
+          }
     });
     initSlider();
     if ($(window).innerWidth() >= 1025) {
