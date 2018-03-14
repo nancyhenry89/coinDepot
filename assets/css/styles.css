@@ -257,7 +257,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .paymentCont .method .title{font-weight:lighter;font-size:20px;color:var(--hover-color);text-transform:capitalize}
 .cart-slide{min-height:calc(100% - 160px)}
 @media only screen and (min-width: 769px) {
-.modal-smal .modal-dialog{width:350px;min-width:35px;height:400px}
+.modal-smal .modal-dialog{width:350px;min-width:35px;min-height: 400px;overflow: hidden;}
 .paymentcont .question{display:block}
 .paymentcont.container{padding-left:49px;margin-top:13px}
 .paymentcont.container .row.question>div{max-width:100%;font-size:18px;font-weight:lighter;color:var(--headings-color);margin-bottom:10px}
