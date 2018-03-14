@@ -173,10 +173,10 @@ footer li{list-style-type:none}
 #payment .popup-label .title{margin-top:32px}
 #payment .total>div{float:left;padding-right:20px;margin:35px 0}
 .modal-dialog{width:100%;background:#f6f6f6;margin:0;min-height:100%}
-.form-popup .modal-dialog{background-image: url(../img/sign-up.png);background-position: center 55px;}
+#createAccount .modal-dialog{background-image: url(../img/sign-up.png);background-position: center 55px;}
 .form-popup .question{text-align: center;margin-top: 37px;float: left;width: 100%;font-size: 15px;position: relative;color: #252525;}
 .form-popup .question:before{content:"";width: 120%;position: absolute;height: 1px;background: #daddd8;left: -10%;top: -17px;}
-.form-popup .login-here{text-align:center;float: left;width: 100%;font-size: 16px;text-decoration: underline;font-weight: bold;color: var(--color1);}
+.form-popup .login-here{text-align:center;float: left;width: 100%;font-size: 16px;text-decoration: underline;font-weight: bold;color: var(--color1);width: 100%;}
 .modal-dialog button.close{right:19px;top:10px;color:#373e43;text-shadow:none;opacity:1;font-size:21px;position:absolute}
 .popup-label{text-align:center;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#e37b00),color-stop(1,#de8d03));background-image:-o-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-moz-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-webkit-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:-ms-linear-gradient(right,#e37b00 0%,#de8d03 100%);background-image:linear-gradient(to right,#e37b00 0%,#de8d03 100%);height:140px;padding:10px}
 .popup-label .icon i{line-height:30px}
@@ -202,6 +202,7 @@ footer li{list-style-type:none}
     padding-top: 8px;
     margin-bottom: 0;
     opacity: 0;
+    transition: all .5s ease;
 }
 .form-item{margin-bottom: 13px;}
 .form-item .info{
@@ -227,8 +228,15 @@ footer li{list-style-type:none}
 }
 
 .form .checkbox label {
+    float:left;
     padding-left: 4px;
     position: relative;
+}
+a.forgot.link {
+    float: right;
+    line-height: 56px;
+    color: var(--color1);
+    text-decoration: underline;
 }
 .checkbox .selected:before{/* background:var(--color1); */visibility:visible;}
 .checkbox .selected:after{border-color: var(--hover-color);}
@@ -236,8 +244,8 @@ footer li{list-style-type:none}
 .selected.checkbox label:before{visibility:visible}
 .checkbox input{visibility:hidden;display:block;float:left;font-size:0;width:60px;margin-top:30px}
 .checkbox label{font-size: 14px;color:#7c7f84;height:75px;line-height: 53px;margin:0 auto;cursor:pointer;}
-.checkbox label:after{content:'';width: 16px;height: 16px;display:block;/* margin-top:-19px; *//* margin-left:30px; */visibility:visible;background: var(--color1);border-radius: 2px;position: absolute;top: 19px;left: -21px;}
-.selected.checkbox label:after{background:var(--hover-color)}
+.checkbox label:after{content:'';width: 16px;height: 16px;display:block;/* margin-top:-19px; *//* margin-left:30px; */visibility:visible;/* background: var(--color1); */border-radius: 2px;position: absolute;top: 19px;left: -21px;border: 1px solid;}
+.selected.checkbox label:after{background:var(--hover-color);border: 0;}
 .book-now .item{width:95%;font-size:18px;color:#7c7f84;height:75px;line-height:75px;margin:0 auto;cursor:pointer}
 .item.cust .content{height:0;visibility:hidden}
 .selected.item.cust .content{height:75px;visibility:visible}
@@ -364,6 +372,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .orderComplete .popup-footer .btns .btn{float:none}
 .modal-smal .popup-footer .link{margin-top:20px;margin-bottom:-70px;width:100%;margin-right:0}
 .popup-footer .link{margin-right:48px;width:auto;margin-bottom:0;margin-top:0}
+.form-popup .login-here{width:100%}
 .page-popup .popup-footer .link{margin-right:0;margin-left:48px}
 .modal-smal .popup-footer .btns{margin-right:0;float:none;margin-top:20px;height:60px}
 .popup-footer .btns{float:right;margin-right:50px;margin-top:40px}

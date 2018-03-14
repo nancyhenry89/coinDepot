@@ -13,26 +13,24 @@
             <label class="form-label">Email</label>
             <input class="form-input" name="email" type="text" placeholder="Email">
           </div>
-          <div class="form-item">
-            <label class="form-label">Mobile Number</label>
-            <input class="form-input" name="mobile" type="text" placeholder="Mobile Number">
-          </div>
+
           <div class="form-item">
             <label class="form-label">Password</label>
             <input class="form-input" name="Password" type="password" placeholder="Password">
-            <div class="info">8 characters, 1 lcapital 1 number </div>
+
           </div>
           <div class="checkbox checkbox-info">
-                        <input id="terms" class="form-checkbox" type="checkbox" checked>
-                        <label for="terms">Accept terms of use</label>
-                    </div>
+              <input id="remember" class="form-checkbox" type="checkbox" checked>
+              <label for="remember">remember me</label>
+          </div>
+          <a class="forgot link">Forgot Password?</a>
         </div>
       </div>
       <div class="popup-footer">
          <div class="btns">
-            <button class="btn solid modal-opener" data="checkout">Sing Up</button>
-            <div class="question">Already have an account?</div>
-            <a class="link login-here">Login here</a>
+            <button class="btn solid modal-opener" data="checkout">Sing In</button>
+            <div class="question">Not registered?</div>
+            <a class="link modal-opener login-here" data="createAccount">Create an account</a>
          </div>
 
 

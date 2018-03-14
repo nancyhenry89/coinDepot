@@ -73,9 +73,16 @@ $(document).ready(function() {
             }
             if (id=="createAccount"){
               $('.modal,.page-popup').hide();
-              $('body').addClass('page-opened');
+              $('body').removeClass('page-opened');
               $('body').addClass('modal-open');
               $('#createAccount').slideDown();
+
+            }
+            if (id=="login"){
+              $('.modal,.page-popup').hide();
+              //$('body').removeClass('page-opened');
+              $('body').addClass('modal-open');
+              $('#login').fadeIn();
 
             }
             if (id=="orderComplete"){
@@ -169,6 +176,10 @@ $(document).ready(function() {
         goToHome();
         $('#createAccount').fadeOut();
     });
+    $('#login .close').click(function() {
+        $('#login').fadeOut();
+        $('#createAccount').fadeIn();
+    });
     //remove item from cart
     $('.delete-item').click(function() {
         $(this).parents('.cart-card').slideUp(400, function() {
@@ -214,7 +225,10 @@ $(document).ready(function() {
         $(this).parents('.book-now').find('.item').removeClass('selected');
         $(this).parents('.item').addClass('selected');
     });
-    $('.signUp .checkbox input').click(function(){
+    $('#createAccount .checkbox input').click(function(){
+      $(this).parents('.checkbox').toggleClass('selected');
+    });
+    $('#login .checkbox input').click(function(){
       $(this).parents('.checkbox').toggleClass('selected');
     });
     //focus on input show label
