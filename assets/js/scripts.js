@@ -71,11 +71,11 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
-            if (id=="paymentMethods"){
+            if (id=="createAccount"){
               $('.modal,.page-popup').hide();
-              $('body').removeClass('modal-open');
-              $('#paymentMethods').show();
-                $('#home').hide();
+              //$('body').removeClass('modal-open');
+              $('#createAccount').show();
+              //  $('#home').hide();
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
@@ -109,15 +109,15 @@ $(document).ready(function() {
                 }, 0)
 
 
-            }else if (id == "paymentMethods") {
+            }else if (id == "createAccount") {
               $('.modal,.page-popup').hide();
-              $('body').removeClass('modal-open');
-              $('body').addClass('page-opened');
-              $('#paymentMethods').fadeIn();
+            //  $('body').removeClass('modal-open');
+            //  $('body').addClass('page-opened');
+              $('#createAccount').fadeIn();
               setTimeout(function() {
                   $('#checkout').modal('hide');
               }, 500);
-              $('#home').hide();
+              $('#home').show();
               $('html, body').animate({
                   scrollTop: ($('body').offset().top)
               }, 0)

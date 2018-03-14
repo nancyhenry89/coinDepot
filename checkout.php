@@ -52,7 +52,7 @@
   <div class="popup-footer">
      <div class="btns">
         <a class="link cancel">order more coins</a>
-        <button class="btn solid modal-opener" data="paymentMethods" >PROCEED</button>
+        <button class="btn solid modal-opener" data="createAccount" >PROCEED</button>
      </div>
   </div>
 

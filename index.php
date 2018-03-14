@@ -7,6 +7,7 @@
   <?php require_once ('paymentMethods.php') ?>
   <?php require_once ('orderComplete.php') ?>
   <?php require_once ('payment.php') ?>
+  <?php require_once ('createAccount.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>
