@@ -30,7 +30,7 @@
       </div>
       <div class="popup-footer">
          <div class="btns">
-            <button class="btn solid modal-opener" data="">Sing Up</button>
+            <button class="btn solid modal-opener" data="accountCreated">Sing Up</button>
             <div class="question">Already have an account?</div>
             <a class="link modal-opener login-here" data="login">Login here</a>
          </div>

@@ -85,11 +85,18 @@ $(document).ready(function() {
               $('#login').fadeIn();
 
             }
-            if (id=="orderComplete"){
+            if (id=="accountCreated"){
               $('.modal,.page-popup').hide();
-              $('body').removeClass('modal-open');
-              $('#orderComplete').show();
+              $('#accountCreated').show();
                 $('#home').hide();
+
+            }
+            if (id=="accountCreated"){
+              $('.modal,.page-popup').hide();
+              //$('body').removeClass('modal-open');
+              $('#accountCreated').show();
+                $('#home').hide();
+                $('#checkout').show();
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
@@ -141,7 +148,16 @@ $(document).ready(function() {
               $('html, body').animate({
                   scrollTop: ($('body').offset().top)
               }, 0)
-            }
+            }else if (id=="accountCreated"){
+                          $('.modal,.page-popup').hide();
+                          //$('body').removeClass('modal-open');
+                          $('#accountCreated').show();
+                            $('#home').hide();
+                            $('#checkout').show();
+                            $('html, body').animate({
+                                scrollTop: ($('body').offset().top)
+                            }, 0)
+                        }
              else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
@@ -163,6 +179,10 @@ $(document).ready(function() {
     $('#addToCart .close , #addToCart .cancel').click(function() {
         $('body').removeClass('modal-open');
         $('#addToCart').fadeOut();
+    });
+    $('#accountCreated .close').click(function() {
+        $('body').removeClass('modal-open');
+        $('#accountCreated').fadeOut();
     });
     $('#payment .close , #payment .cancel').click(function() {
         $('body').removeClass('modal-open');

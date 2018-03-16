@@ -184,6 +184,10 @@ footer li{list-style-type:none}
 .popup-label .icon.no-bg{background:transparent;margin-top: 39px;margin-bottom: -15px;}
 .popup-cont{background:#f6f6f6;float:left}
 .popup-label .title{color:var(--color3);font-size:24px;font-weight:700;text-transform:uppercase;}
+.modal-smal .popup-label {
+    height: 100px;
+    padding-top: 41px;
+}
 #addToCart .popup-label .title{font-weight:400;margin-top:7px}
 .add-to-cart{text-align:center;font-weight:500;color:var(--color2)}
 .add-to-cart .item{margin-top:90px;font-size:18px}
@@ -324,7 +328,14 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .pay-logo{display:flex;justify-content:center;align-items:center;height:100%;width:100%}
 .paymentCont .method .title{font-weight:lighter;font-size:20px;color:var(--hover-color);text-transform:capitalize}
 .cart-slide{min-height:calc(100% - 160px)}
+.accountCreated p {
+    padding: 60px 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #373e44;
+}
 @media only screen and (min-width: 769px) {
+  .accountCreated p {padding: 110px 30px;}
 .modal-smal .modal-dialog{width:350px;min-width:35px;min-height: 400px;overflow: hidden;}
 .paymentcont .question{display:block}
 .paymentcont.container{padding-left:49px;margin-top:13px}
