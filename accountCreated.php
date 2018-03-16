@@ -10,7 +10,7 @@
     <p>some text abour email varification sent to you</p>
     <div class="popup-footer">
        <div class="btns">
-          <button class="btn solid modal-opener" data="" >CTA(to home?)</button>
+          <button class="btn solid modal-opener" data="myProfile" >CTA(to home?)</button>
        </div>
     </div>
   </div>

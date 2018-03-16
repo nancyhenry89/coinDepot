@@ -3,21 +3,21 @@ $(document).ready(function() {
     //logo go to home
     //______________________
     $('.logo *').click(function() {
-      goToHome();
+        goToHome();
     })
     //______________________
     //logo go to home end
 
     //go to home
-    function goToHome(){
-    //  $('.small-sponsors').hide();
-      $('.modal,.page-popup').fadeOut();
-      $('body').attr('class', '');
-      $('header').removeClass('over');
-      $('#home').fadeIn();
-      $('html, body').animate({
-          scrollTop: ($('body').offset().top)
-      }, 0)
+    function goToHome() {
+        //  $('.small-sponsors').hide();
+        $('.modal,.page-popup').fadeOut();
+        $('body').attr('class', '');
+        $('header').removeClass('over');
+        $('#home').fadeIn();
+        $('html, body').animate({
+            scrollTop: ($('body').offset().top)
+        }, 0)
     }
     //modal open setup
     function addModalOpen() {
@@ -29,9 +29,9 @@ $(document).ready(function() {
     $('.modal-opener').click(function() {
         var id = $(this).attr('data');
         if ($(window).innerWidth() <= 768) {
-          //--------------------------------------------------
-          //mobile popups start
-          //--------------------------------------------------
+            //--------------------------------------------------
+            //mobile popups start
+            //--------------------------------------------------
             if (id == "bookNow") {
                 $('#bookNow').fadeIn(500, function() {
                     addModalOpen();
@@ -44,19 +44,19 @@ $(document).ready(function() {
                 });
             }
             if (id == "payment") {
-                  $('#payment').fadeIn(500, function() {
+                $('#payment').fadeIn(500, function() {
                     addModalOpen();
-                  //  $('#paymentMethods').hide();
+                    //  $('#paymentMethods').hide();
                 });
             }
             if (id == "checkout") {
-              $('.modal,.page-popup').hide();
-                if($(this).attr('point')=="header"){
-                  $('#checkout').slideDown(600,function(){
-                    $('body').addClass('cart-slide');
-                  });
-                }else{
-                  $('body').addClass('coming-in');
+                $('.modal,.page-popup').hide();
+                if ($(this).attr('point') == "header") {
+                    $('#checkout').slideDown(600, function() {
+                        $('body').addClass('cart-slide');
+                    });
+                } else {
+                    $('body').addClass('coming-in');
                 }
                 $('body').removeClass('modal-open');
                 $('#checkout').show();
@@ -71,35 +71,49 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
-            if (id=="createAccount"){
-              $('.modal,.page-popup').hide();
-              $('body').removeClass('page-opened');
-              $('body').addClass('modal-open');
-              $('#createAccount').slideDown();
+            if (id == "createAccount") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('page-opened');
+                $('body').addClass('modal-open');
+                $('#createAccount').slideDown();
 
             }
-            if (id=="login"){
-              $('.modal,.page-popup').hide();
-              //$('body').removeClass('page-opened');
-              $('body').addClass('modal-open');
-              $('#login').fadeIn();
+            if (id == "login") {
+                $('.modal,.page-popup').hide();
+                //$('body').removeClass('page-opened');
+                $('body').addClass('modal-open');
+                $('#login').fadeIn();
 
             }
-            if (id=="accountCreated"){
-              $('.modal,.page-popup').hide();
-              $('#accountCreated').show();
+            if (id == "accountCreated") {
+                $('.modal,.page-popup').hide();
+                $('#accountCreated').show();
                 $('#home').hide();
 
             }
-            if (id=="accountCreated"){
-              $('.modal,.page-popup').hide();
-              //$('body').removeClass('modal-open');
-              $('#accountCreated').show();
+            if (id == "accountCreated") {
+                $('.modal,.page-popup').hide();
+                //$('body').removeClass('modal-open');
+                $('#accountCreated').show();
                 $('#home').hide();
                 $('#checkout').show();
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
+            }
+            if (id == "myProfile") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#myProfile').fadeIn();
+                setTimeout(function() {
+                    $('#accountCreated').modal('hide');
+                }, 500);
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
             }
             //--------------------------------------------------
             //mobile popups end
@@ -107,7 +121,7 @@ $(document).ready(function() {
         } else {
             //desktop
             if (id == "checkout") {
-              $('.modal,.page-popup').hide();
+                $('.modal,.page-popup').hide();
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
                 $('#checkout').fadeIn();
@@ -121,44 +135,56 @@ $(document).ready(function() {
                 }, 0)
 
 
-            }else if (id == "createAccount") {
-              $('.modal,.page-popup').hide();
-            //  $('body').removeClass('modal-open');
-             $('body').removeClass('page-opened');
-              $('#createAccount').fadeIn();
-              setTimeout(function() {
-                  $('#checkout').modal('hide');
-                  $('body').addClass('modal-open');
-              }, 500);
-              $('#home').show();
-              $('html, body').animate({
-                  scrollTop: ($('body').offset().top)
-              }, 0)
-            }else if(id=="payment"){
-              $('#payment').fadeIn();
-            }else if(id=="orderComplete"){
-              $('.modal,.page-popup').hide();
-              $('body').removeClass('modal-open');
-              $('body').addClass('page-opened');
-              $('#orderComplete').fadeIn();
-              setTimeout(function() {
-                  $('#payment').modal('hide');
-              }, 500);
-              $('#home').hide();
-              $('html, body').animate({
-                  scrollTop: ($('body').offset().top)
-              }, 0)
-            }else if (id=="accountCreated"){
-                          $('.modal,.page-popup').hide();
-                          //$('body').removeClass('modal-open');
-                          $('#accountCreated').show();
-                            $('#home').hide();
-                            $('#checkout').show();
-                            $('html, body').animate({
-                                scrollTop: ($('body').offset().top)
-                            }, 0)
-                        }
-             else {
+            } else if (id == "createAccount") {
+                $('.modal,.page-popup').hide();
+                //  $('body').removeClass('modal-open');
+                $('body').removeClass('page-opened');
+                $('#createAccount').fadeIn();
+                setTimeout(function() {
+                    $('#checkout').modal('hide');
+                    $('body').addClass('modal-open');
+                }, 500);
+                $('#home').show();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+            } else if (id == "payment") {
+                $('#payment').fadeIn();
+            } else if (id == "orderComplete") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#orderComplete').fadeIn();
+                setTimeout(function() {
+                    $('#payment').modal('hide');
+                }, 500);
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+            } else if (id == "accountCreated") {
+                $('.modal,.page-popup').hide();
+                //$('body').removeClass('modal-open');
+                $('#accountCreated').show();
+                $('#home').hide();
+                $('#checkout').show();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+            } else if (id == "myProfile") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#myProfile').fadeIn();
+                setTimeout(function() {
+                    $('#accountCreated').modal('hide');
+                }, 500);
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            } else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
@@ -245,23 +271,22 @@ $(document).ready(function() {
         $(this).parents('.book-now').find('.item').removeClass('selected');
         $(this).parents('.item').addClass('selected');
     });
-    $('#createAccount .checkbox input').click(function(){
-      $(this).parents('.checkbox').toggleClass('selected');
+    $('#createAccount .checkbox input').click(function() {
+        $(this).parents('.checkbox').toggleClass('selected');
     });
-    $('#login .checkbox input').click(function(){
-      $(this).parents('.checkbox').toggleClass('selected');
+    $('#login .checkbox input').click(function() {
+        $(this).parents('.checkbox').toggleClass('selected');
     });
     //focus on input show label
-    $('.form-item .form-input').focus(function(){
-      $(this).siblings('.form-label').css('opacity','1');
+    $('.form-item .form-input').focus(function() {
+        $(this).siblings('.form-label').css('opacity', '1');
     });
-    $('.form-item .form-input').blur(function()
-    {
-          if( !this.value ) {
-                $(this).siblings('.form-label').css('opacity','0');
-          }else{
-            $(this).siblings('.form-label').css('opacity','1');
-          }
+    $('.form-item .form-input').blur(function() {
+        if (!this.value) {
+            $(this).siblings('.form-label').css('opacity', '0');
+        } else {
+            $(this).siblings('.form-label').css('opacity', '1');
+        }
     });
     initSlider();
     if ($(window).innerWidth() >= 1025) {
