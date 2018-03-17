@@ -9,7 +9,12 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closing .main-content{transform:scale(0)}
 .closing header{transform:scale(0)}
 .closed{transform:scale(1)!important}
-.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
+.page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left;}
+
+.my-profile.page-popup {
+    overflow: hidden;
+}
+.my-profile .form-section{padding: 26px 38px;background: #fff;margin-bottom: 23px;}
 @-webkit-keyframes trans {
 0%{transform:scale(.3) translatex(180%)}
 50%{transform:scale(.3) translatex(0%)}
@@ -75,7 +80,7 @@ svg{height:100%;width:100%}
 .btn{color:var(--color1);border:1px solid;border-radius:18px;background:transparent;height:36px;min-width:100px;font-size:14px;line-height:24px;text-transform:uppercase;transition:all .5s ease}
 .btn.solid{background:var(--color1);color:var(--color3);min-width:205px;margin-top:20px;font-size:15px;border:0}
 .btn.solid:hover,.btn.solid:active,.btn.solid:focus{background:var(--hover-color);color:#fff;border-width:1px}
-.btn:hover,.btn:focus,.btn:active{border-width:2px;background:transparent;border-color:var(--color1);color:var(--color1);outline:none}
+.btn:hover,.btn:focus,.btn:active{border-width:2px;background:transparent;border-color:var(--color1);color:var(--color1);outline:none;cursor: pointer;}
 .btn.btn-alt{color:var(--color3);border-color:var(--color3)}
 .coin-card .btn{margin-top:25px;float:right}
 .coin-card.bitcoin{background:url(../img/bitcoin.png)}
@@ -213,11 +218,15 @@ footer li{list-style-type:none}
     font-size: 16px;
     margin-top: 8px;
     letter-spacing: .1px;
+    color: #4c4c4c;
+}
+
+#fileUploadError {
+    display: none;
 }
 
 .profile-data {
-    background: #ffffff;
-    padding: 11px 18px;
+    padding: 11px 0px;
     margin-top: 6px;
 }
 
@@ -241,7 +250,7 @@ footer li{list-style-type:none}
 }
 
 .dropdown .btn {
-    width: 100%;
+    width: 90%;
     border-color: #d7d7d7;
     color: #777777;
     text-align: left;
@@ -249,9 +258,32 @@ footer li{list-style-type:none}
 }
 .form-item{margin-bottom: 13px;}
 
+.my-profile .form-item {
+    background: #fff;
+}
+
+.profile-data .form-item {
+    /* padding-left: 69px; */
+}
+
+.upload-box .tag {
+    margin-top: 10px;
+    /* padding-left: 63px; */
+    max-width: 320px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.upload-btn {
+    margin-top: 12px;
+    /* margin-left: 63px; */
+}
+
 .read-only .form-label {
     opacity: 1;
 }
+
+.read-only .field {padding-left: 18px;}
 .form-item .info{
     text-align: right;
     font-size: 12px;
@@ -259,7 +291,7 @@ footer li{list-style-type:none}
     padding-right: 10px;
 }
 .form-item .form-input{
-    width: 100%;
+    width: 90%;
     border-radius: 18px;
     height: 36px;
     border: 1px solid #d7d7d7;
@@ -377,6 +409,24 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     font-size: 16px;
     color: #373e44;
 }
+.fileUpload input{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.fileUpload {
+    height:65px;
+    border-radius: 7px;
+    border: 1px dashed #daddd8;
+    position: relative;
+    width: 320px;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--hover-color);
+    font-weight: bold;
+    max-width: 90%;
+}
 @media only screen and (min-width: 769px) {
   .accountCreated p {padding: 110px 30px;}
 .modal-smal .modal-dialog{width:350px;min-width:35px;min-height: 400px;overflow: hidden;}
@@ -414,6 +464,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
+    .profile-data .form-item {
+    padding-left: 69px;
+}
+.profile-data{padding: 11px 18px;}
 .value-input:before{right:-7px}
 .price-input:before{left:1px}
 .book-now .content .input-cont .input{width:85%}
@@ -458,6 +512,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .sticky>div{display:flex}
 .coins{background:#2f3538;margin-top:-1px;padding-top:20px;padding-bottom:28px}
 .container{padding-left:5px;padding-right:5px}
+.my-profile p{text-align:left;padding-left: 27px;margin-top: 21px;}
 .coins>div{padding:7px}
 .coins>div:first-of-type{padding-left:0}
 .coins>div:nth-of-type(4),.coins>div:nth-of-type(5){padding-right:0}
