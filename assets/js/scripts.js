@@ -133,7 +133,7 @@ $(document).ready(function() {
             }
             if (id == "paymentMethods") {
                 $('body').removeClass('modal-open');
-                $('body').addClass('page-popup');
+                $('body').addClass('page-opened');
                 $('.modal').fadeOut();
                 $('#myProfile').hide();
                 $('#paymentMethods').fadeIn(500, function() {
