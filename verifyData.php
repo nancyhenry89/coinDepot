@@ -20,5 +20,24 @@
         </div>
       </div>
       </div>
+      <div class="container popup-cont scan-warning" style="display:none">
+        <div class="icon">!</div>
+        <p>Some problem with account text We will contact you in a few hours some text</p>
+        <div class="popup-footer">
+        <div class="btns">
+           <button class="btn solid cancel">Close</button>
+        </div>
+      </div>
+      </div>
+      <div class="container popup-cont scan-error" style="display:none">
+        <div class="icon">-</div>
+        <p>Some problem with account text you can contact as at:</p>
+        <a  class="mailto" href="mailto:info@coindepot.com">info@coindepot.com<a>
+        <div class="popup-footer">
+        <div class="btns">
+           <button class="btn solid cancel">Close</button>
+        </div>
+      </div>
+      </div>
    </div>
 </div>

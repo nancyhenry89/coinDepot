@@ -128,7 +128,7 @@ $(document).ready(function() {
                 $('#verifyData').fadeIn();
                 setTimeout(function() {
                     $('#verifyData .scanning').hide();
-                    $('#verifyData .scan-success').fadeIn();
+                    $('#verifyData .scan-warning').fadeIn();
                 }, 4000);
             }
             if (id == "paymentMethods") {
@@ -268,6 +268,10 @@ $(document).ready(function() {
     $('#addToCart .close , #addToCart .cancel').click(function() {
         $('body').removeClass('modal-open');
         $('#addToCart').fadeOut();
+    });
+    $('#verifyData .cancel').click(function() {
+        $('body').removeClass('modal-open');
+        $('#verifyData').fadeOut();
     });
     $('#accountCreated .close').click(function() {
         $('body').removeClass('modal-open');
