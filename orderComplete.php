@@ -14,7 +14,7 @@
 
     <div class="popup-footer">
        <div class="btns">
-          <button class="btn solid modal-opener" data="" >CTA</button>
+          <button class="btn solid" data="" >CTA</button>
        </div>
     </div>
   </div>

@@ -54,7 +54,7 @@ $(document).ready(function() {
             if (id == "payment") {
                 $('#payment').fadeIn(500, function() {
                     addModalOpen();
-                    //  $('#paymentMethods').hide();
+
                 });
             }
             if (id == "checkout") {
@@ -128,29 +128,28 @@ $(document).ready(function() {
                 $('#verifyData').fadeIn();
                 setTimeout(function() {
                     $('#verifyData .scanning').hide();
-                    $('#verifyData .scan-warning').fadeIn();
+                    $('#verifyData .scan-success').fadeIn();
                 }, 4000);
             }
             if (id == "paymentMethods") {
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-popup');
                 $('.modal').fadeOut();
-                $('.page-popup').fadeOut();
-                $('#' + id).fadeIn(500, function() {
-                    addModalOpen();
+                $('#myProfile').hide();
+                $('#paymentMethods').fadeIn(500, function() {
                     $('#verifyData .scanning').show();
                     $('#verifyData .scan-success').hide();
                 });
 
             }
             if (id == "orderComplete") {
-                $('.modal,.page-popup').hide();
-                $('body').removeClass('modal-open');
+                $('body').attr('class', '');
                 $('body').addClass('page-opened');
                 $('#orderComplete').fadeIn();
-                setTimeout(function() {
-                    $('#payment').modal('hide');
-                }, 500);
+
+                    $('#payment').fadeOut();
+                    $('#paymentMethods').fadeOut();
+
                 $('#home').hide();
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
@@ -192,13 +191,12 @@ $(document).ready(function() {
             } else if (id == "payment") {
                 $('#payment').fadeIn();
             } else if (id == "orderComplete") {
-                $('.modal,.page-popup').hide();
-                $('body').removeClass('modal-open');
+
+                  $('body').attr('class', '');
                 $('body').addClass('page-opened');
                 $('#orderComplete').fadeIn();
-                setTimeout(function() {
-                    $('#payment').modal('hide');
-                }, 500);
+                $('#payment').fadeOut();
+                $('#paymentMethods').fadeOut();
                 $('#home').hide();
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
@@ -237,17 +235,20 @@ $(document).ready(function() {
                 }, 4000);
 
             } else if (id == "paymentMethods") {
-                $('body').removeClass('modal-open');
-                $('body').addClass('page-popup');
-                $('.modal').fadeOut();
-                $('.page-popup').fadeOut();
-                $('#' + id).fadeIn(500, function() {
-                    addModalOpen();
-                    $('#verifyData .scanning').show();
-                    $('#verifyData .scan-success').hide();
-                });
 
-            } else {
+              $('body').removeClass('modal-open');
+              $('body').addClass('page-opened');
+              $('.modal').fadeOut();
+              $('#myProfile').hide();
+              $('#paymentMethods').fadeIn(500, function() {
+                  $('#verifyData .scanning').show();
+                  $('#verifyData .scan-success').hide();
+              });
+
+            }
+
+
+            else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {

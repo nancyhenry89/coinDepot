@@ -200,7 +200,19 @@ footer li{list-style-type:none}
 .profile-data .section-label{color:var(--headings-color);font-size:15px;text-transform:uppercase}
 .form-popup .popup-cont{background:transparent;width:80%;margin:auto;float:none;padding-top:40px}
 .form-item .form-label{float:left;width:100%;font-size:12px;font-weight:lighter;color:var(--headings-color);padding:0 18px;padding-top:8px;margin-bottom:0;opacity:0;transition:all .5s ease}
-.dropdown .btn{width:90%;border-color:#d7d7d7;color:#777;text-align:left;text-transform:capitalize}
+.dropdown .btn{width:90%;border-color:#d7d7d7;color:#777;text-align:left;text-transform:capitalize;position: relative;}
+
+.dropdown .btn:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #4c4a48;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
 .form-item{margin-bottom:13px}
 .my-profile .form-item{background:#fff}
 .upload-box .tag{margin-top:10px;max-width:320px;font-size:14px;color:#8c8c8c}
@@ -208,7 +220,19 @@ footer li{list-style-type:none}
 .read-only .form-label{opacity:1}
 .read-only .field{padding-left:18px}
 .form-item .info{text-align:right;font-size:12px;color:#7d7f84;padding-right:10px}
-.form-item .form-input{width:100%;border-radius:18px;height:36px;border:1px solid #d7d7d7;padding:0 18px;font-size:15px}
+.form-item .form-input{width:100%;border-radius:18px;height:36px;padding:0 18px;font-size:15px;}
+.form-input{border: 1px solid #daddd8;}
+
+.form-input:focus {
+    border-color: #4f5d75;
+    color: #1e2421;
+}
+
+
+.form-input::-webkit-input-placeholder{color:#8C8C8C}
+.form-input::-moz-placeholder{color:#8C8C8C}
+.form-input:-ms-input-placeholder{color:#8C8C8C}
+.form-input:-moz-placeholder{color:#8C8C8C}
 .profile-data .form-item .form-input{width:90%}
 .form .checkbox{padding-left:23px}
 .form .checkbox input{width:100%}
