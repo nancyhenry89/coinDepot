@@ -39,6 +39,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/upload.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="assets/js/ScanDoc.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

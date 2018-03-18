@@ -187,7 +187,7 @@ footer li{list-style-type:none}
 #payment .popup-cont{padding:40px 25px;padding-bottom:20px}
 #payment{color:#373e44;font-size:16px}
 #payment .popup-label{height:80px}
-#payment .popup-label .title{margin-top:32px}
+#payment .popup-label .title{margin-top: 0;}
 #payment .total>div{float:left;padding-right:20px;margin:35px 0}
 .modal-dialog{width:100%;background:#f6f6f6;margin:0;min-height:100%}
 #createAccount .modal-dialog{background-image: url(../img/sign-up.png);background-position: center 55px;}
@@ -291,12 +291,16 @@ footer li{list-style-type:none}
     padding-right: 10px;
 }
 .form-item .form-input{
-    width: 90%;
+    width: 100%;
     border-radius: 18px;
     height: 36px;
     border: 1px solid #d7d7d7;
     padding: 0 18px;
     font-size: 15px;
+}
+
+.profile-data .form-item .form-input {
+    width: 90%;
 }
 .form .checkbox{
     padding-left: 23px;
@@ -354,6 +358,29 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .book-now .item-radio{visibility:hidden;display:block;float:left;font-size:0;width:60px;margin-top:30px}
 .checkout .popup-footer{height:186px}
 .popup-footer{width:100%;float:left;background:#f6f6f6;height:90px;text-transform:uppercase}
+
+.scan-success .icon {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #06a855;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.verify-data .scan-success p {
+    margin-top: 20px;
+}
+
+.scan-success .icon i {
+    line-height: 26px;
+}
+
+.scan-success .popup-footer {
+    margin-top: 100px;
+}
 .form-popup .popup-footer{background:transparent}
 .popup-footer .link{color:var(--hover-color);display:block;line-height:36px;float:left;margin-top:20px;cursor:pointer;transition:all .5s ease;width:100%;text-align:center;margin-bottom:-70px}
 .popup-footer .link:hover{color:#FFA000;text-decoration:none}
@@ -426,6 +453,19 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     color: var(--hover-color);
     font-weight: bold;
     max-width: 90%;
+}
+.verify-data p{
+   color: #373e44;
+   font-size:16px;
+   text-align:center;
+   margin-top: 50px;
+   margin-bottom: 25px;
+}
+.scan-doc{
+    margin: auto;
+}
+.scan-doc canvas{
+    background: transparent!important;
 }
 @media only screen and (min-width: 769px) {
   .accountCreated p {padding: 110px 30px;}

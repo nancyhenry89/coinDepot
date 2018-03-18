@@ -55,6 +55,4 @@
         <button class="btn solid modal-opener" data="createAccount" >PROCEED</button>
      </div>
   </div>
-
-
 </div>

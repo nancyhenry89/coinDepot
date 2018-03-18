@@ -11,6 +11,7 @@
   <?php require_once ('login.php') ?>
   <?php require_once ('accountCreated.php') ?>
   <?php require_once ('myProfile.php') ?>
+  <?php require_once ('verifyData.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>

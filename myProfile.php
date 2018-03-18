@@ -114,7 +114,7 @@
                 </div>
                 <div class="popup-footer">
                    <div class="btns">
-                      <button class="btn solid modal-opener" data="" >Update</button>
+                      <button class="btn solid modal-opener" data="verifyData">Update</button>
                    </div>
                 </div>
                </div>
