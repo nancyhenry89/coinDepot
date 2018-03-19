@@ -28,7 +28,7 @@
       </div>
       <div class="popup-footer">
          <div class="btns">
-            <button class="btn solid modal-opener" data="checkout">Sing In</button>
+            <button class="btn solid modal-opener" data="paymentMethods">Sing In</button>
             <div class="question">Not registered?</div>
             <a class="link modal-opener login-here" data="createAccount">Create an account</a>
          </div>

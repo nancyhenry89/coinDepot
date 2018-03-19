@@ -236,10 +236,12 @@ $(document).ready(function() {
 
             } else if (id == "paymentMethods") {
 
+
               $('body').removeClass('modal-open');
               $('body').addClass('page-opened');
               $('.modal').fadeOut();
               $('#myProfile').hide();
+              $('#home').hide();
               $('#paymentMethods').fadeIn(500, function() {
                   $('#verifyData .scanning').show();
                   $('#verifyData .scan-success').hide();
