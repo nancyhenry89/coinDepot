@@ -159,6 +159,10 @@ footer li{list-style-type:none}
 .menu-group .title{font-size:18px;color:var(--headings-color);text-transform:uppercase}
 .navbar-nav>li>a{font-size:16px;color:var(--color3);text-transform:uppercase}
 .lang .dropdown-toggle.btn{color:#daddd8;font-size:14px;text-align:right;background-image:url(../img/uk.png);background-repeat:no-repeat;background-position:18px center;background-size:28px}
+
+.lang .dropdown-toggle.btn:before {
+    display: none;
+}
 .lang .dropdown-menu{background:#4e5d75}
 .nav>li.register>a{color:var(--color1)}
 .nav>li>a:focus,.nav>li>a:hover{background:#282c30}
