@@ -156,9 +156,22 @@ $(document).ready(function() {
                 }, 0)
             }
             if (id == "changePassword") {
-                $('.modal,.page-popup').hide();
+                //$('.modal,.page-popup').hide();
                 $('body').addClass('modal-open');
                 $('#changePassword').fadeIn();
+
+            }
+            if (id == "userProfile") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#userProfile').fadeIn();
+                closeNav();
+                $('header').addClass('over');
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
 
             }
             //--------------------------------------------------
@@ -179,7 +192,7 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } 
+            }
 
             else if (id == "createAccount") {
                 $('.modal,.page-popup').hide();
@@ -194,11 +207,11 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } 
+            }
 
             else if (id == "payment") {
                 $('#payment').fadeIn();
-            } 
+            }
 
             else if (id == "orderComplete") {
                 $('body').attr('class', '');
@@ -210,7 +223,7 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } 
+            }
 
             else if (id == "accountCreated") {
                 $('.modal,.page-popup').hide();
@@ -221,7 +234,7 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } 
+            }
 
             else if (id == "myProfile") {
                 $('.modal,.page-popup').hide();
@@ -235,7 +248,7 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } 
+            }
 
             else if (id == "verifyData") {
                 $('body').addClass('modal-open');
@@ -248,7 +261,7 @@ $(document).ready(function() {
                     $('#verifyData .scan-success').fadeIn();
                 }, 4000);
 
-            } 
+            }
 
             else if (id == "paymentMethods") {
               $('body').removeClass('modal-open');
@@ -263,21 +276,31 @@ $(document).ready(function() {
 
             }
 
-            else if (id == "changePassowrd") {
-
-                $('.modal,.page-popup').hide();
+            else if (id == "changePassword") {
+                //$('.modal,.page-popup').hide();
                 $('body').addClass('modal-open');
-                $('#chnagePassowrd').fadeIn();
+                $('#changePassword').fadeIn();
 
             }
+
+            else if (id == "userProfile") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#userProfile').fadeIn();
+                $('#home').hide();
+                $('header').addClass('over');
+                $('html, body').animate({
+                  scrollTop: ($('body').offset().top)
+                }, 0)
+
+                        }
             else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
                     $('body').removeClass('modal-open');
                     $('#bookNow').fadeOut();
-
-
                 });
                 $('.modal').fadeOut();
                 $('.page-popup').fadeOut();
@@ -318,7 +341,8 @@ $(document).ready(function() {
     });
         $('#changePassword .close').click(function() {
         $('#changePassword').fadeOut();
-        $('#login').fadeIn();
+        $('body').removeClass('modal-open');
+        $('#userProfile').fadeIn();
     });
     //remove item from cart
     $('.delete-item').click(function() {

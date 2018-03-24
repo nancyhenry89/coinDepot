@@ -49,11 +49,11 @@
                               </ul>
                            </div>
                            <div class="menu-group">
-                              <div class="title">Title</div>
+                              <div class="title">Account</div>
                               <ul class="nav navbar-nav">
-                                 <li><a href="#">menu link</a></li>
-                                 <li><a href="#">menu link</a></li>
-                                 <li><a href="#">menu link</a></li>
+                                 <li><a class="modal-opener" data="userProfile" href="#">My profile</a></li>
+                                 <li><a href="#">My orders</a></li>
+                                 <li><a href="#">logout</a></li>
                               </ul>
                            </div>
                            <div class="menu-group">

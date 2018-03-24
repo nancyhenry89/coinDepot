@@ -23,7 +23,7 @@
               <input id="remember" class="form-checkbox" type="checkbox" checked>
               <label for="remember">remember me</label>
           </div>
-          <a class="forgot modal-opener link" data="changePassword">Forgot Password?</a>
+          <a class="forgot link" >Forgot Password?</a>
         </div>
       </div>
       <div class="popup-footer">

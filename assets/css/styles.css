@@ -11,6 +11,7 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closed{transform:scale(1)!important}
 .page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
 .my-profile.page-popup{overflow:hidden}
+
 .my-profile .form-section{padding:26px 38px;background:#fff;margin-bottom:23px}
 @-webkit-keyframes trans {
 0%{transform:scale(.3) translatex(180%)}
@@ -37,6 +38,7 @@ html{background:#000}
 .FO{float:right}
 .FL{float:left}
 .main-content{padding-right:0;padding-left:0;background:#f6f6f6}
+
 .light{font-weight:lighter}
 .page-title{text-align:center;color:var(--headings-color);text-transform:uppercase;font-size:24px;font-weight:400;position:relative;margin-top:38px;margin-bottom:20px}
 .page-title:after{content:"";display:block;width:20%;height:2px;background:var(--headings-color);left:40%;position:absolute;top:35px}
@@ -190,6 +192,7 @@ footer li{list-style-type:none}
 .popup-label .icon{width:50px;height:50px;background-color:var(--color3);border-radius:50%;margin:auto;color:var(--color2);font-size:30px;display:flex;align-items:center;justify-content:center;margin-top:24px;margin-bottom:14px;margin-bottom:15px}
 .popup-label .icon.no-bg{background:transparent;margin-top:39px;margin-bottom:-15px}
 .popup-cont{background:#f6f6f6;float:left}
+
 .popup-label .title{color:var(--color3);font-size:24px;font-weight:700;text-transform:uppercase}
 .modal-smal .popup-label{height:100px;padding-top:41px}
 #addToCart .popup-label .title{font-weight:400;margin-top:7px}
@@ -202,7 +205,39 @@ footer li{list-style-type:none}
 .my-profile p{text-align:center;font-size:16px;margin-top:8px;letter-spacing:.1px;color:#4c4c4c}
 #fileUploadError{display:none}
 .profile-data{padding:11px 0;margin-top:6px}
+
+.profile-footer .link {
+    font-size: 14px;
+    color: var(--hover-color);
+    text-decoration: underline;
+    margin-bottom: 33px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.profile-footer {
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+.profile-footer .support {
+    color: #1f2421;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.profile-footer .support .mailto {
+    color: var(--hover-color);
+}
 .profile-data .section-label{color:var(--headings-color);font-size:15px;text-transform:uppercase}
+
+.user-profile .section-label {
+    margin-bottom: 17px;
+}
 .form-popup .popup-cont{background:transparent;width:80%;margin:auto;float:none;padding-top:40px}
 .form-item .form-label{float:left;width:100%;font-size:12px;font-weight:lighter;color:var(--headings-color);padding:0 18px;padding-top:8px;margin-bottom:0;opacity:0;transition:all .5s ease}
 .dropdown .btn{width:90%;border-color:#d7d7d7;color:#777;text-align:left;text-transform:capitalize;position: relative;}
@@ -224,6 +259,36 @@ footer li{list-style-type:none}
     position: relative;
 }
 .my-profile .form-item{background:#fff}
+
+.user-profile .form-item {
+    margin-bottom: -4px;
+}
+
+.form-item .form-detail {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--headings-color);
+}
+
+.upload-detail.upload-warning .icon {
+    color: #f08700;
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.upload-detail .icon {
+    float: right;
+    color: #00a551;
+    border: 2px solid;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 3px;
+}
 .upload-box .tag{margin-top:10px;max-width:320px;font-size:14px;color:#8c8c8c}
 .upload-btn{margin-top:12px}
 .read-only .form-label{opacity:1}
@@ -423,6 +488,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 }
 @media only screen and (min-width: 992px) {
 .profile-data .form-item{padding-left:69px}
+
+.user-profile .form-item {
+    padding-left: 0;
+}
 .profile-data{padding:11px 18px}
 .value-input:before{right:-7px}
 .price-input:before{left:1px}
@@ -482,6 +551,11 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .coin-card.bitcoin .value,.coin-card.eth .value{width:100%;text-align:center;margin-bottom:40px}
 .coin-card.bitcoin .btn,.coin-card.eth .btn{float:none;min-width:130px}
 .btn{min-width:100px}
+
+.user-profile .fileUpload {
+    margin: auto;
+    display: block;
+}
 .coin-card .title{height:50%;font-size:22px;font-weight:lighter}
 .coin-card .content{padding-right:10px;height:100%}
 .section-title{float:left;text-align:left;height:224px;width:17%;margin-top:41px;font-size:31px;z-index:9}

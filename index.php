@@ -13,6 +13,7 @@
   <?php require_once ('myProfile.php') ?>
   <?php require_once ('verifyData.php') ?>
   <?php require_once ('changePassword.php') ?>
+    <?php require_once ('userProfile.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>
