@@ -155,6 +155,12 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
             }
+            if (id == "changePassword") {
+                $('.modal,.page-popup').hide();
+                $('body').addClass('modal-open');
+                $('#changePassword').fadeIn();
+
+            }
             //--------------------------------------------------
             //mobile popups end
             //--------------------------------------------------
@@ -173,9 +179,9 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
+            } 
 
-
-            } else if (id == "createAccount") {
+            else if (id == "createAccount") {
                 $('.modal,.page-popup').hide();
                 //  $('body').removeClass('modal-open');
                 $('body').removeClass('page-opened');
@@ -188,11 +194,14 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } else if (id == "payment") {
-                $('#payment').fadeIn();
-            } else if (id == "orderComplete") {
+            } 
 
-                  $('body').attr('class', '');
+            else if (id == "payment") {
+                $('#payment').fadeIn();
+            } 
+
+            else if (id == "orderComplete") {
+                $('body').attr('class', '');
                 $('body').addClass('page-opened');
                 $('#orderComplete').fadeIn();
                 $('#payment').fadeOut();
@@ -201,7 +210,9 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } else if (id == "accountCreated") {
+            } 
+
+            else if (id == "accountCreated") {
                 $('.modal,.page-popup').hide();
                 //$('body').removeClass('modal-open');
                 $('#accountCreated').show();
@@ -210,7 +221,9 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
-            } else if (id == "myProfile") {
+            } 
+
+            else if (id == "myProfile") {
                 $('.modal,.page-popup').hide();
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
@@ -222,8 +235,9 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: ($('body').offset().top)
                 }, 0)
+            } 
 
-            } else if (id == "verifyData") {
+            else if (id == "verifyData") {
                 $('body').addClass('modal-open');
                 $('#verifyData').fadeIn();
                 $('html, body').animate({
@@ -234,9 +248,9 @@ $(document).ready(function() {
                     $('#verifyData .scan-success').fadeIn();
                 }, 4000);
 
-            } else if (id == "paymentMethods") {
+            } 
 
-
+            else if (id == "paymentMethods") {
               $('body').removeClass('modal-open');
               $('body').addClass('page-opened');
               $('.modal').fadeOut();
@@ -249,7 +263,13 @@ $(document).ready(function() {
 
             }
 
+            else if (id == "changePassowrd") {
 
+                $('.modal,.page-popup').hide();
+                $('body').addClass('modal-open');
+                $('#chnagePassowrd').fadeIn();
+
+            }
             else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
@@ -295,6 +315,10 @@ $(document).ready(function() {
     $('#login .close').click(function() {
         $('#login').fadeOut();
         $('#createAccount').fadeIn();
+    });
+        $('#changePassword .close').click(function() {
+        $('#changePassword').fadeOut();
+        $('#login').fadeIn();
     });
     //remove item from cart
     $('.delete-item').click(function() {

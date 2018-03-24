@@ -219,12 +219,21 @@ footer li{list-style-type:none}
     top: 14px;
 }
 .form-item{margin-bottom:13px}
+
+.change-password .form-item {
+    position: relative;
+}
 .my-profile .form-item{background:#fff}
 .upload-box .tag{margin-top:10px;max-width:320px;font-size:14px;color:#8c8c8c}
 .upload-btn{margin-top:12px}
 .read-only .form-label{opacity:1}
 .read-only .field{padding-left:18px}
 .form-item .info{text-align:right;font-size:12px;color:#7d7f84;padding-right:10px}
+
+.change-password .form-item .info {
+    position: absolute;
+    left: 17px;
+}
 .form-item .form-input{width:100%;border-radius:18px;height:36px;padding:0 18px;font-size:15px;}
 .form-input{border: 1px solid #daddd8;}
 
@@ -242,7 +251,7 @@ footer li{list-style-type:none}
 .form .checkbox{padding-left:23px}
 .form .checkbox input{width:100%}
 .form .checkbox label{float:left;padding-left:4px;position:relative}
-a.forgot.link{float:right;line-height:56px;color:var(--color1);text-decoration:underline}
+a.forgot.link{float:right;line-height:56px;color:var(--color1);text-decoration:underline;cursor: pointer;}
 .checkbox .selected:before{visibility:visible}
 .checkbox .selected:after{border-color:var(--hover-color)}
 .checkbox label:before{display:block;top:1px;visibility:hidden;content:"\2713";color:#fff;position:absolute;left:-19px;z-index:9;font-size:17px}
@@ -309,6 +318,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .scan-success .icon i{line-height:26px}
 .scan-success .popup-footer{margin-top:100px}
 .form-popup .popup-footer{background:transparent}
+
+.change-password .popup-footer {
+    margin-top: 90px;
+}
 
 #createAccount .popup-footer,#login .popup-footer {
     height: 170px;
