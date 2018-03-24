@@ -10,6 +10,10 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closing header{transform:scale(0)}
 .closed{transform:scale(1)!important}
 .page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
+
+.my-orders .popup-cont {
+    padding: 0;
+}
 .my-profile.page-popup{overflow:hidden}
 
 .my-profile .form-section{padding:26px 38px;background:#fff;margin-bottom:23px}
@@ -107,9 +111,125 @@ svg{height:100%;width:100%}
 .best-seller .icon i:before{line-height:30px}
 .best-seller{margin-top:18px}
 .nav-tabs{border:0}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent}
+.table-head .title {
+    font-size: 14px;
+    color: #8c8c8c;
+    width: calc(100% / 3);
+    float: left;
+    padding: 24px 25px;
+}
+
+.my-orders .tab-content {
+    border: 1px solid #dbddd8;
+}
+.panel-collapse {
+    float: left;
+}
+.table-head {
+    background: #fff;
+    float: left;
+    width: 100%;
+    height: 58px;
+    padding-left: 57px;
+}
+
+.table-row .item {
+    width: calc(100% / 3);
+    float: left;
+    font-size: 14px;
+    padding: 24px 15px;
+}
+
+.table-row {
+    width: calc(100% - 57px);
+    float: left;
+    color: #1f2421;
+    font-weight: normal;
+}
+
+.my-orders .panel-heading {
+    padding: 0;
+    height: 60px;
+    float: left;
+    width: 100%;
+    background-color:  #fff;
+    border-top: 1px solid #dbddd8;
+}
+.panel-collapse {
+    background: #f6f6f6;
+    width: 100%;
+    border: 1px solid #8c8c8c;
+    border-top: 0;
+}
+
+.panel-collapse.in {}
+
+.order-detail {
+    width: 100%;
+}
+
+.my-orders .panel-body {
+    width: 100%;
+    float: left;
+}
+.order-detail .item{
+    margin-bottom: 16px;
+    float: left;
+    width: 100%;
+}
+.order-detail .icon{
+    float: left;
+    padding-right: 17px;
+}
+.order-detail .icon.watch{color:var(--color1);padding-top: 5px;}
+.order-detail .icon.check{color:#00a551}
+.order-detail .value{
+    float: left;
+    width: 160px;
+}
+.order-detail .code{
+    float: left;
+    width: 100%;
+    padding-left: 27px;
+}
+.panel-heading a[aria-expanded="true"]{
+    border: 1px solid #8c8c8c;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0;
+}
+a[aria-expanded="false"] .panel-minus{display:none}
+.panel-group .panel-icon {
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    color: #8c8c8c;
+    padding-top: 17px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+a[aria-expanded="true"] .panel-plus {
+    display: none;
+}
+
+.collapsed .panel-minus {
+    display:  none;
+}
+.my-orders .nav-tabs {
+    margin-top: 61px;
+    text-transform: capitalize;
+}
+.my-orders .nav-tabs>li.active>a,.my-orders .nav-tabs>li.active>a:focus,.my-orders .nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom: 2px solid #dbddd8;background:transparent;}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {color: var(--headings-color);border: 0;border-bottom: 2px solid #4f5d75;background: transparent;}
 .nav-tabs>li>a{color:#929aa9;font-size:16px;padding:3px 0;font-weight:500}
 .nav-tabs>li{width:calc(100% / 3);text-align:center}
+
+.my-orders .nav-tabs>li {
+    width: calc(100% / 2);
+}
 .best-seller .nav-tabs{margin-top:30px}
 .best-seller .item{margin-top:28px;=:50pxborder-radius: 50%;text-align:center}
 .s-section-title{font-size:23px;font-weight:lighter;color:var(--headings-color);text-transform:uppercase;text-align:center;margin-top:15px}
@@ -487,8 +607,12 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
+    .order-detail .code{width:auto;padding-left:0
+    }
+    .order-detail{padding-left: 46px;}
+    .panel-group .panel-icon{padding-left:24px}
 .profile-data .form-item{padding-left:69px}
-
+.table-row .item{padding:24px}
 .user-profile .form-item {
     padding-left: 0;
 }
@@ -538,6 +662,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .sticky>div{display:flex}
 .coins{background:#2f3538;margin-top:-1px;padding-top:20px;padding-bottom:28px}
 .container{padding-left:5px;padding-right:5px}
+
+.my-orders .popup-cont {
+    padding-left: 32px;
+}
 .my-profile p{text-align:left;padding-left:27px;margin-top:21px}
 .coins>div{padding:7px}
 .coins>div:first-of-type{padding-left:0}
@@ -563,9 +691,14 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .section-title:after{width:3px;height:100%;left:100%;top:0}
 .slider{float:left;width:83%}
 .tab-content{width:66%;float:left;margin-top:22px}
+
+.my-orders .tab-content {
+    width: 100%;
+}
 .best-seller .nav-tabs{position:absolute;top:108px;width:16%;z-index:9}
 .best-seller{position:relative;padding-left:0;padding-right:0}
-.nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
+.nav-tabs>li, .my-orders .nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
+.my-orders .nav-tabs{width: 60%;}
 .two-sec{width:970px;margin:auto;max-width:100%;position:relative}
 .two-sec>div{width:50%;float:right}
 .best-seller .section-title{width:34%}

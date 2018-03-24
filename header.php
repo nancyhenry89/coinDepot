@@ -52,7 +52,7 @@
                               <div class="title">Account</div>
                               <ul class="nav navbar-nav">
                                  <li><a class="modal-opener" data="userProfile" href="#">My profile</a></li>
-                                 <li><a href="#">My orders</a></li>
+                                 <li><a class="modal-opener" data="myOrders" href="#">My orders</a></li>
                                  <li><a href="#">logout</a></li>
                               </ul>
                            </div>
