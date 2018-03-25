@@ -54,6 +54,10 @@ html{background:#000}
 .main-content{padding-right:0;padding-left:0;background:#f6f6f6}
 .light{font-weight:lighter}
 .page-title{text-align:center;color:var(--headings-color);text-transform:uppercase;font-size:24px;font-weight:400;position:relative;margin-top:38px;margin-bottom:20px}
+
+.all-coins .page-title {
+    margin-top: 100px;
+}
 .my-orders .page-title{margin-bottom:0}
 .page-title:after{content:"";display:block;width:20%;height:2px;background:var(--headings-color);left:40%;position:absolute;top:35px}
 .page-title b{font-weight:700}
@@ -121,6 +125,10 @@ svg{height:100%;width:100%}
 .best-seller .icon i:before{line-height:30px}
 .best-seller{margin-top:18px}
 .nav-tabs{border:0}
+
+.all-coins .nav-tabs {
+    margin-top: 30px;
+}
 .table-head .title{font-size:14px;color:#8c8c8c;width:calc(100% / 3);float:left;padding:24px 15px}
 .my-orders .tab-content{border:1px solid #dbddd8}
 .panel-collapse{float:left}
@@ -156,6 +164,7 @@ a[aria-expanded="true"] .panel-plus{display:none}
 .my-orders .nav-tabs{margin-top:61px;text-transform:capitalize}
 .my-orders .nav-tabs>li.active>a,.my-orders .nav-tabs>li.active>a:focus,.my-orders .nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #dbddd8;background:transparent}
 .nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:var(--headings-color);border:0;border-bottom:2px solid #4f5d75;background:transparent}
+
 .nav-tabs>li>a{color:#929aa9;font-size:16px;padding:3px 0;font-weight:500}
 .nav-tabs>li{width:calc(100% / 3);text-align:center}
 .my-orders .nav-tabs>li{width:calc(100% / 2)}
@@ -469,7 +478,34 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .coin-page .desc .item {
     margin-bottom: 30px;
 }
+.coins-search{
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 110px);
+}
+.all-coins .card {
+    width: calc(50% - 20px)!important;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 @media only screen and (min-width: 769px) {
+    .coins-search{
+    left: auto;
+    right: 0;
+    top: -50px;
+    margin-right: 10px;
+}
+
+.coins-search .srch-inpt {
+    margin-right: 0;
+}
+    .all-coins .card{
+    width: calc(100% / 5 - 20px)!important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
     .coin-page .btn{position: initial;}
     .coin-page .banner{border-radius:5px}
     .coin-page .popup-cont{
@@ -517,6 +553,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .get-wallet{margin-top:11px;font-size:14px}
 .cart-card{padding-top:31px}
 .page-title{width:15%;float:left;height:100%;margin-top:7px;text-align:left}
+
+.all-coins .page-title {
+    margin-top: 18px;
+}
 .orderComplete .page-title{width:100%;height:auto;text-align:center}
 .orderComplete .page-title b{display:inline}
 .page-title b{display:block;margin-bottom:6px}
@@ -602,6 +642,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .section-title:after{width:3px;height:100%;left:100%;top:0}
 .slider{float:left;width:83%}
 .tab-content{width:66%;float:left;margin-top:22px}
+
+.all-coins .tab-content {
+    width: 100%;
+}
 .my-orders .tab-content{width:100%;margin-top: 7px;}
 .best-seller .nav-tabs{position:absolute;top:108px;width:16%;z-index:9}
 .best-seller{position:relative;padding-left:0;padding-right:0}
