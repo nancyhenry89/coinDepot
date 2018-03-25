@@ -11,6 +11,14 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closed{transform:scale(1)!important}
 .page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
 
+.coin-page {
+    /* height: 100%; */
+}
+
+.coin-page .btn {color: var(--hover-color);margin-left: 14px;position: absolute;top: 260px;right: 30px;}
+
+
+
 .conditions .popup-cont {padding: 10px 20px;}
 
 .faq.page-popup {
@@ -240,6 +248,12 @@ footer li{list-style-type:none}
 .add-to-cart .cart-img{height:200px;width:140px;background:url(../img/big-cart.png);margin:auto;background-repeat:no-repeat;background-position:center;background-size:91px;margin-bottom:-6px}
 .popup-cont{float:left;width:100%}
 
+.coin-page .popup-cont {
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
+}
+
 .condition {
     margin-bottom: 40px;
 }
@@ -421,7 +435,48 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     color: var(--hover-color);
     margin-top: 30px;
 }
+.coin-page .banner{
+    background: url(../img/day-coin.png);
+    color: var(--color3);
+    height: 226px;
+    /* border-radius: 5px; */
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+.coin-page .banner .coin-icon {margin: auto;font-size: 60px;margin-top: 40px;color: var(--color1);background: transparent;}
+
+.coin-page .banner .coin-name {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.coin-page .details {
+    padding-left: 14px;
+    font-size: 16px;
+}
+
+.coin-page .desc {
+    padding-left: 15px;
+    margin-top: 17px;
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.coin-page .desc .item {
+    margin-bottom: 30px;
+}
 @media only screen and (min-width: 769px) {
+    .coin-page .btn{position: initial;}
+    .coin-page .banner{border-radius:5px}
+    .coin-page .popup-cont{
+    padding-left: 30px;
+    /* margin-left: 1px; */
+    position: initial;
+}
 .nav-tabs>li,.my-orders .nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
 .table-head .title{padding:24px}
 .table-head{padding-left:55px}
@@ -454,6 +509,10 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .orderComplete .page-title:after{width:150px;height:2px;left:50%;top:35px;margin-left:-75px}
 .page-popup{top:128px;width:81%;margin:auto;float:left;left:10%;position:relative;margin-bottom:170px}
 .page-popup>*{width:85%;float:right}
+
+.coin-page .page-title {
+    min-height: 810px;
+}
 .orderComplete.page-popup>*{width:50%;float:none}
 .get-wallet{margin-top:11px;font-size:14px}
 .cart-card{padding-top:31px}

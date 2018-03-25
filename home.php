@@ -206,7 +206,7 @@
             <div class="info-content">
                <h3 class="s-section-title">We buy blocks of coins</h3>
                <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
-               <btn class="btn btn-default">apply here</btn>
+               <button class="btn btn-default">apply here</button>
                <div class="icon medal"></div>
             </div>
          </div>
@@ -215,7 +215,7 @@
                <div class="ribbon">Special Offer</div>
                <p class="details"><b>1%</b> commission on <b>STX</b> </p>
                <p class="time">Today only</p>
-               <btn class="btn btn-default">book now</btn>
+               <button class="btn btn-default">book now</button>
                <div class="icon"></div>
             </div>
          </div>
@@ -223,7 +223,7 @@
             <div class="info-content">
                <h3 class="s-section-title">Some content here</h3>
                <p>Interested in selling large amounts of tokens? Send your offer to our corporate department</p>
-               <btn class="btn btn-default">apply here</btn>
+               <button class="btn btn-default">apply here</button>
                <div class="icon bill"></div>
             </div>
          </div>

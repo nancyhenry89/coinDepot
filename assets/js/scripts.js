@@ -401,14 +401,14 @@ $(document).ready(function() {
                 }, 0)
 
             }else {
-                $('.modal').modal('hide');
-                $('.page-popup').modal('hide');
+                //$('.modal').modal('hide');
+                //$('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
                     $('body').removeClass('modal-open');
                     $('#bookNow').fadeOut();
                 });
                 $('.modal').fadeOut();
-                $('.page-popup').fadeOut();
+              //  $('.page-popup').fadeOut();
                 $('#' + id).fadeIn(500, function() {
                     addModalOpen();
                 });
