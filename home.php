@@ -95,7 +95,7 @@
    </div>
    <div class="container search">
       <input class="srch-inpt" type="text" placeholder="Search your coin" />
-      <a class="plus" href="#">+ View All</a>
+      <a class="plus modal-opener" data="allCoins" href="#">+ View All</a>
    </div>
    <div class="two-sec">
       <div class="container coin-of-day">
@@ -108,7 +108,7 @@
             <div class="item">Symbol : ETH</div>
             <div class="item">Detail : detail some</div>
             <div class="item">text here some text</div>
-            <btn class="btn btn-default">EXPLORE</btn>
+            <button class="btn btn-default modal-opener" data="coinOfDay">EXPLORE</button>
          </div>
       </div>
       <div class="container best-seller">

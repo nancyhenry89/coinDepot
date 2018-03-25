@@ -217,6 +217,32 @@ $(document).ready(function() {
                 }, 0)
 
             }
+            if (id == "coinOfDay") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#coinOfDay').fadeIn();
+                closeNav();
+                $('header').addClass('over');
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }
+            if (id == "allCoins") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#allCoins').fadeIn();
+                closeNav();
+                $('header').addClass('over');
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }
             //--------------------------------------------------
             //mobile popups end
             //--------------------------------------------------
@@ -346,6 +372,28 @@ $(document).ready(function() {
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
                 $('#conditions').fadeIn();
+                $('#home').hide();
+                $('header').addClass('over');
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }else if (id == "coinOfDay") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#coinOfDay').fadeIn();
+                $('#home').hide();
+                $('header').addClass('over');
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }else if (id == "allCoins") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#allCoins').fadeIn();
                 $('#home').hide();
                 $('header').addClass('over');
                 $('html, body').animate({

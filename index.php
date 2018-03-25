@@ -17,6 +17,8 @@
   <?php require_once ('myOrders.php') ?>
   <?php require_once ('faq.php') ?>
   <?php require_once ('conditions.php') ?>
+  <?php require_once ('coinOfDay.php') ?>
+  <?php require_once ('allCoins.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>
