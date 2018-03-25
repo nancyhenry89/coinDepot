@@ -490,7 +490,20 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     margin-right: 10px;
     margin-left: 10px;
 }
+@media (min-width: 768px){
+    .all-coins .card{
+    width: calc(100% /3 - 20px)!important;
+}
+    .navbar-toggle {display:block}
+    .navbar-nav>li{float:none}
+}
+
 @media only screen and (min-width: 769px) {
+    .navbar-nav>li {
+
+    float: left
+}
+  .navbar-toggle {display:none}
     .coins-search{
     left: auto;
     right: 0;
@@ -502,7 +515,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
     margin-right: 0;
 }
     .all-coins .card{
-    width: calc(100% / 5 - 20px)!important;
+    width: calc(100% / 4 - 20px)!important;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -566,6 +579,11 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .navbar-toggle{display:block}
 }
 @media only screen and (min-width: 992px) {
+   .navbar-collapse{
+    padding-left: 0;
+    padding-right: 0;
+}
+    .all-coins .card{}
 .table-head .title{padding:24px}
 .table-head{padding-left:55px}
 .table-row{width:calc(100% - 55px)}
@@ -615,7 +633,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .menu-group{float:right}
 .menu-group .title,.lang{display:none}
 .sidenav{display:none;position:relative;width:100%!important;background:#2f3538;overflow:hidden;max-width:100%}
-.sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{display:none}
+.sidenav .menu-group:not(.account) .navbar-nav>li:last-of-type{/* display:none; */}
 .sticky{padding-top:40px;width:100%;background:var(--color2);height:100px}
 .sticky>div{display:flex}
 .coins{background:#2f3538;margin-top:-1px;padding-top:20px;padding-bottom:28px}
@@ -705,11 +723,14 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 .logo .text{font-size:37px}
 .sidenav{display:block}
 .navbar-toggle{display:none}
-.navbar-nav>li>a{font-size:13px}
+.navbar-nav>li>a{font-size: 11px;padding-left: 9px;}
 .menu-group .title,.lang{display:none}
 .paymentMethods .page-title{font-size:25px}
 }
 @media only screen and (min-width: 1025px) {
+     .all-coins .card{
+    width: calc(100% / 5 - 20px)!important;
+}
 .paymentMethods .page-title{font-size:26px}
 .slider{padding-left:30px;margin-top:41px}
 .slider .card{float:left;width:calc(100% / 5 - 10px)!important}
