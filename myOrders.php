@@ -8,8 +8,10 @@
    </h1>
    <div class="container popup-cont">
       <div class="tab-content">
-         <div id="pending" class="tab-pane fade active in">
-            pending
+         <div id="pending" class="tab-pane fade active in no-orders">
+            <p>You Have no pending orders.</p>
+            <p>Some text to make you wanna buy coins </p>
+            <button class="btn btn-default back-home">BOOK NOW GO TO HOMEPAGE</button>
          </div>
          <div id="closed" class="tab-pane fade">
            <div class="table-head">

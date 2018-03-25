@@ -27,6 +27,9 @@ $(document).ready(function() {
             scrollTop: ($('body').offset().top)
         }, 0)
     }
+    $('.back-home').click(function(){
+      goToHome();
+    });
     //modal open setup
     function addModalOpen() {
         $('body').addClass('modal-open');

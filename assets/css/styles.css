@@ -10,7 +10,7 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closing header{transform:scale(0)}
 .closed{transform:scale(1)!important}
 .page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
-.my-orders .popup-cont{padding:0}
+.my-orders .popup-cont{padding:0;height: 100%;}
 .my-profile.page-popup{overflow:hidden}
 .my-profile .form-section{padding:26px 38px;background:#fff;margin-bottom:23px}
 @-webkit-keyframes trans {
@@ -358,6 +358,12 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .verify-data .mailto{color:#373e44;font-size:16px;text-align:center;display:block;font-weight:700;margin-bottom:31px}
 .scan-doc{margin:auto}
 .scan-doc canvas{background:transparent!important}
+.no-orders{text-align:center;background:#fff;padding: 90px 20px;height: 100%;}
+
+.no-orders .btn {
+    color: var(--hover-color);
+    margin-top: 30px;
+}
 @media only screen and (min-width: 769px) {
 .nav-tabs>li,.my-orders .nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
 .table-head .title{padding:24px}
@@ -480,7 +486,7 @@ input:focus{outline:none;color:#1e2421;border:1px solid #4f5d75!important}
 .section-title:after{width:3px;height:100%;left:100%;top:0}
 .slider{float:left;width:83%}
 .tab-content{width:66%;float:left;margin-top:22px}
-.my-orders .tab-content{width:100%}
+.my-orders .tab-content{width:100%;margin-top: 7px;}
 .best-seller .nav-tabs{position:absolute;top:108px;width:16%;z-index:9}
 .best-seller{position:relative;padding-left:0;padding-right:0}
 .nav-tabs>li,.my-orders .nav-tabs>li{width:100%;text-align:left;margin-bottom:6px}
