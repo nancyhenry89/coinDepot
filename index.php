@@ -15,6 +15,7 @@
   <?php require_once ('changePassword.php') ?>
   <?php require_once ('userProfile.php') ?>
   <?php require_once ('myOrders.php') ?>
+  <?php require_once ('faq.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>

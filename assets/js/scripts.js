@@ -191,6 +191,19 @@ $(document).ready(function() {
                 }, 0)
 
             }
+            if (id == "faq") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#faq').fadeIn();
+                closeNav();
+                $('header').addClass('over');
+                $('#home').hide();
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }
             //--------------------------------------------------
             //mobile popups end
             //--------------------------------------------------
@@ -304,7 +317,18 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
 
-            } else {
+            } else if (id == "faq") {
+                $('.modal,.page-popup').hide();
+                $('body').removeClass('modal-open');
+                $('body').addClass('page-opened');
+                $('#faq').fadeIn();
+                $('#home').hide();
+                $('header').addClass('over');
+                $('html, body').animate({
+                    scrollTop: ($('body').offset().top)
+                }, 0)
+
+            }else {
                 $('.modal').modal('hide');
                 $('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
