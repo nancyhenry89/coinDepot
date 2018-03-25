@@ -16,6 +16,7 @@
   <?php require_once ('userProfile.php') ?>
   <?php require_once ('myOrders.php') ?>
   <?php require_once ('faq.php') ?>
+  <?php require_once ('conditions.php') ?>
   <div class="small-sponsors sponsors">
      <ul>
         <li><img src="assets/img/sp1.png" alt=""/></li>

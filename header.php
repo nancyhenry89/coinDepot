@@ -60,7 +60,7 @@
                               <div class="title">Title</div>
                               <ul class="nav navbar-nav">
                                  <li><a class="modal-opener" data="faq" href="#">FAQ</a></li>
-                                 <li><a class="modal-opener" data="terms" href="#">Terms of use</a></li>
+                                 <li><a class="modal-opener" data="conditions" href="#">Terms of use</a></li>
                                  <li><a href="#">menu link</a></li>
                               </ul>
                            </div>

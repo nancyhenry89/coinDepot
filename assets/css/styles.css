@@ -11,6 +11,8 @@ body{font-family:var(--main-font);transition:all .5s ease;background:#000}
 .closed{transform:scale(1)!important}
 .page-popup{margin-top:30px;background:#f6f6f6;width:100%;float:left}
 
+.conditions .popup-cont {padding: 10px 20px;}
+
 .faq.page-popup {
     height: 100%;
 }
@@ -237,6 +239,15 @@ footer li{list-style-type:none}
 .add-to-cart .question{font-size:16px;margin-bottom:29px}
 .add-to-cart .cart-img{height:200px;width:140px;background:url(../img/big-cart.png);margin:auto;background-repeat:no-repeat;background-position:center;background-size:91px;margin-bottom:-6px}
 .popup-cont{float:left;width:100%}
+
+.condition {
+    margin-bottom: 40px;
+}
+
+.condition .title {
+    font-size: 18px;
+    color: var(--headings-color);
+}
 
 .faq .popup-cont {
 }
