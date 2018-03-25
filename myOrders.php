@@ -2,8 +2,8 @@
    <h1 class="page-title">
       <span><b>my</b> orders</span>
       <ul class="nav nav-tabs">
-         <li class=""><a data-toggle="tab" href="#pending" aria-expanded="false">Pending</a></li>
-         <li class="active"><a data-toggle="tab" href="#closed" aria-expanded="true">Closed</a></li>
+         <li class="active"><a data-toggle="tab" href="#pending" aria-expanded="true">Pending</a></li>
+         <li class=""><a data-toggle="tab" href="#closed" aria-expanded="false">Closed</a></li>
       </ul>
    </h1>
    <div class="container popup-cont">
