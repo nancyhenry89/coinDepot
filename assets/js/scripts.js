@@ -27,8 +27,8 @@ $(document).ready(function() {
             scrollTop: ($('body').offset().top)
         }, 0)
     }
-    $('.back-home').click(function(){
-      goToHome();
+    $('.back-home').click(function() {
+        goToHome();
     });
     //modal open setup
     function addModalOpen() {
@@ -367,7 +367,7 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
 
-            }else if (id == "conditions") {
+            } else if (id == "conditions") {
                 $('.modal,.page-popup').hide();
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
@@ -378,7 +378,7 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
 
-            }else if (id == "coinOfDay") {
+            } else if (id == "coinOfDay") {
                 $('.modal,.page-popup').hide();
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
@@ -389,7 +389,7 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
 
-            }else if (id == "allCoins") {
+            } else if (id == "allCoins") {
                 $('.modal,.page-popup').hide();
                 $('body').removeClass('modal-open');
                 $('body').addClass('page-opened');
@@ -400,7 +400,7 @@ $(document).ready(function() {
                     scrollTop: ($('body').offset().top)
                 }, 0)
 
-            }else {
+            } else {
                 //$('.modal').modal('hide');
                 //$('.page-popup').modal('hide');
                 $('#bookNow .close , #bookNow .cancel').click(function() {
@@ -408,7 +408,7 @@ $(document).ready(function() {
                     $('#bookNow').fadeOut();
                 });
                 $('.modal').fadeOut();
-              //  $('.page-popup').fadeOut();
+                //  $('.page-popup').fadeOut();
                 $('#' + id).fadeIn(500, function() {
                     addModalOpen();
                 });
