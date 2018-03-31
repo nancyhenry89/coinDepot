@@ -71,6 +71,12 @@ svg{height:100%;width:100%}
 .navbar-toggle .icon-bar{background:var(--color1)}
 .logo .text{float:left;margin:0;font-style:italic;font-weight:lighter;font-size:24px;margin-left:10px;text-transform:unset}
 .logo .img{float:left;width:26px;height:31px}
+
+.desktop-logo {
+    display: none;
+}
+
+.logo img.mobile-logo {width: 99px;margin-left: -10px;}
 .slogan{text-align:center;font-weight:300;font-size:15px;text-transform:uppercase;width:75%;margin:auto;margin-top:38px;height:0}
 .over .slogan{display:none}
 .slogan b{font-weight:500}
@@ -720,6 +726,15 @@ footer .btn:hover{color:var(--color1)}
 footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 .logo{cursor:pointer}
 .logo .img{width:43px;height:auto;margin-top:-4px}
+
+.logo img.mobile-logo {
+    display: none;
+}
+
+.logo img.desktop-logo {
+    display: block;
+    width: 148px;
+}
 .logo .text{font-size:37px}
 .sidenav{display:block}
 .navbar-toggle{display:none}
@@ -728,6 +743,10 @@ footer .footer-link:hover{text-decoration:none;color:#8c9db6}
 .paymentMethods .page-title{font-size:25px}
 }
 @media only screen and (min-width: 1025px) {
+    .navbar-nav>li>a {
+    font-size: 13px;
+    padding-left: 9px;
+}
      .all-coins .card{
     width: calc(100% / 5 - 20px)!important;
 }

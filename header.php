@@ -71,8 +71,8 @@
                   </nav>
                </div>
                <div class="logo">
-                  <img class="img" src="assets/img/logo.png" alt="Coin Depot"/>
-                  <h1 class="text">Coin<b>Depot</b></h1>
+                  <img class="img desktop-logo" src="assets/img/logo-desktop.svg" alt="Coin Depot"/>
+                  <img class="img mobile-logo" src="assets/img/logo-mobile.svg" alt="Coin Depot"/>
                </div>
                <div class="cart modal-opener" point="header" data="checkout">
                   <svg class="icon">
